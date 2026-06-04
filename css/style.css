@@ -3,6 +3,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
   background: linear-gradient(180deg, #f7f7fb 0%, #eef1f5 100%);
   color: #1f2937;
+  text-align: center; /* CENTRAGE GLOBAL */
 }
 
 /* CONTAINER */
@@ -37,7 +38,7 @@ body {
   color: #9ca3af;
 }
 
-/* LANG SWITCH PLUS CLEAN */
+/* LANG SWITCH */
 .lang-switch {
   margin-top: 14px;
   display: flex;
@@ -65,7 +66,7 @@ body {
 .card {
   background: white;
   border-radius: 20px;
-  padding: 18px 18px;
+  padding: 18px;
   margin: 14px 0;
   box-shadow: 0 12px 30px rgba(0,0,0,0.06);
   border: 1px solid rgba(0,0,0,0.04);
@@ -76,18 +77,15 @@ body {
   transform: translateY(-2px);
 }
 
-/* TITRE SECTION */
+/* TITRES SECTION */
 .card h3 {
   margin: 0 0 10px;
   font-size: 16px;
   font-weight: 800;
   color: #111827;
-  display: flex;
-  align-items: center;
-  gap: 8px;
 }
 
-/* TEXTE PLUS LISIBLE */
+/* TEXTE */
 .card p {
   margin: 0;
   font-size: 14px;
@@ -95,7 +93,7 @@ body {
   line-height: 1.6;
 }
 
-/* LIENS DANS CARTES */
+/* LIENS */
 .card a {
   display: block;
   margin-top: 8px;
@@ -108,7 +106,7 @@ body {
   color: #1d4ed8;
 }
 
-/* TOP BAR STYLE GLASS */
+/* TOP BAR GLASS */
 .topbar {
   position: fixed;
   top: 0;
@@ -159,6 +157,7 @@ body {
   box-shadow: 0 10px 25px rgba(0,0,0,0.25);
 }
 
+/* PHOTOS */
 .photo {
   margin: 16px 0;
 }
@@ -166,23 +165,23 @@ body {
 .photo img {
   display: block;
   max-width: 100%;
-  width: auto;
   height: auto;
 
-  /* clé pour les photos verticales */
+  /* important pour photos verticales */
   max-height: 60vh;
 
   margin: 0 auto;
   border-radius: 12px;
 }
 
-/* version tablette */
-@media (min-width: 600px) {
-  .photo img {
-    height: 220px;
-  }
-}
-/* SMOOTH SCROLL */
+/* SCROLL FLUIDE */
 html {
   scroll-behavior: smooth;
+}
+
+/* MOBILE OPTIMISÉ */
+@media (min-width: 600px) {
+  .photo img {
+    max-height: 70vh;
+  }
 }
