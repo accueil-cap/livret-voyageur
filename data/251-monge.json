@@ -1,1 +1,12 @@
+{
+  "nom": "Appartement 251 Monge",
+  "gps": "https://maps.google.com",
 
+  "tel_assistance": "+33600000000",
+
+  "codes": {
+    "porte": "3492#",
+    "boite": "251",
+    "digicode": "7088"
+  }
+}
