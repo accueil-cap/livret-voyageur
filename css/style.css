@@ -159,6 +159,37 @@ body {
   box-shadow: 0 10px 25px rgba(0,0,0,0.25);
 }
 
+.photo {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 12px;
+  border: 1px solid #eee;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+.photo img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.photo p {
+  margin: 0;
+  padding: 10px 12px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+  background: #fff;
+}
+
+/* version tablette */
+@media (min-width: 600px) {
+  .photo img {
+    height: 220px;
+  }
+}
 /* SMOOTH SCROLL */
 html {
   scroll-behavior: smooth;
