@@ -204,7 +204,7 @@ en: {
       title: "3 - Photos of the meeting point",
       text: `
         ${photo("images_colisee", "conciergerie1.jpg")}
-        ${photo("251-monge", "conciergerie2.jpg")}
+        ${photo("images_colisee", "conciergerie2.jpg")}
       `
     },
 
@@ -223,7 +223,7 @@ en: {
 
         Open: enter the code and turn the lock to the right<br>
         Close: reset to 0000 after use
-        ${photo("251-monge", "boitecles.jpg")}
+        ${photo("images_colisee", "boitecles.jpg")}
       `
     },
 
@@ -231,13 +231,13 @@ en: {
       title: "5 - Taxi / VTC contacts",
       text: `
           VTC CONFORT :<br>
-          ${photo("251-monge", "vtcconfort.jpg")}
+          ${photo("images_colisee", "vtcconfort.jpg")}
           📞 06 35 24 53 75<br>
           ✉ contact@vtc-confort34.fr<br>
           🌐 www.vtc-confort34.fr<br><br>
           
           Génie Taxi : <br>
-          ${photo("251-monge", "genietaxi.jpg")}
+          ${photo("images_colisee", "genietaxi.jpg")}
           📞 06 95 13 78 77<br><br>
       `
     },
@@ -265,53 +265,53 @@ en: {
       title: "7 - Access to the property",
       text: `
         <b>Le Colisée residence 👇</b>
-        ${photo("251-monge", "residence.jpg")}<br>
+        ${photo("images_colisee", "residence.jpg")}<br>
 
         <b>Gate and pedestrian entrance 👇</b>
-        ${photo("251-monge", "portail.jpg")}<br>
+        ${photo("images_colisee", "portail.jpg")}<br>
 
         <b>Opening the gate 👇</b><br>
         (place the access badge on the black pad between the gate sections)
-        ${photo("251-monge", "vigik_portail.jpg")}<br>
+        ${photo("images_colisee", "vigik_portail.jpg")}<br>
 
         <b>Take the second driveway on the right 👇</b>
-        ${photo("251-monge", "allee.jpg")}<br>
+        ${photo("images_colisee", "allee.jpg")}<br>
 
         <b>Parking space 👇</b><br>
         Located on your right
-        ${photo("251-monge", "parking.jpg")}<br>
+        ${photo("images_colisee", "parking.jpg")}<br>
 
         <b>Private parking numbers: 33D - 115 👇</b>
-        ${photo("251-monge", "place_parking.jpg")}<br>
+        ${photo("images_colisee", "place_parking.jpg")}<br>
 
         <b>Building D access 👇</b><br>
         yellow arrow = parking<br>
         orange arrow = building
-        ${photo("251-monge", "batiment_d_exterieur.jpg")}<br>
+        ${photo("images_colisee", "batiment_d_exterieur.jpg")}<br>
 
         <b>Building entrance 👇</b>
-        ${photo("251-monge", "entree_batiment1.jpg")}
-        ${photo("251-monge", "entree_batiment2.jpg")}<br>
+        ${photo("images_colisee", "entree_batiment1.jpg")}
+        ${photo("images_colisee", "entree_batiment2.jpg")}<br>
 
         <b>Door access with badge 👇</b><br>
         (place the badge on the black sensor on the right side)
-        ${photo("251-monge", "badge_porte.jpg")}<br>
+        ${photo("images_colisee", "badge_porte.jpg")}<br>
 
         <b>Go to 3rd floor and turn left 👇</b>
-        ${photo("251-monge", "escaliers.jpg")}<br>
+        ${photo("images_colisee", "escaliers.jpg")}<br>
 
         <b>The apartment is at the end of the hallway 👇</b>
-        ${photo("251-monge", "couloir.jpg")}<br>
+        ${photo("images_colisee", "couloir.jpg")}<br>
 
         <b>Apartment number 👇</b>
-        ${photo("251-monge", "porte_appartement.jpg")}<br>
+        ${photo("images_colisee", "porte_appartement.jpg")}<br>
 
         <b>Keys 👇</b><br>
         Flat key (main lock)
-        ${photo("251-monge", "cle_plate.jpg")}<br>
+        ${photo("images_colisee", "cle_plate.jpg")}<br>
 
         Round key (top lock)
-        ${photo("251-monge", "cle_ronde.jpg")}
+        ${photo("images_colisee", "cle_ronde.jpg")}
       `
     },
 
@@ -351,8 +351,8 @@ es: {
     photos1: {
       title: "3 - Fotos del punto de encuentro",
       text: `
-        ${photo("251-monge", "conciergerie1.jpg")}
-        ${photo("251-monge", "conciergerie2.jpg")}
+        ${photo("images_colisee", "conciergerie1.jpg")}
+        ${photo("images_colisee", "conciergerie2.jpg")}
       `
     },
 
@@ -371,7 +371,7 @@ es: {
 
         Abrir: introducir el código y girar a la derecha<br>
         Cerrar: volver a 0000 después del uso
-        ${photo("251-monge", "boitecles.jpg")}
+        ${photo("images_colisee", "boitecles.jpg")}
       `
     },
 
@@ -379,13 +379,13 @@ es: {
       title: "5 - Taxis / VTC",
       text: `
           VTC CONFORT :<br>
-          ${photo("251-monge", "vtcconfort.jpg")}
+          ${photo("images_colisee", "vtcconfort.jpg")}
           📞 06 35 24 53 75<br>
           ✉ contact@vtc-confort34.fr<br>
           🌐 www.vtc-confort34.fr<br><br>
           
           Génie Taxi : <br>
-          ${photo("251-monge", "genietaxi.jpg")}
+          ${photo("images_colisee", "genietaxi.jpg")}
           📞 06 95 13 78 77<br><br>
       `
     },
@@ -413,53 +413,53 @@ es: {
       title: "7 - Acceso al alojamiento",
       text: `
         <b>Residencia Le Colisée 👇</b>
-        ${photo("251-monge", "residence.jpg")}<br>
+        ${photo("images_colisee", "residence.jpg")}<br>
 
         <b>Portón y entrada 👇</b>
-        ${photo("251-monge", "portail.jpg")}<br>
+        ${photo("images_colisee", "portail.jpg")}<br>
 
         <b>Apertura del portón 👇</b><br>
         (coloca el llavero en el sensor negro)
-        ${photo("251-monge", "vigik_portail.jpg")}<br>
+        ${photo("images_colisee", "vigik_portail.jpg")}<br>
 
         <b>Toma la segunda entrada a la derecha 👇</b>
-        ${photo("251-monge", "allee.jpg")}<br>
+        ${photo("images_colisee", "allee.jpg")}<br>
 
         <b>Aparcamiento 👇</b><br>
         Situado a la derecha
-        ${photo("251-monge", "parking.jpg")}<br>
+        ${photo("images_colisee", "parking.jpg")}<br>
 
         <b>Número de plaza: 33D - 115 👇</b>
-        ${photo("251-monge", "place_parking.jpg")}<br>
+        ${photo("images_colisee", "place_parking.jpg")}<br>
 
         <b>Acceso edificio D 👇</b><br>
         flecha amarilla = parking<br>
         flecha naranja = edificio
-        ${photo("251-monge", "batiment_d_exterieur.jpg")}<br>
+        ${photo("images_colisee", "batiment_d_exterieur.jpg")}<br>
 
         <b>Entrada edificio 👇</b>
-        ${photo("251-monge", "entree_batiment1.jpg")}
-        ${photo("251-monge", "entree_batiment2.jpg")}<br>
+        ${photo("images_colisee", "entree_batiment1.jpg")}
+        ${photo("images_colisee", "entree_batiment2.jpg")}<br>
 
         <b>Acceso con badge 👇</b><br>
         (coloca el badge en el lector)
-        ${photo("251-monge", "badge_porte.jpg")}<br>
+        ${photo("images_colisee", "badge_porte.jpg")}<br>
 
         <b>Sube al 3er piso y gira a la izquierda 👇</b>
-        ${photo("251-monge", "escaliers.jpg")}<br>
+        ${photo("images_colisee", "escaliers.jpg")}<br>
 
         <b>El apartamento está al final del pasillo 👇</b>
-        ${photo("251-monge", "couloir.jpg")}<br>
+        ${photo("images_colisee", "couloir.jpg")}<br>
 
         <b>Número del apartamento 👇</b>
-        ${photo("251-monge", "porte_appartement.jpg")}<br>
+        ${photo("images_colisee", "porte_appartement.jpg")}<br>
 
         <b>Llaves 👇</b><br>
         Llave plana (cerradura principal)
-        ${photo("251-monge", "cle_plate.jpg")}<br>
+        ${photo("images_colisee", "cle_plate.jpg")}<br>
 
         Llave redonda (cerradura superior)
-        ${photo("251-monge", "cle_ronde.jpg")}
+        ${photo("images_colisee", "cle_ronde.jpg")}
       `
     },
 
