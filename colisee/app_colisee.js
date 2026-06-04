@@ -487,7 +487,10 @@ function render() {
       .join("<br>");
 
   Object.keys(data.sections).forEach(id => {
-    document.getElementById(id).innerHTML =
+    const el = document.getElementById(id);
+    if (!el) return; // évite crash
+
+    el.innerHTML =
       `<h3>${data.sections[id].title}</h3>
        <div>${data.sections[id].text}</div>`;
   });
