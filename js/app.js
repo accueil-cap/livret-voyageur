@@ -1,77 +1,84 @@
 const params = new URLSearchParams(window.location.search);
 
 const id = params.get("id") || "251-monge";
-const lang = params.get("lang") || "fr";
 
-fetch(`data/${id}.json`)
-  .then(res => res.json())
-  .then(data => {
+let lang = localStorage.getItem("lang") || "fr";
 
-    // TITRE MULTILINGUE
-    const titles = {
-      fr: "🏠 Conciergerie du logement",
-      en: "🏠 Property Check-in Guide",
-      es: "🏠 Guía de entrada al alojamiento"
-    };
+function setLang(l) {
+  lang = l;
+  localStorage.setItem("lang", l);
+  render();
+}
 
-    document.getElementById("title").innerText = titles[lang] || titles.fr;
+const t = {
+  fr: {
+    title: "Conciergerie du logement",
+    subtitle: "Récupération des clés",
+    menu: "Accès rapide",
+    sections: {
+      heure: ["1 - Heure d'arrivée", "à partir de 16h"],
+      adresse: ["2 - Point d'accueil", "Conciergerie du Cap d'Agde"],
+      photos1: ["3 - Photographies", "À venir"],
+      codes: ["4 - Boîte à clés", "Codes d'accès"],
+      taxis: ["5 - Taxis / VTC", "Contacts disponibles"],
+      logement: ["6 - Logement", "Adresse complète"],
+      photos2: ["7 - Accès logement", "Photos accès"],
+      livret: ["8 - Livret de séjour", "Ouvrir"]
+    }
+  },
 
-    // TRADUCTIONS SIMPLES UI
-    const translations = {
-      fr: {
-        gps: "📍 Ouvrir Google Maps",
-        keys: "🔑 Récupérer les clés",
-        access: "🚪 Accès logement",
-        help: "📞 Assistance"
-      },
-      en: {
-        gps: "📍 Open Google Maps",
-        keys: "🔑 Get keys",
-        access: "🚪 Access property",
-        help: "📞 Support"
-      },
-      es: {
-        gps: "📍 Abrir Google Maps",
-        keys: "🔑 Recoger llaves",
-        access: "🚪 Acceso alojamiento",
-        help: "📞 Asistencia"
-      }
-    };
+  en: {
+    title: "Property Check-in Guide",
+    subtitle: "Key collection",
+    menu: "Quick access",
+    sections: {
+      heure: ["1 - Check-in time", "from 4 PM"],
+      adresse: ["2 - Meeting point", "Concierge location"],
+      photos1: ["3 - Photos", "Coming soon"],
+      codes: ["4 - Key box", "Access codes"],
+      taxis: ["5 - Taxi / VTC", "Contacts"],
+      logement: ["6 - Property", "Full address"],
+      photos2: ["7 - Access photos", "Entry guide"],
+      livret: ["8 - Stay guide", "Open"]
+    }
+  },
 
-    const t = translations[lang] || translations.fr;
+  es: {
+    title: "Guía de entrada",
+    subtitle: "Recogida de llaves",
+    menu: "Acceso rápido",
+    sections: {
+      heure: ["1 - Hora de llegada", "desde las 16h"],
+      adresse: ["2 - Punto de encuentro", "Concierge"],
+      photos1: ["3 - Fotos", "Próximamente"],
+      codes: ["4 - Caja de llaves", "Códigos"],
+      taxis: ["5 - Taxis / VTC", "Contactos"],
+      logement: ["6 - Alojamiento", "Dirección"],
+      photos2: ["7 - Acceso", "Fotos"],
+      livret: ["8 - Guía", "Abrir"]
+    }
+  }
+};
 
-    document.getElementById("gps").innerText = t.gps;
-    document.getElementById("keys").innerText = t.keys;
-    document.getElementById("access").innerText = t.access;
-    document.getElementById("help").innerText = t.help;
+function render() {
+  const data = t[lang];
 
-    // DATA
-    document.getElementById("gps").href = data.gps;
-    document.getElementById("help").href = "tel:" + data.tel_assistance;
+  document.getElementById("title").innerText = data.title;
+  document.getElementById("subtitle").innerText = data.subtitle;
 
-    document.getElementById("keys").onclick = () => {
-      if (lang === "en") {
-        alert(
-          "🔑 Access codes:\n\n" +
-          "Door: " + data.codes.porte + "\n" +
-          "Box: " + data.codes.boite + "\n" +
-          "Digicode: " + data.codes.digicode
-        );
-      } else if (lang === "es") {
-        alert(
-          "🔑 Códigos de acceso:\n\n" +
-          "Puerta: " + data.codes.porte + "\n" +
-          "Caja: " + data.codes.boite + "\n" +
-          "Digicode: " + data.codes.digicode
-        );
-      } else {
-        alert(
-          "🔑 Codes d’accès\n\n" +
-          "Porte : " + data.codes.porte + "\n" +
-          "Boîte : " + data.codes.boite + "\n" +
-          "Digicode : " + data.codes.digicode
-        );
-      }
-    };
+  // MENU
+  document.getElementById("menu").innerHTML =
+    `<b>${data.menu}</b><br><br>` +
+    Object.keys(data.sections)
+      .map(k => `<a href="#${k}">${data.sections[k][0]}</a>`)
+      .join("<br>");
 
+  // SECTIONS
+  Object.keys(data.sections).forEach(id => {
+    const s = data.sections[id];
+    document.getElementById(id).innerHTML =
+      `<h3>${s[0]}</h3><p>${s[1]}</p>`;
   });
+}
+
+render();
