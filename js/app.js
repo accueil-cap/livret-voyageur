@@ -64,7 +64,7 @@ codes: {
       },
 
       taxis: {
-        title: "5 - Taxis / VTC",
+        title: "5 - Coordonnées Taxis / VTC",
         text: `
         📞 06 35 24 53 75<br>
         ✉ contact@vtc-confort34.fr<br>
