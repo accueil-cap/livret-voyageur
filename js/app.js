@@ -174,163 +174,283 @@ photos2: {
     }
   },
 
-  en: {
-    title: "Property Check-in Guide",
-    subtitle: "Key collection",
-    menu: "Quick access",
+en: {
+  title: "Accommodation Guide",
+  subtitle: "Key collection & check-in",
+  menu: "Quick access",
 
-    sections: {
-      heure: {
-        title: "1 - Check-in time",
-        text: "Self check-in available 24/7 with flexible arrival time."
-      },
+  sections: {
+    heure: {
+      title: "1 - Check-in time",
+      text: "Self check-in system with flexible arrival time. You can arrive at any time, including late at night."
+    },
 
-      adresse: {
-        title: "2 - Meeting point",
-        text: `
-          Concierge of Cap d'Agde<br>
-          Impasse des Sargasses<br>
-          34300 Cap d'Agde<br>
-          Amoureva residence<br><br>
-          📍 Open Google Maps
-        `
-      },
+    adresse: {
+      title: "2 - Key collection point",
+      text: `
+        Concierge of Cap d'Agde<br>
+        Impasse des Sargasses<br>
+        34300 Cap d'Agde<br>
+        Amoureva residence<br><br>
 
-      photos1: {
-        title: "3 - Photos",
-        text: `
-          ${photo("251-monge", "conciergerie1.jpg", "Meeting point")}
-          ${photo("251-monge", "conciergerie2.jpg", "Meeting point")}
-        `
-      },
+        <a class="map-link"
+           href="https://maps.app.goo.gl/t46grpyPzibVdFZM9"
+           target="_blank">
+           📍 Open Google Maps
+        </a>
+      `
+    },
 
-      codes: {
-        title: "4 - Key box / Access codes",
-        text: `
-          <b>Door code</b><br>
-          <span style="color:#ef4444;font-size:22px;font-weight:800;">3492#</span><br><br>
+    photos1: {
+      title: "3 - Photos of the meeting point",
+      text: `
+        ${photo("251-monge", "conciergerie1.jpg")}
+        ${photo("251-monge", "conciergerie2.jpg")}
+      `
+    },
 
-          <b>Key box</b><br>
-          <span style="color:#ef4444;font-size:22px;font-weight:800;">n° 251</span><br><br>
+    codes: {
+      title: "4 - Key box / Access codes",
+      text: `
+        <b>Front door code</b><br>
+        <span style="color:#ef4444;font-size:22px;font-weight:800;">3492#</span><br><br>
 
-          <b>Digicode</b><br>
-          <span style="color:#ef4444;font-size:22px;font-weight:800;">7088</span><br><br>
+        <b>Key box</b><br>
+        <span style="color:#ef4444;font-size:22px;font-weight:800;">n° 251</span><br><br>
 
-          Open: enter code and turn right<br>
-          Close: reset to 0000
-        `
-      },
+        <b>Digicode</b><br>
+        <span style="color:#ef4444;font-size:22px;font-weight:800;">7088</span><br><br>
 
-      taxis: {
-        title: "5 - Taxi / VTC",
-        text: `
-          📞 06 35 24 53 75<br>
-          Génie Taxi: 06 95 13 78 77
-        `
-      },
+        Open: enter the code and turn the lock to the right<br>
+        Close: reset to 0000 after use
+      `
+    },
 
-      logement: {
-        title: "6 - Property address",
-        text: `
-          7 rue Sarret de Coussergues<br>
-          34300 Cap d'Agde<br><br>
+    taxis: {
+      title: "5 - Taxi / VTC contacts",
+      text: `
+        VTC CONFORT:<br>
+        📞 06 35 24 53 75<br><br>
 
-          Parking: 115 / D33<br>
-          Residence: Le Colisée<br>
-          Building: D<br>
-          Apartment: 33<br><br>
+        Génie Taxi:<br>
+        📞 06 95 13 78 77
+      `
+    },
 
-          📍 Open Google Maps
-        `
-      },
+    logement: {
+      title: "6 - Property address",
+      text: `
+        7 rue Sarret de Coussergues<br>
+        34300 Cap d'Agde<br><br>
 
-      photos2: {
-        title: "7 - Access",
-        text: "Access photos coming soon."
-      },
+        Parking: 115 / D33<br>
+        Residence: Le Colisée<br>
+        Building: D<br>
+        Apartment: 33<br><br>
 
-      livret: {
-        title: "8 - Stay guide",
-        text: "Full guide available."
-      }
-    }
-  },
+        <a class="map-link"
+           href="https://maps.app.goo.gl/NGggttSMAHzW2q1N6"
+           target="_blank">
+           📍 Open Google Maps
+        </a>
+      `
+    },
 
-  es: {
-    title: "Guía de entrada",
-    subtitle: "Recogida de llaves",
-    menu: "Acceso rápido",
+    photos2: {
+      title: "7 - Access to the property",
+      text: `
+        <b>Le Colisée residence 👇</b>
+        ${photo("251-monge", "residence.jpg")}<br>
 
-    sections: {
-      heure: {
-        title: "1 - Hora de llegada",
-        text: "Auto check-in disponible 24/7 con llegada flexible."
-      },
+        <b>Gate and pedestrian entrance 👇</b>
+        ${photo("251-monge", "portail.jpg")}<br>
 
-      adresse: {
-        title: "2 - Punto de encuentro",
-        text: `
-          Concierge de Cap d'Agde<br>
-          Impasse des Sargasses<br>
-          34300 Cap d'Agde<br><br>
-          📍 Abrir Google Maps
-        `
-      },
+        <b>Opening the gate 👇</b><br>
+        (place the access badge on the black pad between the gate sections)
+        ${photo("251-monge", "vigik_portail.jpg")}<br>
 
-      photos1: {
-        title: "3 - Fotos",
-        text: `
-          ${photo("251-monge", "conciergerie1.jpg", "Punto de encuentro")}
-          ${photo("251-monge", "conciergerie2.jpg", "Punto de encuentro")}
-        `
-      },
+        <b>Take the second driveway on the right 👇</b>
+        ${photo("251-monge", "allee.jpg")}<br>
 
-      codes: {
-        title: "4 - Caja de llaves / Códigos",
-        text: `
-          Código puerta: <span style="color:#ef4444;font-weight:800;">3492#</span><br>
-          Caja: <span style="color:#ef4444;font-weight:800;">n° 251</span><br>
-          Digicode: <span style="color:#ef4444;font-weight:800;">7088</span><br><br>
+        <b>Parking space 👇</b><br>
+        Located on your right
+        ${photo("251-monge", "parking.jpg")}<br>
 
-          Abrir: introducir código y girar a la derecha<br>
-          Cerrar: volver a 0000
-        `
-      },
+        <b>Private parking numbers: 33D - 115 👇</b>
+        ${photo("251-monge", "place_parking.jpg")}<br>
 
-      taxis: {
-        title: "5 - Taxis / VTC",
-        text: `
-          📞 06 35 24 53 75<br>
-          Génie Taxi: 06 95 13 78 77
-        `
-      },
+        <b>Building D access 👇</b><br>
+        yellow arrow = parking<br>
+        orange arrow = building
+        ${photo("251-monge", "batiment_d_exterieur.jpg")}<br>
 
-      logement: {
-        title: "6 - Dirección",
-        text: `
-          7 rue Sarret de Coussergues<br>
-          34300 Cap d'Agde<br><br>
+        <b>Building entrance 👇</b>
+        ${photo("251-monge", "entree_batiment1.jpg")}
+        ${photo("251-monge", "entree_batiment2.jpg")}<br>
 
-          Parking: 115 / D33<br>
-          Residencia: Le Colisée<br>
-          Edificio: D<br>
-          Apartamento: 33<br><br>
+        <b>Door access with badge 👇</b><br>
+        (place the badge on the black sensor on the right side)
+        ${photo("251-monge", "badge_porte.jpg")}<br>
 
-          📍 Abrir Google Maps
-        `
-      },
+        <b>Go to 3rd floor and turn left 👇</b>
+        ${photo("251-monge", "escaliers.jpg")}<br>
 
-      photos2: {
-        title: "7 - Acceso",
-        text: "Fotos de acceso próximamente."
-      },
+        <b>The apartment is at the end of the hallway 👇</b>
+        ${photo("251-monge", "couloir.jpg")}<br>
 
-      livret: {
-        title: "8 - Guía",
-        text: "Guía completa disponible."
-      }
+        <b>Apartment number 👇</b>
+        ${photo("251-monge", "porte_appartement.jpg")}<br>
+
+        <b>Keys 👇</b><br>
+        Flat key (main lock)
+        ${photo("251-monge", "cle_plate.jpg")}<br><br>
+
+        Round key (top lock)
+        ${photo("251-monge", "cle_ronde.jpg")}
+      `
+    },
+
+    livret: {
+      title: "8 - Guest guide",
+      text: "Full accommodation guide available."
     }
   }
+},
+
+es: {
+  title: "Guía del alojamiento",
+  subtitle: "Entrega de llaves y llegada",
+  menu: "Acceso rápido",
+
+  sections: {
+    heure: {
+      title: "1 - Hora de llegada",
+      text: "Sistema de auto check-in con llegada flexible. Puedes llegar a cualquier hora, incluso por la noche."
+    },
+
+    adresse: {
+      title: "2 - Punto de recogida de llaves",
+      text: `
+        Concierge de Cap d'Agde<br>
+        Impasse des Sargasses<br>
+        34300 Cap d'Agde<br>
+        Residencia Amoureva<br><br>
+
+        📍 Abrir Google Maps
+      `
+    },
+
+    photos1: {
+      title: "3 - Fotos del punto de encuentro",
+      text: `
+        ${photo("251-monge", "conciergerie1.jpg")}
+        ${photo("251-monge", "conciergerie2.jpg")}
+      `
+    },
+
+    codes: {
+      title: "4 - Caja de llaves / Códigos de acceso",
+      text: `
+        <b>Código de la puerta</b><br>
+        <span style="color:#ef4444;font-size:22px;font-weight:800;">3492#</span><br><br>
+
+        <b>Caja de llaves</b><br>
+        <span style="color:#ef4444;font-size:22px;font-weight:800;">n° 251</span><br><br>
+
+        <b>Digicode</b><br>
+        <span style="color:#ef4444;font-size:22px;font-weight:800;">7088</span><br><br>
+
+        Abrir: introducir el código y girar a la derecha<br>
+        Cerrar: volver a 0000 después del uso
+      `
+    },
+
+    taxis: {
+      title: "5 - Taxis / VTC",
+      text: `
+        VTC CONFORT:<br>
+        📞 06 35 24 53 75<br><br>
+
+        Génie Taxi:<br>
+        📞 06 95 13 78 77
+      `
+    },
+
+    logement: {
+      title: "6 - Dirección del alojamiento",
+      text: `
+        7 rue Sarret de Coussergues<br>
+        34300 Cap d'Agde<br><br>
+
+        Parking: 115 / D33<br>
+        Residencia: Le Colisée<br>
+        Edificio: D<br>
+        Apartamento: 33<br><br>
+
+        📍 Abrir Google Maps
+      `
+    },
+
+    photos2: {
+      title: "7 - Acceso al alojamiento",
+      text: `
+        <b>Residencia Le Colisée 👇</b>
+        ${photo("251-monge", "residence.jpg")}<br>
+
+        <b>Portón y entrada 👇</b>
+        ${photo("251-monge", "portail.jpg")}<br>
+
+        <b>Apertura del portón 👇</b><br>
+        (coloca el llavero en el sensor negro)
+        ${photo("251-monge", "vigik_portail.jpg")}<br>
+
+        <b>Toma la segunda entrada a la derecha 👇</b>
+        ${photo("251-monge", "allee.jpg")}<br>
+
+        <b>Aparcamiento 👇</b><br>
+        Situado a la derecha
+        ${photo("251-monge", "parking.jpg")}<br>
+
+        <b>Número de plaza: 33D - 115 👇</b>
+        ${photo("251-monge", "place_parking.jpg")}<br>
+
+        <b>Acceso edificio D 👇</b><br>
+        flecha amarilla = parking<br>
+        flecha naranja = edificio
+        ${photo("251-monge", "batiment_d_exterieur.jpg")}<br>
+
+        <b>Entrada edificio 👇</b>
+        ${photo("251-monge", "entree_batiment1.jpg")}
+        ${photo("251-monge", "entree_batiment2.jpg")}<br>
+
+        <b>Acceso con badge 👇</b><br>
+        (coloca el badge en el lector)
+        ${photo("251-monge", "badge_porte.jpg")}<br>
+
+        <b>Sube al 3er piso y gira a la izquierda 👇</b>
+        ${photo("251-monge", "escaliers.jpg")}<br>
+
+        <b>El apartamento está al final del pasillo 👇</b>
+        ${photo("251-monge", "couloir.jpg")}<br>
+
+        <b>Número del apartamento 👇</b>
+        ${photo("251-monge", "porte_appartement.jpg")}<br>
+
+        <b>Llaves 👇</b><br>
+        Llave plana (cerradura principal)
+        ${photo("251-monge", "cle_plate.jpg")}<br><br>
+
+        Llave redonda (cerradura superior)
+        ${photo("251-monge", "cle_ronde.jpg")}
+      `
+    },
+
+    livret: {
+      title: "8 - Guía de estancia",
+      text: "Guía completa del alojamiento disponible."
+    }
+  }
+}
 };
 
 /* =========================
