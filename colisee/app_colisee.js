@@ -55,7 +55,7 @@ text: `
         title: "3 - Photographies du point d'accueil",
         text: `
           ${photo(null, "conciergerie1.jpg")}
-          ${photo("images_colisee", "conciergerie2.jpg")}
+          ${photo(null, "conciergerie2.jpg")}
         `
       },
 
@@ -75,7 +75,7 @@ text: `
           <b>Pour l'ouverture :</b> mettre le code et tourner la serrure sur la droite<br><br>
           <b>Pour la fermeture :</b> conserver le même code et tourner sur la gauche,
           puis remettre à 0000
-          ${photo("images_colisee", "boitecles.jpg")}
+          ${photo(null, "boitecles.jpg")}
         `
       },
 
@@ -83,13 +83,13 @@ text: `
         title: "5 - Coordonnées Taxis - VTC",
         text: `
           VTC CONFORT :<br>
-          ${photo("images_colisee", "vtcconfort.jpg")}
+          ${photo(null, "vtcconfort.jpg")}
           📞 06 35 24 53 75<br>
           ✉ contact@vtc-confort34.fr<br>
           🌐 www.vtc-confort34.fr<br><br>
           
           Génie Taxi : <br>
-          ${photo("images_colisee", "genietaxi.jpg")}
+          ${photo(null, "genietaxi.jpg")}
           📞 06 95 13 78 77<br><br>
         `
       },
@@ -117,53 +117,53 @@ photos2: {
   title: "7 - Accès au logement",
   text: `
     <b>Résidence Le Colisée 👇</b>
-    ${photo("images_colisee", "residence.jpg")}<br>
+    ${photo(null, "residence.jpg")}<br>
 
     <b>Portail et portillon de la résidence 👇</b>
-    ${photo("images_colisee", "portail.jpg")}<br>
+    ${photo(null, "portail.jpg")}<br>
 
     <b>Ouverture du portail et du portillon 👇</b><br>
     (collez le vigik sur la pastille noire située entre le portail et le portillon)
-    ${photo("images_colisee", "vigik_portail.jpg")}<br>
+    ${photo(null, "vigik_portail.jpg")}<br>
 
     <b>Prendre la deuxième allée sur votre droite 👇</b>
-    ${photo("images_colisee", "allee.jpg")}<br>
+    ${photo(null, "allee.jpg")}<br>
 
     <b>Place de parking 👇</b><br>
     La place se situe sur votre droite
-    ${photo("images_colisee", "parking.jpg")}<br>
+    ${photo(null, "parking.jpg")}<br>
 
     <b>Numéros de la place privative : 33D - 115 👇</b>
-    ${photo("images_colisee", "place_parking.jpg")}<br>
+    ${photo(null, "place_parking.jpg")}<br>
 
     <b>Accès au bâtiment D 👇</b><br>
     flèche jaune = parking<br>
     flèche orange = bâtiment
-    ${photo("images_colisee", "batiment_d_exterieur.jpg")}<br>
+    ${photo(null, "batiment_d_exterieur.jpg")}<br>
 
     <b>Entrée du bâtiment D 👇</b>
-    ${photo("images_colisee", "entree_batiment1.jpg")}
-    ${photo("images_colisee", "entree_batiment2.jpg")}<br>
+    ${photo(null, "entree_batiment1.jpg")}
+    ${photo(null, "entree_batiment2.jpg")}<br>
 
     <b>Ouverture de la porte avec le badge 👇</b><br>
     (collez le vigik sur la pastille noire à droite de la porte)
-    ${photo("images_colisee", "badge_porte.jpg")}<br>
+    ${photo(null, "badge_porte.jpg")}<br>
 
     <b>Montez jusqu'au 3ème étage et prenez à gauche 👇</b>
-    ${photo("images_colisee", "escaliers.jpg")}<br>
+    ${photo(null, "escaliers.jpg")}<br>
 
     <b>Le logement se situe au bout du couloir 👇</b>
-    ${photo("images_colisee", "couloir.jpg")}<br>
+    ${photo(null, "couloir.jpg")}<br>
 
     <b>Numéro d'appartement 👇</b>
-    ${photo("images_colisee", "porte_appartement.jpg")}<br>
+    ${photo(null, "porte_appartement.jpg")}<br>
 
     <b>Clés de la porte 👇</b><br>
     clé plate (serrure principale)
-    ${photo("images_colisee", "cle_plate.jpg")}
+    ${photo(null, "cle_plate.jpg")}
 
     clé ronde (verrou du haut)
-    ${photo("images_colisee", "cle_ronde.jpg")}
+    ${photo(null, "cle_ronde.jpg")}
   `
 },
 
@@ -203,8 +203,8 @@ en: {
     photos1: {
       title: "3 - Photos of the meeting point",
       text: `
-        ${photo("images_colisee", "conciergerie1.jpg")}
-        ${photo("images_colisee", "conciergerie2.jpg")}
+        ${photo(null, "conciergerie1.jpg")}
+        ${photo(null, "conciergerie2.jpg")}
       `
     },
 
@@ -223,7 +223,7 @@ en: {
 
         Open: enter the code and turn the lock to the right<br>
         Close: reset to 0000 after use
-        ${photo("images_colisee", "boitecles.jpg")}
+        ${photo(null, "boitecles.jpg")}
       `
     },
 
@@ -231,13 +231,13 @@ en: {
       title: "5 - Taxi / VTC contacts",
       text: `
           VTC CONFORT :<br>
-          ${photo("images_colisee", "vtcconfort.jpg")}
+          ${photo(null, "vtcconfort.jpg")}
           📞 06 35 24 53 75<br>
           ✉ contact@vtc-confort34.fr<br>
           🌐 www.vtc-confort34.fr<br><br>
           
           Génie Taxi : <br>
-          ${photo("images_colisee", "genietaxi.jpg")}
+          ${photo(null, "genietaxi.jpg")}
           📞 06 95 13 78 77<br><br>
       `
     },
@@ -265,53 +265,53 @@ en: {
       title: "7 - Access to the property",
       text: `
         <b>Le Colisée residence 👇</b>
-        ${photo("images_colisee", "residence.jpg")}<br>
+        ${photo(null, "residence.jpg")}<br>
 
         <b>Gate and pedestrian entrance 👇</b>
-        ${photo("images_colisee", "portail.jpg")}<br>
+        ${photo(null, "portail.jpg")}<br>
 
         <b>Opening the gate 👇</b><br>
         (place the access badge on the black pad between the gate sections)
-        ${photo("images_colisee", "vigik_portail.jpg")}<br>
+        ${photo(null, "vigik_portail.jpg")}<br>
 
         <b>Take the second driveway on the right 👇</b>
-        ${photo("images_colisee", "allee.jpg")}<br>
+        ${photo(null, "allee.jpg")}<br>
 
         <b>Parking space 👇</b><br>
         Located on your right
-        ${photo("images_colisee", "parking.jpg")}<br>
+        ${photo(null, "parking.jpg")}<br>
 
         <b>Private parking numbers: 33D - 115 👇</b>
-        ${photo("images_colisee", "place_parking.jpg")}<br>
+        ${photo(null, "place_parking.jpg")}<br>
 
         <b>Building D access 👇</b><br>
         yellow arrow = parking<br>
         orange arrow = building
-        ${photo("images_colisee", "batiment_d_exterieur.jpg")}<br>
+        ${photo(null, "batiment_d_exterieur.jpg")}<br>
 
         <b>Building entrance 👇</b>
-        ${photo("images_colisee", "entree_batiment1.jpg")}
-        ${photo("images_colisee", "entree_batiment2.jpg")}<br>
+        ${photo(null, "entree_batiment1.jpg")}
+        ${photo(null, "entree_batiment2.jpg")}<br>
 
         <b>Door access with badge 👇</b><br>
         (place the badge on the black sensor on the right side)
-        ${photo("images_colisee", "badge_porte.jpg")}<br>
+        ${photo(null, "badge_porte.jpg")}<br>
 
         <b>Go to 3rd floor and turn left 👇</b>
-        ${photo("images_colisee", "escaliers.jpg")}<br>
+        ${photo(null, "escaliers.jpg")}<br>
 
         <b>The apartment is at the end of the hallway 👇</b>
-        ${photo("images_colisee", "couloir.jpg")}<br>
+        ${photo(null, "couloir.jpg")}<br>
 
         <b>Apartment number 👇</b>
-        ${photo("images_colisee", "porte_appartement.jpg")}<br>
+        ${photo(null, "porte_appartement.jpg")}<br>
 
         <b>Keys 👇</b><br>
         Flat key (main lock)
-        ${photo("images_colisee", "cle_plate.jpg")}<br>
+        ${photo(null, "cle_plate.jpg")}<br>
 
         Round key (top lock)
-        ${photo("images_colisee", "cle_ronde.jpg")}
+        ${photo(null, "cle_ronde.jpg")}
       `
     },
 
@@ -351,8 +351,8 @@ es: {
     photos1: {
       title: "3 - Fotos del punto de encuentro",
       text: `
-        ${photo("images_colisee", "conciergerie1.jpg")}
-        ${photo("images_colisee", "conciergerie2.jpg")}
+        ${photo(null, "conciergerie1.jpg")}
+        ${photo(null, "conciergerie2.jpg")}
       `
     },
 
@@ -371,7 +371,7 @@ es: {
 
         Abrir: introducir el código y girar a la derecha<br>
         Cerrar: volver a 0000 después del uso
-        ${photo("images_colisee", "boitecles.jpg")}
+        ${photo(null, "boitecles.jpg")}
       `
     },
 
@@ -379,13 +379,13 @@ es: {
       title: "5 - Taxis / VTC",
       text: `
           VTC CONFORT :<br>
-          ${photo("images_colisee", "vtcconfort.jpg")}
+          ${photo(null, "vtcconfort.jpg")}
           📞 06 35 24 53 75<br>
           ✉ contact@vtc-confort34.fr<br>
           🌐 www.vtc-confort34.fr<br><br>
           
           Génie Taxi : <br>
-          ${photo("images_colisee", "genietaxi.jpg")}
+          ${photo(null, "genietaxi.jpg")}
           📞 06 95 13 78 77<br><br>
       `
     },
@@ -413,53 +413,53 @@ es: {
       title: "7 - Acceso al alojamiento",
       text: `
         <b>Residencia Le Colisée 👇</b>
-        ${photo("images_colisee", "residence.jpg")}<br>
+        ${photo(null, "residence.jpg")}<br>
 
         <b>Portón y entrada 👇</b>
-        ${photo("images_colisee", "portail.jpg")}<br>
+        ${photo(null, "portail.jpg")}<br>
 
         <b>Apertura del portón 👇</b><br>
         (coloca el llavero en el sensor negro)
-        ${photo("images_colisee", "vigik_portail.jpg")}<br>
+        ${photo(null, "vigik_portail.jpg")}<br>
 
         <b>Toma la segunda entrada a la derecha 👇</b>
-        ${photo("images_colisee", "allee.jpg")}<br>
+        ${photo(null, "allee.jpg")}<br>
 
         <b>Aparcamiento 👇</b><br>
         Situado a la derecha
-        ${photo("images_colisee", "parking.jpg")}<br>
+        ${photo(null, "parking.jpg")}<br>
 
         <b>Número de plaza: 33D - 115 👇</b>
-        ${photo("images_colisee", "place_parking.jpg")}<br>
+        ${photo(null, "place_parking.jpg")}<br>
 
         <b>Acceso edificio D 👇</b><br>
         flecha amarilla = parking<br>
         flecha naranja = edificio
-        ${photo("images_colisee", "batiment_d_exterieur.jpg")}<br>
+        ${photo(null, "batiment_d_exterieur.jpg")}<br>
 
         <b>Entrada edificio 👇</b>
-        ${photo("images_colisee", "entree_batiment1.jpg")}
-        ${photo("images_colisee", "entree_batiment2.jpg")}<br>
+        ${photo(null, "entree_batiment1.jpg")}
+        ${photo(null, "entree_batiment2.jpg")}<br>
 
         <b>Acceso con badge 👇</b><br>
         (coloca el badge en el lector)
-        ${photo("images_colisee", "badge_porte.jpg")}<br>
+        ${photo(null, "badge_porte.jpg")}<br>
 
         <b>Sube al 3er piso y gira a la izquierda 👇</b>
-        ${photo("images_colisee", "escaliers.jpg")}<br>
+        ${photo(null, "escaliers.jpg")}<br>
 
         <b>El apartamento está al final del pasillo 👇</b>
-        ${photo("images_colisee", "couloir.jpg")}<br>
+        ${photo(null, "couloir.jpg")}<br>
 
         <b>Número del apartamento 👇</b>
-        ${photo("images_colisee", "porte_appartement.jpg")}<br>
+        ${photo(null, "porte_appartement.jpg")}<br>
 
         <b>Llaves 👇</b><br>
         Llave plana (cerradura principal)
-        ${photo("images_colisee", "cle_plate.jpg")}<br>
+        ${photo(null, "cle_plate.jpg")}<br>
 
         Llave redonda (cerradura superior)
-        ${photo("images_colisee", "cle_ronde.jpg")}
+        ${photo(null, "cle_ronde.jpg")}
       `
     },
 
@@ -477,18 +477,23 @@ es: {
 function render() {
   const data = t[lang];
 
+  if (!data) return;
+
   document.getElementById("title").innerText = data.title;
   document.getElementById("subtitle").innerText = data.subtitle;
 
-  document.getElementById("menu").innerHTML =
-    `<b>${data.menu}</b><br><br>` +
-    Object.keys(data.sections)
-      .map(k => `<a href="#${k}">${data.sections[k].title}</a>`)
-      .join("<br>");
+  const menu = document.getElementById("menu");
+  if (menu) {
+    menu.innerHTML =
+      `<b>${data.menu}</b><br><br>` +
+      Object.keys(data.sections)
+        .map(k => `<a href="#${k}">${data.sections[k].title}</a>`)
+        .join("<br>");
+  }
 
   Object.keys(data.sections).forEach(id => {
     const el = document.getElementById(id);
-    if (!el) return; // évite crash
+    if (!el) return;
 
     el.innerHTML =
       `<h3>${data.sections[id].title}</h3>
