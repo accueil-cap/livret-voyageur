@@ -38,13 +38,17 @@ const t = {
 
       adresse: {
         title: "2 - Adresse du Point d'accueil pour récupérer les clés",
-        text: `
-          Conciergerie du Cap d'Agde<br>
-          Impasse des Sargasses<br>
-          34300 Cap d'Agde<br>
-          Résidence Amoureva<br><br>
-          📍 Ouvrir Google Maps
-        `
+text: `
+  Conciergerie du Cap d'Agde<br>
+  Impasse des Sargasses<br>
+  34300 Cap d'Agde<br><br>
+
+  <a class="map-link"
+     href="https://www.google.com/maps/search/?api=1&query=Impasse+des+Sargasses+34300+Cap+d'Agde"
+     target="_blank">
+     📍 Ouvrir Google Maps
+  </a>
+`
       },
 
       photos1: {
@@ -101,7 +105,11 @@ const t = {
           Bâtiment : D<br>
           Appartement : 33<br><br>
 
-          📍 Ouvrir Google Maps
+          <a class="map-link"
+   href="https://www.google.com/maps/search/?api=1&query=7+rue+Sarret+de+Coussergues+34300+Cap+d'Agde"
+   target="_blank">
+   📍 Ouvrir Google Maps
+</a>
         `
       },
 
