@@ -54,8 +54,8 @@ text: `
       photos1: {
         title: "3 - Photographies du point d'accueil",
         text: `
-          ${photo("251-monge", "conciergerie1.jpg")}
-          ${photo("251-monge", "conciergerie2.jpg")}
+          ${photo("images_colisee", "conciergerie1.jpg")}
+          ${photo("images_colisee", "conciergerie2.jpg")}
         `
       },
 
@@ -75,7 +75,7 @@ text: `
           <b>Pour l'ouverture :</b> mettre le code et tourner la serrure sur la droite<br><br>
           <b>Pour la fermeture :</b> conserver le même code et tourner sur la gauche,
           puis remettre à 0000
-          ${photo("251-monge", "boitecles.jpg")}
+          ${photo("images_colisee", "boitecles.jpg")}
         `
       },
 
@@ -83,13 +83,13 @@ text: `
         title: "5 - Coordonnées Taxis - VTC",
         text: `
           VTC CONFORT :<br>
-          ${photo("251-monge", "vtcconfort.jpg")}
+          ${photo("images_colisee", "vtcconfort.jpg")}
           📞 06 35 24 53 75<br>
           ✉ contact@vtc-confort34.fr<br>
           🌐 www.vtc-confort34.fr<br><br>
           
           Génie Taxi : <br>
-          ${photo("251-monge", "genietaxi.jpg")}
+          ${photo("images_colisee", "genietaxi.jpg")}
           📞 06 95 13 78 77<br><br>
         `
       },
@@ -117,53 +117,53 @@ photos2: {
   title: "7 - Accès au logement",
   text: `
     <b>Résidence Le Colisée 👇</b>
-    ${photo("251-monge", "residence.jpg")}<br>
+    ${photo("images_colisee", "residence.jpg")}<br>
 
     <b>Portail et portillon de la résidence 👇</b>
-    ${photo("251-monge", "portail.jpg")}<br>
+    ${photo("images_colisee", "portail.jpg")}<br>
 
     <b>Ouverture du portail et du portillon 👇</b><br>
     (collez le vigik sur la pastille noire située entre le portail et le portillon)
-    ${photo("251-monge", "vigik_portail.jpg")}<br>
+    ${photo("images_colisee", "vigik_portail.jpg")}<br>
 
     <b>Prendre la deuxième allée sur votre droite 👇</b>
-    ${photo("251-monge", "allee.jpg")}<br>
+    ${photo("images_colisee", "allee.jpg")}<br>
 
     <b>Place de parking 👇</b><br>
     La place se situe sur votre droite
-    ${photo("251-monge", "parking.jpg")}<br>
+    ${photo("images_colisee", "parking.jpg")}<br>
 
     <b>Numéros de la place privative : 33D - 115 👇</b>
-    ${photo("251-monge", "place_parking.jpg")}<br>
+    ${photo("images_colisee", "place_parking.jpg")}<br>
 
     <b>Accès au bâtiment D 👇</b><br>
     flèche jaune = parking<br>
     flèche orange = bâtiment
-    ${photo("251-monge", "batiment_d_exterieur.jpg")}<br>
+    ${photo("images_colisee", "batiment_d_exterieur.jpg")}<br>
 
     <b>Entrée du bâtiment D 👇</b>
-    ${photo("251-monge", "entree_batiment1.jpg")}
-    ${photo("251-monge", "entree_batiment2.jpg")}<br>
+    ${photo("images_colisee", "entree_batiment1.jpg")}
+    ${photo("images_colisee", "entree_batiment2.jpg")}<br>
 
     <b>Ouverture de la porte avec le badge 👇</b><br>
     (collez le vigik sur la pastille noire à droite de la porte)
-    ${photo("251-monge", "badge_porte.jpg")}<br>
+    ${photo("images_colisee", "badge_porte.jpg")}<br>
 
     <b>Montez jusqu'au 3ème étage et prenez à gauche 👇</b>
-    ${photo("251-monge", "escaliers.jpg")}<br>
+    ${photo("images_colisee", "escaliers.jpg")}<br>
 
     <b>Le logement se situe au bout du couloir 👇</b>
-    ${photo("251-monge", "couloir.jpg")}<br>
+    ${photo("images_colisee", "couloir.jpg")}<br>
 
     <b>Numéro d'appartement 👇</b>
-    ${photo("251-monge", "porte_appartement.jpg")}<br>
+    ${photo("images_colisee", "porte_appartement.jpg")}<br>
 
     <b>Clés de la porte 👇</b><br>
     clé plate (serrure principale)
-    ${photo("251-monge", "cle_plate.jpg")}
+    ${photo("images_colisee", "cle_plate.jpg")}
 
     clé ronde (verrou du haut)
-    ${photo("251-monge", "cle_ronde.jpg")}
+    ${photo("images_colisee", "cle_ronde.jpg")}
   `
 },
 
@@ -203,7 +203,7 @@ en: {
     photos1: {
       title: "3 - Photos of the meeting point",
       text: `
-        ${photo("251-monge", "conciergerie1.jpg")}
+        ${photo("images_colisee", "conciergerie1.jpg")}
         ${photo("251-monge", "conciergerie2.jpg")}
       `
     },
