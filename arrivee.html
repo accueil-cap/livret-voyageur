@@ -5,15 +5,37 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Livret - Conciergerie</title>
 
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="style.css">
+
+<style>
+html {
+  scroll-behavior: smooth;
+}
+</style>
+
 </head>
 
 <body>
 
-<div class="container">
+<!-- MENU STICKY -->
+<div class="topbar">
+  <div class="topbar-inner">
+    <a href="#top">🏠</a>
+    <a href="#heure">1</a>
+    <a href="#adresse">2</a>
+    <a href="#photos1">3</a>
+    <a href="#codes">4</a>
+    <a href="#taxis">5</a>
+    <a href="#logement">6</a>
+    <a href="#photos2">7</a>
+    <a href="#livret">8</a>
+  </div>
+</div>
+
+<div class="container" id="top">
 
   <div class="header">
-    <h1 id="title">🏠 Conciergerie du logement</h1>
+    <h1>🏠 Conciergerie du logement</h1>
     <p>Récupération des clés</p>
     <p class="small">Référence A251</p>
   </div>
@@ -21,29 +43,29 @@
   <!-- MENU RAPIDE -->
   <div class="card">
     <b>Accès rapide</b><br><br>
-    1 - Heure d'arrivée<br>
-    2 - Point d'accueil<br>
-    3 - Photos point d'accueil<br>
-    4 - Boîte à clés<br>
-    5 - Taxis / VTC<br>
-    6 - Adresse logement<br>
-    7 - Accès logement<br>
-    8 - Livret de séjour
+
+    <a href="#heure">1 - Heure d'arrivée</a><br>
+    <a href="#adresse">2 - Adresse du point d'accueil</a><br>
+    <a href="#photos1">3 - Photographies point d'accueil</a><br>
+    <a href="#codes">4 - Boîte à clés / codes</a><br>
+    <a href="#taxis">5 - Taxis - VTC</a><br>
+    <a href="#logement">6 - Adresse logement</a><br>
+    <a href="#photos2">7 - Photos accès logement</a><br>
+    <a href="#livret">8 - Livret de séjour</a>
   </div>
 
   <!-- 1 -->
-  <div class="card">
+  <div class="card" id="heure">
     <h3>1 - HEURE D'ARRIVÉE</h3>
-    <p>à partir de 16h</p>
+    <p><b>à partir de 16h</b></p>
     <p class="small">
-      Système de récupération autonome des clés permettant une arrivée de nuit,
-      7j/7.
+      Arrivée autonome possible 24h/24 et 7j/7.
     </p>
   </div>
 
   <!-- 2 -->
-  <div class="card">
-    <h3>2 - ADRESSE POINT D'ACCUEIL</h3>
+  <div class="card" id="adresse">
+    <h3>2 - POINT D'ACCUEIL</h3>
 
     <p>
       Conciergerie du Cap d'Agde<br>
@@ -60,13 +82,13 @@
   </div>
 
   <!-- 3 -->
-  <div class="card">
+  <div class="card" id="photos1">
     <h3>3 - PHOTOGRAPHIES</h3>
-    <p class="small">À ajouter (prochaine étape)</p>
+    <p class="small">Section photos à ajouter (prochaine étape)</p>
   </div>
 
   <!-- 4 -->
-  <div class="card">
+  <div class="card" id="codes">
     <h3>4 - BOÎTE À CLÉS / CODES</h3>
 
     <p><b>Code porte :</b> 3492#</p>
@@ -74,13 +96,13 @@
     <p><b>Digicode :</b> 7088</p>
 
     <p class="small">
-      Pour ouvrir : entrer le code + tourner à droite<br>
-      Pour fermer : remettre à 0000
+      Entrer le code puis tourner la serrure à droite.<br>
+      Pour fermer : remettre à 0000.
     </p>
   </div>
 
   <!-- 5 -->
-  <div class="card">
+  <div class="card" id="taxis">
     <h3>5 - TAXIS / VTC</h3>
 
     <p>
@@ -89,13 +111,11 @@
       🌐 www.vtc-confort34.fr
     </p>
 
-    <p>
-      📞 Génie Taxi : 06 95 13 78 77
-    </p>
+    <p>📞 Génie Taxi : 06 95 13 78 77</p>
   </div>
 
   <!-- 6 -->
-  <div class="card">
+  <div class="card" id="logement">
     <h3>6 - ADRESSE DU LOGEMENT</h3>
 
     <p>
@@ -113,21 +133,18 @@
     <a class="btn primary"
        href="https://www.google.com/maps"
        target="_blank">
-      📍 Ouvrir itinéraire logement
+      📍 Itinéraire logement
     </a>
   </div>
 
   <!-- 7 -->
-  <div class="card">
+  <div class="card" id="photos2">
     <h3>7 - ACCÈS LOGEMENT</h3>
-
-    <p class="small">
-      Section photos à ajouter ensuite (on pourra faire un slider)
-    </p>
+    <p class="small">Photos à intégrer ensuite (on peut faire un slider)</p>
   </div>
 
   <!-- 8 -->
-  <div class="card">
+  <div class="card" id="livret">
     <h3>8 - LIVRET DE SÉJOUR</h3>
 
     <a class="btn primary" href="#">
@@ -136,6 +153,9 @@
   </div>
 
 </div>
+
+<!-- SCROLL TOP BUTTON -->
+<a href="#top" class="backtop">↑</a>
 
 </body>
 </html>
