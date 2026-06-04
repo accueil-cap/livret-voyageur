@@ -160,13 +160,19 @@ body {
 }
 
 .photo {
-  margin: 15px 0;
+  margin: 16px 0;
 }
 
 .photo img {
-  width: 100%;
-  height: auto;
   display: block;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+
+  /* clé pour les photos verticales */
+  max-height: 60vh;
+
+  margin: 0 auto;
   border-radius: 12px;
 }
 
