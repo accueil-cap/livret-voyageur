@@ -341,7 +341,6 @@ es: {
      target="_blank">
      📍 Abrir Google Maps
   </a>
-        
       `
     },
 
