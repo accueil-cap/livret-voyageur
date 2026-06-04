@@ -125,7 +125,7 @@ photos2: {
     La place se situe sur votre droite<br>
     ${photo("251-monge", "parking.jpg")}<br>
     
-    <b>Numéros de la place privative : 33D - 115<b><br>
+    <b>Numéros de la place privative : 33D - 115</b><br>
     ${photo("251-monge", "place_parking.jpg")}<br>
 
     <b>Accès au bâtiment D</b><br>
