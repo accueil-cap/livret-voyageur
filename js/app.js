@@ -76,13 +76,15 @@ const t = {
       },
 
       taxis: {
-        title: "5 - Taxis / VTC",
+        title: "5 - Coordonnées Taxis - VTC",
         text: `
+          VTC CONFORT :<br>
           ${photo("251-monge", "vtcconfort.jpg")}
           📞 06 35 24 53 75<br>
           ✉ contact@vtc-confort34.fr<br>
           🌐 www.vtc-confort34.fr<br><br>
           
+          Génie Taxi : <br>
           ${photo("251-monge", "genietaxi.jpg")}
           Génie Taxi : 06 95 13 78 77<br><br>
         `
