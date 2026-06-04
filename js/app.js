@@ -114,22 +114,22 @@ photos2: {
     <b>Portail et portillon de la résidence 👇</b>
     ${photo("251-monge", "portail.jpg")}<br>
 
-    <b>Ouverture du portail et du portillon 👇</b>
+    <b>Ouverture du portail et du portillon 👇</b><br>
     (collez le vigik sur la pastille noire située entre le portail et le portillon)
     ${photo("251-monge", "vigik_portail.jpg")}<br>
 
     <b>Prendre la deuxième allée sur votre droite 👇</b>
     ${photo("251-monge", "allee.jpg")}<br>
 
-    <b>Place de parking 👇</b>
+    <b>Place de parking 👇</b><br>
     La place se situe sur votre droite
-    ${photo("251-monge", "parking.jpg")}<br><br>
+    ${photo("251-monge", "parking.jpg")}<br>
 
     <b>Numéros de la place privative : 33D - 115 👇</b>
     ${photo("251-monge", "place_parking.jpg")}<br>
 
-    <b>Accès au bâtiment D 👇</b>
-    flèche jaune = parking
+    <b>Accès au bâtiment D 👇</b><br>
+    flèche jaune = parking<br>
     flèche orange = bâtiment
     ${photo("251-monge", "batiment_d_exterieur.jpg")}<br>
 
@@ -137,7 +137,7 @@ photos2: {
     ${photo("251-monge", "entree_batiment1.jpg")}
     ${photo("251-monge", "entree_batiment2.jpg")}<br>
 
-    <b>Ouverture de la porte avec le badge 👇</b>
+    <b>Ouverture de la porte avec le badge 👇</b><br>
     (collez le vigik sur la pastille noire à droite de la porte)
     ${photo("251-monge", "badge_porte.jpg")}<br>
 
@@ -150,7 +150,7 @@ photos2: {
     <b>Numéro d'appartement 👇</b>
     ${photo("251-monge", "porte_appartement.jpg")}<br>
 
-    <b>Clés de la porte 👇</b>
+    <b>Clés de la porte 👇</b><br>
     clé plate (serrure principale)
     ${photo("251-monge", "cle_plate.jpg")}
 
