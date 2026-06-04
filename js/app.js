@@ -123,8 +123,8 @@ photos2: {
 
     <b>Place de parking</b><br>
     La place se situe sur votre droite<br>
-    ${photo("251-monge", "parking.jpg")}<br>
-    
+    ${photo("251-monge", "parking.jpg")}<br><br>
+
     <b>Numéros de la place privative : 33D - 115</b><br>
     ${photo("251-monge", "place_parking.jpg")}<br>
 
