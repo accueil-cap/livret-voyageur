@@ -15,28 +15,51 @@ const t = {
 
     sections: {
       heure: {
-        title: "1 - Heure d'arrivée",
-        text: "À partir de 16h. Arrivée autonome possible 24h/24 et 7j/7."
+        title: "1 - Heure d'arrivée à partir de 16h",
+        text: "Système de récupération autonome des clés avec possibilité d’arriver de nuit, n’importe quel jour de la semaine."
       },
 
       adresse: {
-        title: "2 - Point d'accueil",
+        title: "2 - Adresse du Point d'accueil pour récupérer les clés",
         text: "Conciergerie du Cap d'Agde<br>Impasse des Sargasses<br>34300 Cap d'Agde<br>Résidence Amoureva<br><br>📍 Ouvrir Google Maps"
       },
 
       photos1: {
-        title: "3 - Photographies",
+        title: "3 - Photographies du Point d'acceuil",
         text: "Photos du point d'accueil à venir."
       },
 
-      codes: {
-        title: "4 - Boîte à clés / Codes",
-        text: `
-        Code porte : <b>3492#</b><br>
-        Boîte à clés : <b>251</b><br>
-        Digicode : <b>7088</b><br><br>
-        Ouvrir : entrer le code puis tourner à droite<br>
-        Fermer : remettre à 0000
+codes: {
+  title: "4 - Boîte à clés / Codes d'accès",
+  text: `
+    <div style="margin-bottom:14px;">
+      <b>BOÎTE À CLÉS ET CODE D'ACCÈS</b>
+    </div>
+
+    <div style="margin-bottom:12px;">
+      <b>Code de la porte d'entrée</b><br>
+      <span style="color:#ef4444; font-size:22px; font-weight:800;">3492#</span><br>
+      <span style="color:#6b7280; font-size:13px;">(poussez SIMULTANEMENT la porte)</span>
+    </div>
+
+    <div style="margin-bottom:12px;">
+      <b>Boîte à clés</b><br>
+      <span style="color:#ef4444; font-size:22px; font-weight:800;">n° 251</span>
+    </div>
+
+    <div style="margin-bottom:12px;">
+      <b>Digicode</b><br>
+      <span style="color:#ef4444; font-size:22px; font-weight:800;">7088</span>
+    </div>
+
+    <hr style="border:none; border-top:1px solid #eee; margin:14px 0;">
+
+    <div style="font-size:13px; color:#374151; line-height:1.6;">
+      <b>Pour l'ouverture :</b> mettre le code et tourner la serrure sur la droite<br><br>
+
+      <b>Pour la fermeture :</b> conserver le même code et tourner la serrure sur la gauche,
+      puis remettre à <b>0000</b> ensuite
+    </div>
         `
       },
 
