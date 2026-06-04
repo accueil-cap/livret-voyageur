@@ -223,6 +223,7 @@ en: {
 
         Open: enter the code and turn the lock to the right<br>
         Close: reset to 0000 after use
+        ${photo("251-monge", "boitecles.jpg")}
       `
     },
 
@@ -370,6 +371,7 @@ es: {
 
         Abrir: introducir el código y girar a la derecha<br>
         Cerrar: volver a 0000 después del uso
+        ${photo("251-monge", "boitecles.jpg")}
       `
     },
 
