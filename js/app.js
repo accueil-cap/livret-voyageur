@@ -106,7 +106,7 @@ text: `
           Appartement : 33<br><br>
 
           <a class="map-link"
-   href="https://https://maps.app.goo.gl/NGggttSMAHzW2q1N6"
+   href="https://maps.app.goo.gl/NGggttSMAHzW2q1N6"
    target="_blank">
    📍 Ouvrir Google Maps
 </a>
