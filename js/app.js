@@ -33,7 +33,7 @@ const t = {
     sections: {
       heure: {
         title: "1 - Heure d'arrivée",
-        text: "Système de récupération autonome des clés avec possibilité d’arriver de nuit, n’importe quel jour de la semaine."
+        text: "A partir de 16h. Système de récupération autonome des clés avec possibilité d’arriver de nuit, n’importe quel jour de la semaine."
       },
 
       adresse: {
@@ -182,7 +182,7 @@ en: {
   sections: {
     heure: {
       title: "1 - Check-in time",
-      text: "Self check-in system with flexible arrival time. You can arrive at any time, including late at night."
+      text: "Check-in from 4 pm. Self check-in system with flexible arrival time. You can arrive at any time, including late at night."
     },
 
     adresse: {
@@ -330,7 +330,7 @@ es: {
   sections: {
     heure: {
       title: "1 - Hora de llegada",
-      text: "Sistema de auto check-in con llegada flexible. Puedes llegar a cualquier hora, incluso por la noche."
+      text: "Llegada a partir de las 16:00. Sistema de auto check-in con llegada flexible. Puedes llegar a cualquier hora, incluso por la noche."
     },
 
     adresse: {
