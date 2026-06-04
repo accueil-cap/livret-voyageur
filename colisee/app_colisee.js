@@ -54,7 +54,7 @@ text: `
       photos1: {
         title: "3 - Photographies du point d'accueil",
         text: `
-          ${photo("images_colisee", "conciergerie1.jpg")}
+          ${photo(null, "conciergerie1.jpg")}
           ${photo("images_colisee", "conciergerie2.jpg")}
         `
       },
