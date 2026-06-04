@@ -501,4 +501,4 @@ function render() {
   });
 }
 
-document.addEventListener("DOMContentLoaded", render);
+render();
