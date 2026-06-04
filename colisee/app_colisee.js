@@ -1,4 +1,5 @@
 let lang = localStorage.getItem("lang") || "fr";
+const IMG_PATH = "images_colisee";
 
 /* =========================
    CHANGER DE LANGUE
@@ -12,10 +13,10 @@ function setLang(l) {
 /* =========================
    FONCTION PHOTO (REUTILISABLE)
 ========================= */
-function photo(folder, img, text = "") {
+function photo(img, text = "") {
   return `
     <div class="photo">
-      <img src="images_colisee/${folder}/${img}" />
+      <img src="${IMG_PATH}/${img}" />
       ${text ? `<p>${text}</p>` : ""}
     </div>
   `;
