@@ -105,10 +105,56 @@ const t = {
         `
       },
 
-      photos2: {
-        title: "7 - Accès logement",
-        text: "Photos d'accès à venir (portail, parking, bâtiment, etc.)"
-      },
+photos2: {
+  title: "7 - Accès au logement",
+  text: `
+    <b>Résidence Le Colisée</b><br>
+    ${photo("251-monge", "residence.jpg")}<br>
+
+    <b>Portail et portillon de la résidence</b><br>
+    ${photo("251-monge", "portail.jpg")}<br>
+
+    <b>Ouverture du portail et du portillon</b><br>
+    (collez le vigik sur la pastille noire située entre le portail et le portillon)<br><br>
+    ${photo("251-monge", "vigik_portail.jpg")}<br>
+
+    <b>Prendre la deuxième allée sur votre droite</b><br>
+    ${photo("251-monge", "allee.jpg")}<br>
+
+    <b>Place de parking</b><br>
+    La place se situe sur votre droite<br>
+    Numéro : 33D - 115<br><br>
+    ${photo("251-monge", "parking.jpg")}<br>
+
+    <b>Accès au bâtiment D</b><br>
+    flèche jaune = parking<br>
+    flèche orange = bâtiment<br><br>
+    ${photo("251-monge", "batiment_d_exterieur.jpg")}<br>
+
+    <b>Entrée du bâtiment D</b><br>
+    ${photo("251-monge", "entree_batiment.jpg")}<br>
+
+    <b>Ouverture de la porte avec le badge</b><br>
+    (collez le vigik sur la pastille noire à droite de la porte)<br><br>
+    ${photo("251-monge", "badge_porte.jpg")}<br>
+
+    <b>Montez jusqu'au 3ème étage et prenez à gauche</b><br>
+    ${photo("251-monge", "escaliers.jpg")}<br>
+
+    <b>Le logement se situe au bout du couloir</b><br>
+    ${photo("251-monge", "couloir.jpg")}<br>
+
+    <b>Numéro d'appartement</b><br>
+    ${photo("251-monge", "porte_appartement.jpg")}<br>
+
+    <b>Clés de la porte</b><br>
+    clé plate (serrure principale)<br>
+    ${photo("251-monge", "cle_plate.jpg")}<br><br>
+
+    clé ronde (verrou du haut)<br>
+    ${photo("251-monge", "cle_ronde.jpg")}
+  `
+}
 
       livret: {
         title: "8 - Livret de séjour",
