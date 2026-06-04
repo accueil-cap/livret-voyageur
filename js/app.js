@@ -160,6 +160,7 @@ const t = {
           Open: enter code and turn right<br>
           Close: reset to 0000
         `
+          ${photo("251-monge", "boitecles.jpg", "Boîte à clés")}
       },
 
       taxis: {
