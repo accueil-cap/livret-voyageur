@@ -12,11 +12,11 @@ function setLang(l) {
 /* =========================
    FONCTION PHOTO (REUTILISABLE)
 ========================= */
-function photo(folder, img, text) {
+function photo(folder, img, text = "") {
   return `
     <div class="photo">
       <img src="images/${folder}/${img}" />
-      <p>${text}</p>
+      ${text ? `<p>${text}</p>` : ""}
     </div>
   `;
 }
@@ -50,8 +50,8 @@ const t = {
       photos1: {
         title: "3 - Photographies du point d'accueil",
         text: `
-          ${photo("251-monge", "conciergerie1.jpg", "Point d'accueil")}
-          ${photo("251-monge", "conciergerie2.jpg", "Point d'accueil")}
+          ${photo("251-monge", "conciergerie1.jpg")}
+          ${photo("251-monge", "conciergerie2.jpg")}
         `
       },
 
@@ -71,21 +71,20 @@ const t = {
           <b>Pour l'ouverture :</b> mettre le code et tourner la serrure sur la droite<br><br>
           <b>Pour la fermeture :</b> conserver le même code et tourner sur la gauche,
           puis remettre à 0000
-          ${photo("251-monge", "boitecles.jpg", "Boîte à clés")}
+          ${photo("251-monge", "boitecles.jpg")}
         `
       },
 
       taxis: {
         title: "5 - Taxis / VTC",
         text: `
+          ${photo("251-monge", "vtcconfort.jpg")}
           📞 06 35 24 53 75<br>
           ✉ contact@vtc-confort34.fr<br>
           🌐 www.vtc-confort34.fr<br><br>
-
+          
+          ${photo("251-monge", "genietaxi.jpg")}
           Génie Taxi : 06 95 13 78 77<br><br>
-
-          ${photo("251-monge", "vtcconfort.jpg", "VTC Confort")}
-          ${photo("251-monge", "genietaxi.jpg", "Génie Taxi")}
         `
       },
 
