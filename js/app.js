@@ -123,8 +123,10 @@ photos2: {
 
     <b>Place de parking</b><br>
     La place se situe sur votre droite<br>
-    Numéro : 33D - 115<br><br>
     ${photo("251-monge", "parking.jpg")}<br>
+    
+    <b>Numéros de la place privative : 33D - 115<b><br>
+    ${photo("251-monge", "place_parking.jpg")}<br>
 
     <b>Accès au bâtiment D</b><br>
     flèche jaune = parking<br>
@@ -132,7 +134,8 @@ photos2: {
     ${photo("251-monge", "batiment_d_exterieur.jpg")}<br>
 
     <b>Entrée du bâtiment D</b><br>
-    ${photo("251-monge", "entree_batiment.jpg")}<br>
+    ${photo("251-monge", "entree_batiment1.jpg")}<br>
+    ${photo("251-monge", "entree_batiment2.jpg")}<br>
 
     <b>Ouverture de la porte avec le badge</b><br>
     (collez le vigik sur la pastille noire à droite de la porte)<br><br>
