@@ -15,7 +15,7 @@ function setLang(l) {
 function photo(folder, img, text = "") {
   return `
     <div class="photo">
-      <img src="images/${folder}/${img}" />
+      <img src="images_colisee/${folder}/${img}" />
       ${text ? `<p>${text}</p>` : ""}
     </div>
   `;
