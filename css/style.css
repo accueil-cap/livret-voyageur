@@ -160,30 +160,14 @@ body {
 }
 
 .photo {
-  background: white;
-  border-radius: 16px;
-  overflow: hidden;
-  margin-bottom: 12px;
-  border: 1px solid #eee;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  margin: 15px 0;
 }
 
 .photo img {
   width: 100%;
   height: auto;
-  max-height: 320px;
-  object-fit: contain;
   display: block;
-  background: #f3f4f6;
-}
-
-.photo p {
-  margin: 0;
-  padding: 10px 12px;
-  font-size: 13px;
-  font-weight: 600;
-  color: #374151;
-  background: #fff;
+  border-radius: 12px;
 }
 
 /* version tablette */
