@@ -71,6 +71,7 @@ const t = {
           <b>Pour l'ouverture :</b> mettre le code et tourner la serrure sur la droite<br><br>
           <b>Pour la fermeture :</b> conserver le même code et tourner sur la gauche,
           puis remettre à 0000
+          ${photo("251-monge", "boitecles.jpg", "Boîte à clés")}
         `
       },
 
@@ -160,7 +161,6 @@ const t = {
           Open: enter code and turn right<br>
           Close: reset to 0000
         `
-          ${photo("251-monge", "boitecles.jpg", "Boîte à clés")}
       },
 
       taxis: {
