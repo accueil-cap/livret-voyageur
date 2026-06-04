@@ -336,7 +336,12 @@ es: {
         34300 Cap d'Agde<br>
         Residencia Amoureva<br><br>
 
-        📍 Abrir Google Maps
+  <a class="map-link"
+     href="https://maps.app.goo.gl/t46grpyPzibVdFZM9"
+     target="_blank">
+     📍 Abrir Google Maps
+  </a>
+        
       `
     },
 
@@ -386,8 +391,12 @@ es: {
         Residencia: Le Colisée<br>
         Edificio: D<br>
         Apartamento: 33<br><br>
-
-        📍 Abrir Google Maps
+        
+        <a class="map-link"
+           href="https://maps.app.goo.gl/NGggttSMAHzW2q1N6"
+           target="_blank">
+           📍 Abrir Google Maps
+        </a>
       `
     },
 
