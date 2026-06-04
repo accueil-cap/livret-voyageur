@@ -102,3 +102,52 @@ body {
   font-size: 22px;
   margin-right: 4px;
 }
+
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+  z-index: 999;
+}
+
+.topbar-inner {
+  max-width: 650px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  padding: 8px 0;
+}
+
+.topbar a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+
+.topbar a:hover {
+  background: #f3f4f6;
+}
+
+/* éviter que le contenu passe sous le menu */
+.container {
+  padding-top: 60px;
+}
+
+/* bouton retour haut */
+.backtop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #ff6a00;
+  color: white;
+  padding: 12px 14px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.2);
+}
