@@ -188,10 +188,9 @@ en: {
     adresse: {
       title: "2 - Key collection point",
       text: `
-        Concierge of Cap d'Agde<br>
+        Conciergerie du Cap d'Agde<br>
         Impasse des Sargasses<br>
-        34300 Cap d'Agde<br>
-        Amoureva residence<br><br>
+        34300 Cap d'Agde<br><br>
 
         <a class="map-link"
            href="https://maps.app.goo.gl/t46grpyPzibVdFZM9"
@@ -213,7 +212,8 @@ en: {
       title: "4 - Key box / Access codes",
       text: `
         <b>Front door code</b><br>
-        <span style="color:#ef4444;font-size:22px;font-weight:800;">3492#</span><br><br>
+        <span style="color:#ef4444;font-size:22px;font-weight:800;">3492#</span><br>
+        (push the door SIMULTANEOUSLY)<br><br>
 
         <b>Key box</b><br>
         <span style="color:#ef4444;font-size:22px;font-weight:800;">n° 251</span><br><br>
@@ -229,11 +229,15 @@ en: {
     taxis: {
       title: "5 - Taxi / VTC contacts",
       text: `
-        VTC CONFORT:<br>
-        📞 06 35 24 53 75<br><br>
-
-        Génie Taxi:<br>
-        📞 06 95 13 78 77
+          VTC CONFORT :<br>
+          ${photo("251-monge", "vtcconfort.jpg")}
+          📞 06 35 24 53 75<br>
+          ✉ contact@vtc-confort34.fr<br>
+          🌐 www.vtc-confort34.fr<br><br>
+          
+          Génie Taxi : <br>
+          ${photo("251-monge", "genietaxi.jpg")}
+          📞 06 95 13 78 77<br><br>
       `
     },
 
@@ -243,10 +247,10 @@ en: {
         7 rue Sarret de Coussergues<br>
         34300 Cap d'Agde<br><br>
 
-        Parking: 115 / D33<br>
-        Residence: Le Colisée<br>
-        Building: D<br>
-        Apartment: 33<br><br>
+        Parking : 115 / D33<br>
+        Residence : Le Colisée<br>
+        Building : D<br>
+        Apartment : 33<br><br>
 
         <a class="map-link"
            href="https://maps.app.goo.gl/NGggttSMAHzW2q1N6"
@@ -303,7 +307,7 @@ en: {
 
         <b>Keys 👇</b><br>
         Flat key (main lock)
-        ${photo("251-monge", "cle_plate.jpg")}<br><br>
+        ${photo("251-monge", "cle_plate.jpg")}<br>
 
         Round key (top lock)
         ${photo("251-monge", "cle_ronde.jpg")}
@@ -331,10 +335,9 @@ es: {
     adresse: {
       title: "2 - Punto de recogida de llaves",
       text: `
-        Concierge de Cap d'Agde<br>
+        Conciergerie du Cap d'Agde<br>
         Impasse des Sargasses<br>
         34300 Cap d'Agde<br>
-        Residencia Amoureva<br><br>
 
   <a class="map-link"
      href="https://maps.app.goo.gl/t46grpyPzibVdFZM9"
@@ -357,6 +360,7 @@ es: {
       text: `
         <b>Código de la puerta</b><br>
         <span style="color:#ef4444;font-size:22px;font-weight:800;">3492#</span><br><br>
+        (empuje la puerta SIMULTÁNEAMENTE)<br><br>
 
         <b>Caja de llaves</b><br>
         <span style="color:#ef4444;font-size:22px;font-weight:800;">n° 251</span><br><br>
@@ -372,11 +376,15 @@ es: {
     taxis: {
       title: "5 - Taxis / VTC",
       text: `
-        VTC CONFORT:<br>
-        📞 06 35 24 53 75<br><br>
-
-        Génie Taxi:<br>
-        📞 06 95 13 78 77
+          VTC CONFORT :<br>
+          ${photo("251-monge", "vtcconfort.jpg")}
+          📞 06 35 24 53 75<br>
+          ✉ contact@vtc-confort34.fr<br>
+          🌐 www.vtc-confort34.fr<br><br>
+          
+          Génie Taxi : <br>
+          ${photo("251-monge", "genietaxi.jpg")}
+          📞 06 95 13 78 77<br><br>
       `
     },
 
@@ -386,10 +394,10 @@ es: {
         7 rue Sarret de Coussergues<br>
         34300 Cap d'Agde<br><br>
 
-        Parking: 115 / D33<br>
-        Residencia: Le Colisée<br>
-        Edificio: D<br>
-        Apartamento: 33<br><br>
+        Parking : 115 / D33<br>
+        Residencia : Le Colisée<br>
+        Edificio : D<br>
+        Apartamento : 33<br><br>
         
         <a class="map-link"
            href="https://maps.app.goo.gl/NGggttSMAHzW2q1N6"
@@ -446,7 +454,7 @@ es: {
 
         <b>Llaves 👇</b><br>
         Llave plana (cerradura principal)
-        ${photo("251-monge", "cle_plate.jpg")}<br><br>
+        ${photo("251-monge", "cle_plate.jpg")}<br>
 
         Llave redonda (cerradura superior)
         ${photo("251-monge", "cle_ronde.jpg")}
