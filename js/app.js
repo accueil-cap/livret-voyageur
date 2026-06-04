@@ -44,7 +44,7 @@ text: `
   34300 Cap d'Agde<br><br>
 
   <a class="map-link"
-     href="https://www.google.com/maps/search/?api=1&query=Impasse+des+Sargasses+34300+Cap+d'Agde"
+     href="https://maps.app.goo.gl/t46grpyPzibVdFZM9"
      target="_blank">
      📍 Ouvrir Google Maps
   </a>
@@ -106,7 +106,7 @@ text: `
           Appartement : 33<br><br>
 
           <a class="map-link"
-   href="https://www.google.com/maps/search/?api=1&query=7+rue+Sarret+de+Coussergues+34300+Cap+d'Agde"
+   href="https://https://maps.app.goo.gl/NGggttSMAHzW2q1N6"
    target="_blank">
    📍 Ouvrir Google Maps
 </a>
