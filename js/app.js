@@ -157,7 +157,7 @@ photos2: {
     clé ronde (verrou du haut)<br>
     ${photo("251-monge", "cle_ronde.jpg")}
   `
-}
+},
 
       livret: {
         title: "8 - Livret de séjour",
