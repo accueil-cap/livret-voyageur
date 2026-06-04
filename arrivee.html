@@ -3,165 +3,42 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Livret - Conciergerie</title>
+
+<title>Livret</title>
 
 <link rel="stylesheet" href="css/style.css">
-
-<style>
-html {
-  scroll-behavior: smooth;
-}
-</style>
-
 </head>
 
 <body>
 
-<!-- MENU STICKY -->
-<div class="topbar">
-  <div class="topbar-inner">
-    <a href="#top">🏠</a>
-    <a href="#heure">1</a>
-    <a href="#adresse">2</a>
-    <a href="#photos1">3</a>
-    <a href="#codes">4</a>
-    <a href="#taxis">5</a>
-    <a href="#logement">6</a>
-    <a href="#photos2">7</a>
-    <a href="#livret">8</a>
-  </div>
-</div>
-
-<div class="container" id="top">
-
+  <!-- HEADER -->
   <div class="header">
-    <h1>🏠 Conciergerie du logement</h1>
-    <p>Récupération des clés</p>
-    <p class="small">Référence A251</p>
+    <h1 id="title"></h1>
+    <p id="subtitle"></p>
+
+    <div class="lang-switch">
+      <button onclick="setLang('fr')">🇫🇷 FR</button>
+      <button onclick="setLang('en')">🇬🇧 EN</button>
+      <button onclick="setLang('es')">🇪🇸 ES</button>
+    </div>
   </div>
 
-  <div class="lang-switch">
-  <a href="?id=251-monge&lang=fr">🇫🇷 FR</a>
-  <a href="?id=251-monge&lang=en">🇬🇧 EN</a>
-  <a href="?id=251-monge&lang=es">🇪🇸 ES</a>
-</div>
+  <!-- MENU -->
+  <div class="card" id="menu"></div>
 
-  <!-- MENU RAPIDE -->
-  <div class="card">
-    <b>Accès rapide</b><br><br>
-
-    <a href="#heure">1 - Heure d'arrivée</a><br>
-    <a href="#adresse">2 - Adresse du point d'accueil</a><br>
-    <a href="#photos1">3 - Photographies point d'accueil</a><br>
-    <a href="#codes">4 - Boîte à clés / codes</a><br>
-    <a href="#taxis">5 - Taxis - VTC</a><br>
-    <a href="#logement">6 - Adresse logement</a><br>
-    <a href="#photos2">7 - Photos accès logement</a><br>
-    <a href="#livret">8 - Livret de séjour</a>
-  </div>
-
-  <!-- 1 -->
-  <div class="card" id="heure">
-    <h3>1 - HEURE D'ARRIVÉE</h3>
-    <p><b>à partir de 16h</b></p>
-    <p class="small">
-      Arrivée autonome possible 24h/24 et 7j/7.
-    </p>
-  </div>
-
-  <!-- 2 -->
-  <div class="card" id="adresse">
-    <h3>2 - POINT D'ACCUEIL</h3>
-
-    <p>
-      Conciergerie du Cap d'Agde<br>
-      Impasse des Sargasses<br>
-      34300 Cap d'Agde<br>
-      Résidence Amoureva
-    </p>
-
-    <a class="btn primary"
-       href="https://www.google.com/maps"
-       target="_blank">
-      📍 Ouvrir Google Maps
-    </a>
-  </div>
-
-  <!-- 3 -->
-  <div class="card" id="photos1">
-    <h3>3 - PHOTOGRAPHIES</h3>
-    <p class="small">Section photos à ajouter (prochaine étape)</p>
-  </div>
-
-  <!-- 4 -->
-  <div class="card" id="codes">
-    <h3>4 - BOÎTE À CLÉS / CODES</h3>
-
-    <p><b>Code porte :</b> 3492#</p>
-    <p><b>Boîte à clés :</b> 251</p>
-    <p><b>Digicode :</b> 7088</p>
-
-    <p class="small">
-      Entrer le code puis tourner la serrure à droite.<br>
-      Pour fermer : remettre à 0000.
-    </p>
-  </div>
-
-  <!-- 5 -->
-  <div class="card" id="taxis">
-    <h3>5 - TAXIS / VTC</h3>
-
-    <p>
-      📞 06 35 24 53 75<br>
-      ✉ contact@vtc-confort34.fr<br>
-      🌐 www.vtc-confort34.fr
-    </p>
-
-    <p>📞 Génie Taxi : 06 95 13 78 77</p>
-  </div>
-
-  <!-- 6 -->
-  <div class="card" id="logement">
-    <h3>6 - ADRESSE DU LOGEMENT</h3>
-
-    <p>
-      7 rue Sarret de Coussergues<br>
-      34300 Cap d'Agde
-    </p>
-
-    <p>
-      Parking : 115 / D33<br>
-      Résidence : Le Colisée<br>
-      Bâtiment : D<br>
-      Appartement : 33
-    </p>
-
-    <a class="btn primary"
-       href="https://www.google.com/maps"
-       target="_blank">
-      📍 Itinéraire logement
-    </a>
-  </div>
-
-  <!-- 7 -->
-  <div class="card" id="photos2">
-    <h3>7 - ACCÈS LOGEMENT</h3>
-    <p class="small">Photos à intégrer ensuite (on peut faire un slider)</p>
-  </div>
-
-  <!-- 8 -->
-  <div class="card" id="livret">
-    <h3>8 - LIVRET DE SÉJOUR</h3>
-
-    <a class="btn primary" href="#">
-      📖 Ouvrir le livret complet
-    </a>
-  </div>
+  <!-- SECTIONS -->
+  <div class="card" id="heure"></div>
+  <div class="card" id="adresse"></div>
+  <div class="card" id="photos1"></div>
+  <div class="card" id="codes"></div>
+  <div class="card" id="taxis"></div>
+  <div class="card" id="logement"></div>
+  <div class="card" id="photos2"></div>
+  <div class="card" id="livret"></div>
 
 </div>
 
-<!-- SCROLL TOP BUTTON -->
-<a href="#top" class="backtop">↑</a>
+<script src="js/app.js"></script>
 
 </body>
 </html>
