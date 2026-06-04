@@ -11,6 +11,15 @@ const t = {
     title: "Conciergerie du logement",
     subtitle: "Récupération des clés",
 
+function photo(folder, img, text) {
+  return `
+    <div class="photo">
+      <img src="images/${folder}/${img}" />
+      <p>${text}</p>
+    </div>
+  `;
+}
+  
     menu: "Accès rapide",
 
     sections: {
@@ -26,7 +35,8 @@ const t = {
 
       photos1: {
         title: "3 - Photographies du Point d'acceuil",
-        text: "Photos du point d'accueil à venir."
+        ${photo("251-monge", "conciergerie1.jpg", "Point d'accueil")}
+        ${photo("251-monge", "conciergerie2.jpg", "Point d'accueil")}
       },
 
 codes: {
@@ -61,15 +71,19 @@ codes: {
       puis remettre à <b>0000</b> ensuite
     </div>
         `
+  ${photo("251-monge", "boitecles.jpg", "Boite à clés")}
       },
 
       taxis: {
         title: "5 - Coordonnées Taxis / VTC",
+        ${photo("251-monge", "vtcconfort.jpg", "VTC CONFORT")}
         text: `
         📞 06 35 24 53 75<br>
         ✉ contact@vtc-confort34.fr<br>
         🌐 www.vtc-confort34.fr<br><br>
-        Génie Taxi : 06 95 13 78 77
+        Génie Taxi
+        ${photo("251-monge", "genietaxi.jpg", "Génie Taxi")}
+        06 95 13 78 77
         `
       },
 
