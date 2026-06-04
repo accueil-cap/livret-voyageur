@@ -1,46 +1,35 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<title>Conciergerie - Livret</title>
-
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>Colisée - Arrivée</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script defer src="app_colisee.js"></script>
 </head>
 
 <body>
 
-<div class="container" id="top">
+  <div class="container">
 
-  <!-- HEADER -->
-  <div class="header">
-    <h1 id="title">...</h1>
-    <p id="subtitle">...</p>
-
-    <div class="lang-switch">
-      <button onclick="setLang('fr')">🇫🇷 FR</button>
-      <button onclick="setLang('en')">🇬🇧 EN</button>
-      <button onclick="setLang('es')">🇪🇸 ES</button>
+    <div class="header">
+      <h1 id="title"></h1>
+      <p id="subtitle"></p>
     </div>
+
+    <!-- MENU -->
+    <div class="card" id="menu"></div>
+
+    <!-- SECTIONS -->
+    <div class="card" id="heure"></div>
+    <div class="card" id="adresse"></div>
+    <div class="card" id="photos1"></div>
+    <div class="card" id="codes"></div>
+    <div class="card" id="taxis"></div>
+    <div class="card" id="logement"></div>
+    <div class="card" id="photos2"></div>
+    <div class="card" id="livret"></div>
+
   </div>
-
-  <!-- MENU RAPIDE -->
-  <div class="card" id="menu"></div>
-
-  <!-- SECTIONS -->
-  <div class="card" id="heure"></div>
-  <div class="card" id="adresse"></div>
-  <div class="card" id="photos1"></div>
-  <div class="card" id="codes"></div>
-  <div class="card" id="taxis"></div>
-  <div class="card" id="logement"></div>
-  <div class="card" id="photos2"></div>
-  <div class="card" id="livret"></div>
-
-</div>
-
-<script src="js/app.js"></script>
 
 </body>
 </html>
