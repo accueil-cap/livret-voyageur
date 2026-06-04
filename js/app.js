@@ -86,7 +86,7 @@ const t = {
           
           Génie Taxi : <br>
           ${photo("251-monge", "genietaxi.jpg")}
-          Génie Taxi : 06 95 13 78 77<br><br>
+          📞 06 95 13 78 77<br><br>
         `
       },
 
