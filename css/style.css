@@ -210,20 +210,11 @@ html {
 }
 
 .btn.secondary{
-  background: #6b7280;
+  background: #d0f7be;
 }
 
 .btn.large{
-  font-size: 18px;
-  padding: 18px 22px;
-  min-width: 260px;
-}
-
-/* =========================
-   VARIANTE HUB (très lisible)
-   👉 pour les pages "Entrer / choix"
-========================= */
-.btn.large{
+  background : #d0f7be
   font-size: 18px;
   padding: 18px 22px;
   min-width: 260px;
