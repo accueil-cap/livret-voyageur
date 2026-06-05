@@ -186,37 +186,50 @@ html {
   }
 }
 
-.btn{
-    display:inline-block;
-    margin-top:10px;
-    padding:12px 24px;
-    background:#2563eb;
-    color:white;
-    text-decoration:none;
-    border-radius:8px;
-    font-weight:bold;
-}
-
-.btn:hover{
-    opacity:0.9;
-}
-
+/* =========================
+   BUTTON BASE
+========================= */
 .btn{
   display:block;
-  padding:14px;
-  margin-top:10px;
-  text-align:center;
-  background:#2563eb;
-  color:white;
-  text-decoration:none;
-  border-radius:10px;
-  font-weight:600;
+  width: fit-content;
+  min-width: 220px;
+  margin: 10px auto; /* 👈 CENTRAGE AUTOMATIQUE */
+  padding: 14px 18px;
+  text-align: center;
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: 0.2s ease;
 }
 
+/* hover */
 .btn:hover{
-  opacity:0.9;
+  opacity: 0.9;
+  transform: translateY(-1px);
 }
 
+/* bouton secondaire */
 .btn.secondary{
-  background:#6b7280;
+  background: #6b7280;
+}
+
+/* =========================
+   VARIANTE HUB (très lisible)
+   👉 pour les pages "Entrer / choix"
+========================= */
+.btn.large{
+  font-size: 18px;
+  padding: 18px 22px;
+  min-width: 260px;
+}
+
+/* =========================
+   CENTRAGE GLOBAL (optionnel mais propre)
+========================= */
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centre tout ce qui est dedans */
 }
