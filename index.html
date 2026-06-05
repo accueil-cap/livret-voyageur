@@ -9,7 +9,7 @@
 
 <body>
 
-  <!-- LANG SWITCH -->
+  <!-- TOP BAR LANGUE -->
   <div class="topbar">
     <div class="topbar-inner">
       <a href="#" onclick="setLang('fr')">🇫🇷 FR</a>
@@ -29,61 +29,73 @@
     <div class="card">
       <h2>🏠 <span id="colisee-title"></span></h2>
       <p id="colisee-text"></p>
-
-      <button class="btn" onclick="accesColisee()">
-        <span id="btn-enter"></span>
-      </button>
+      <button class="btn" onclick="openPin('colisee')">Entrer</button>
     </div>
 
     <!-- PALM BEACH -->
     <div class="card">
       <h2>🌴 <span id="palm-title"></span></h2>
       <p id="palm-text"></p>
-
-      <button class="btn" onclick="accesPalmBeach()">
-        <span id="btn-enter2"></span>
-      </button>
+      <button class="btn" onclick="openPin('palm')">Entrer</button>
     </div>
 
   </div>
 
+  <!-- =========================
+       PIN MODAL
+  ========================= -->
+  <div id="pinOverlay" class="pin-overlay hidden">
+
+    <div class="pin-box">
+
+      <h2 id="pinTitle">Code d'accès</h2>
+      <p id="pinSubtitle">Entrez votre code à 4 chiffres</p>
+
+      <div class="pin-inputs">
+        <input maxlength="1" class="pin" />
+        <input maxlength="1" class="pin" />
+        <input maxlength="1" class="pin" />
+        <input maxlength="1" class="pin" />
+      </div>
+
+      <button class="btn" onclick="validatePin()">Valider</button>
+      <button class="btn secondary" onclick="closePin()">Annuler</button>
+
+    </div>
+
+  </div>
+
+  <!-- =========================
+       SCRIPT GLOBAL
+  ========================= -->
   <script>
     let lang = localStorage.getItem("lang") || "fr";
+
+    let currentApp = null;
 
     const t = {
       fr: {
         title: "Livret voyageurs",
         subtitle: "Choisissez votre appartement",
-
         colisee: "Appartement Colisée",
         palm: "Appartement Palm Beach",
-
-        text: "Accédez aux informations relatives à votre séjour :",
-
+        text: "Accédez aux informations relatives à votre séjour",
         enter: "Entrer"
       },
-
       en: {
         title: "Guest Guide",
         subtitle: "Choose your apartment",
-
         colisee: "Colisée Apartment",
         palm: "Palm Beach Apartment",
-
-        text: "Access your stay information:",
-
+        text: "Access your stay information",
         enter: "Enter"
       },
-
       es: {
         title: "Guía del viajero",
         subtitle: "Elige tu apartamento",
-
         colisee: "Apartamento Colisée",
         palm: "Apartamento Palm Beach",
-
-        text: "Accede a la información de tu estancia:",
-
+        text: "Accede a la información de tu estancia",
         enter: "Entrar"
       }
     };
@@ -105,52 +117,70 @@
 
       document.getElementById("colisee-text").innerText = d.text;
       document.getElementById("palm-text").innerText = d.text;
-
-      document.getElementById("btn-enter").innerText = d.enter;
-      document.getElementById("btn-enter2").innerText = d.enter;
     }
 
     render();
 
-    /* ======================
-       CODES PIN
-    ====================== */
+    // =========================
+    // PIN SYSTEM
+    // =========================
 
-    function accesColisee() {
-      const code = prompt(
-        lang === "fr" ? "Entrez votre code d'accès" :
-        lang === "en" ? "Enter your access code" :
-        "Introduce tu código de acceso"
-      );
+    function openPin(app){
+      currentApp = app;
 
-      if (code === "2510") {
-        window.location.href = "colisee/colisee.html";
+      document.getElementById("pinOverlay").classList.remove("hidden");
+
+      const inputs = document.querySelectorAll(".pin");
+      inputs.forEach(i => i.value = "");
+      inputs[0].focus();
+
+      inputs.forEach((input, index) => {
+        input.oninput = () => {
+          if(input.value && index < 3){
+            inputs[index + 1].focus();
+          }
+        };
+      });
+    }
+
+    function validatePin(){
+      const inputs = document.querySelectorAll(".pin");
+      let code = "";
+
+      inputs.forEach(i => code += i.value);
+
+      let valid = false;
+
+      if(currentApp === "colisee" && code === "2510"){
+        valid = "colisee/colisee.html";
+      }
+
+      if(currentApp === "palm" && code === "4837"){
+        valid = "palm-beach/palm-beach.html";
+      }
+
+      if(valid){
+        window.location.href = valid;
       } else {
         alert(
           lang === "fr" ? "Code incorrect" :
           lang === "en" ? "Wrong code" :
           "Código incorrecto"
         );
+
+        inputs.forEach(i => i.value = "");
+        inputs[0].focus();
       }
     }
 
-    function accesPalmBeach() {
-      const code = prompt(
-        lang === "fr" ? "Entrez votre code d'accès" :
-        lang === "en" ? "Enter your access code" :
-        "Introduce tu código de acceso"
-      );
-
-      if (code === "4837") {
-        window.location.href = "palm-beach/palm-beach.html";
-      } else {
-        alert(
-          lang === "fr" ? "Code incorrect" :
-          lang === "en" ? "Wrong code" :
-          "Código incorrecto"
-        );
-      }
+    function closePin(){
+      document.getElementById("pinOverlay").classList.add("hidden");
     }
+
+    document.addEventListener("keydown", (e) => {
+      if(e.key === "Escape") closePin();
+    });
+
   </script>
 
 </body>
