@@ -200,3 +200,23 @@ html {
 .btn:hover{
     opacity:0.9;
 }
+
+.btn{
+  display:block;
+  padding:14px;
+  margin-top:10px;
+  text-align:center;
+  background:#2563eb;
+  color:white;
+  text-decoration:none;
+  border-radius:10px;
+  font-weight:600;
+}
+
+.btn:hover{
+  opacity:0.9;
+}
+
+.btn.secondary{
+  background:#6b7280;
+}
