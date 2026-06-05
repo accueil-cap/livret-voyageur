@@ -212,14 +212,14 @@ en: {
       title: "4 - Key box / Access codes",
       text: `
         <b>Front door code</b><br>
-        <span style="color:#ef4444;font-size:22px;font-weight:800;">3492#</span><br>
+        <span style="color:#ef4444;font-size:22px;font-weight:800;">2609#</span><br>
         (push the door SIMULTANEOUSLY)<br><br>
 
         <b>Key box</b><br>
-        <span style="color:#ef4444;font-size:22px;font-weight:800;">n° 251</span><br><br>
+        <span style="color:#ef4444;font-size:22px;font-weight:800;">n° 124</span><br><br>
 
         <b>Digicode</b><br>
-        <span style="color:#ef4444;font-size:22px;font-weight:800;">7088</span><br><br>
+        <span style="color:#ef4444;font-size:22px;font-weight:800;">5428</span><br><br>
 
         Open: enter the code and turn the lock to the right<br>
         Close: reset to 0000 after use
@@ -245,16 +245,16 @@ en: {
     logement: {
       title: "6 - Property address",
       text: `
-        7 rue Sarret de Coussergues<br>
+        3 rue Sarret de Coussergues<br>
         34300 Cap d'Agde<br><br>
 
-        Parking : 115 / D33<br>
-        Residence : Le Colisée<br>
-        Building : D<br>
-        Apartment : 33<br><br>
+        Parking : <br>
+        Residence : Palm Beach<br>
+        Building : <br>
+        Apartment : <br><br>
 
         <a class="map-link"
-           href="https://maps.app.goo.gl/NGggttSMAHzW2q1N6"
+           href="https://maps.app.goo.gl/N4a77bKb9pezGHx26"
            target="_blank">
            📍 Open Google Maps
         </a>
@@ -264,7 +264,7 @@ en: {
     photos2: {
       title: "7 - Access to the property",
       text: `
-        <b>Le Colisée residence 👇</b>
+        <b>Palm Beach residence 👇</b>
         ${photo(null, "residence.jpg")}<br>
 
         <b>Gate and pedestrian entrance 👇</b>
@@ -360,14 +360,14 @@ es: {
       title: "4 - Caja de llaves / Códigos de acceso",
       text: `
         <b>Código de la puerta</b><br>
-        <span style="color:#ef4444;font-size:22px;font-weight:800;">3492#</span><br><br>
+        <span style="color:#ef4444;font-size:22px;font-weight:800;">2609#</span><br><br>
         (empuje la puerta SIMULTÁNEAMENTE)<br><br>
 
         <b>Caja de llaves</b><br>
-        <span style="color:#ef4444;font-size:22px;font-weight:800;">n° 251</span><br><br>
+        <span style="color:#ef4444;font-size:22px;font-weight:800;">n° 124</span><br><br>
 
         <b>Digicode</b><br>
-        <span style="color:#ef4444;font-size:22px;font-weight:800;">7088</span><br><br>
+        <span style="color:#ef4444;font-size:22px;font-weight:800;">5428</span><br><br>
 
         Abrir: introducir el código y girar a la derecha<br>
         Cerrar: volver a 0000 después del uso
@@ -393,16 +393,16 @@ es: {
     logement: {
       title: "6 - Dirección del alojamiento",
       text: `
-        7 rue Sarret de Coussergues<br>
+        3 rue Sarret de Coussergues<br>
         34300 Cap d'Agde<br><br>
 
-        Parking : 115 / D33<br>
-        Residencia : Le Colisée<br>
-        Edificio : D<br>
-        Apartamento : 33<br><br>
+        Parking : <br>
+        Residencia : Palm Beach<br>
+        Edificio : <br>
+        Apartamento : <br><br>
         
         <a class="map-link"
-           href="https://maps.app.goo.gl/NGggttSMAHzW2q1N6"
+           href="https://maps.app.goo.gl/N4a77bKb9pezGHx26"
            target="_blank">
            📍 Abrir Google Maps
         </a>
@@ -412,7 +412,7 @@ es: {
     photos2: {
       title: "7 - Acceso al alojamiento",
       text: `
-        <b>Residencia Le Colisée 👇</b>
+        <b>Residencia Palm Beach 👇</b>
         ${photo(null, "residence.jpg")}<br>
 
         <b>Portón y entrada 👇</b>
