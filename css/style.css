@@ -360,3 +360,26 @@ html {
 html{
   scroll-behavior: smooth;
 }
+
+select{
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  font-size: 14px;
+  font-weight: 600;
+  background: white;
+  outline: none;
+  cursor: pointer;
+}
+
+/* animation apparition */
+.section{
+  display: none;
+  animation: fade 0.3s ease;
+}
+
+@keyframes fade{
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
