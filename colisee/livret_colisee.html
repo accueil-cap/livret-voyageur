@@ -9,181 +9,114 @@
 
 <body>
 
-<!-- =========================
-     TOP MENU NAVIGATION
-========================= -->
-<div class="topbar">
-  <div class="topbar-inner">
-    <a href="#intro">Présentation</a>
-    <a href="#logement">Logement</a>
-    <a href="#accueil">Accueil</a>
-    <a href="#taxi">Taxis</a>
-    <a href="#acces">Accès</a>
-    <a href="#infos">Infos</a>
-    <a href="#inventaire">Inventaire</a>
-    <a href="#sejour">Séjour</a>
-    <a href="#plages">Plages</a>
-    <a href="#depart">Départ</a>
-  </div>
-</div>
-
 <div class="container">
 
   <!-- =========================
-       1 - INTRO
+       HEADER
   ========================= -->
-  <div class="card" id="intro">
-    <h2>1 - Présentation</h2>
-    <p>
-      LIVRET DE SEJOUR<br><br>
-
-      Ce livret a pour objectif de vous informer sur votre séjour au Cap d'Agde.<br>
-      Il vous accompagne de votre arrivée jusqu’à votre départ.<br><br>
-
-      La Conciergerie du Cap d'Agde permet l’échange de clés 24h/24 et 7j/7 en toute sécurité.<br><br>
-
-      ⚠️ Les codes d’accès ne sont pas fournis ici et doivent être demandés au gestionnaire.
-    </p>
+  <div class="header">
+    <h1>📘 Livret de séjour</h1>
+    <p>Sélectionnez une section</p>
   </div>
 
   <!-- =========================
-       2 - LOGEMENT
+       MENU DÉROULANT
   ========================= -->
-  <div class="card" id="logement">
-    <h2>2 - Le logement</h2>
+  <div class="card">
 
-    <p>
-      Appartement au Cap d'Agde de 36 m² situé dans une résidence sécurisée.<br><br>
+    <select id="menu" onchange="showSection()">
+      <option value="">-- Choisir une section --</option>
+      <option value="intro">1 - Présentation</option>
+      <option value="logement">2 - Logement</option>
+      <option value="accueil">3 - Accueil</option>
+      <option value="taxi">4 - Taxis</option>
+      <option value="acces">5 - Accès logement</option>
+      <option value="infos">6 - Infos utiles</option>
+      <option value="inventaire">7 - Inventaire</option>
+      <option value="sejour">8 - Séjour</option>
+      <option value="plages">9 - Plages</option>
+      <option value="depart">10 - Départ</option>
+    </select>
 
-      ✔ Séjour<br>
-      ✔ Cuisine équipée<br>
-      ✔ Chambre mezzanine<br>
-      ✔ Loggia<br>
-      ✔ Salle de bain<br>
-      ✔ Parking privé<br>
-    </p>
-
-    <p><b>📸 Photos du logement</b></p>
-
-    <div class="photo">
-      <img src="images_colisee/photo1.jpg">
-    </div>
   </div>
 
   <!-- =========================
-       3 - ACCUEIL
+       SECTIONS
   ========================= -->
-  <div class="card" id="accueil">
-    <h2>3 - Modalités d’accueil</h2>
 
-    <p><b>Heure d’arrivée :</b> à partir de 16h</p>
-
-    <p>
-      Système de récupération autonome des clés 24h/24.
-    </p>
-
-    <p>
-      📍 Conciergerie du Cap d'Agde<br>
-      Impasse des Sargasses<br>
-      34300 Cap d'Agde
-    </p>
-
-    <a class="btn" href="https://maps.google.com" target="_blank">
-      Ouvrir Google Maps
-    </a>
+  <div class="card section" id="intro">
+    <h2>Présentation</h2>
+    <p>Texte présentation...</p>
   </div>
 
-  <!-- =========================
-       4 - TAXIS
-  ========================= -->
-  <div class="card" id="taxi">
-    <h2>4 - Taxis / VTC</h2>
-
-    <p>
-      🚕 VTC Confort 34<br>
-      📞 06 35 24 53 75
-    </p>
-
-    <p>
-      🚕 Génie Taxi<br>
-      📞 06 95 13 78 77
-    </p>
+  <div class="card section" id="logement">
+    <h2>Logement</h2>
+    <p>Infos logement + photos</p>
   </div>
 
-  <!-- =========================
-       5 - ACCES
-  ========================= -->
-  <div class="card" id="acces">
-    <h2>5 - Accès au logement</h2>
-
-    <p>
-      Adresse complète, parking, résidence, bâtiment...
-    </p>
+  <div class="card section" id="accueil">
+    <h2>Accueil</h2>
+    <p>Adresse + maps</p>
   </div>
 
-  <!-- =========================
-       6 - INFOS
-  ========================= -->
-  <div class="card" id="infos">
-    <h2>6 - Informations utiles</h2>
-
-    <p>
-      • Local poubelle<br>
-      • Disjoncteur<br>
-      • Eau / gaz<br>
-      • Chauffe-eau
-    </p>
+  <div class="card section" id="taxi">
+    <h2>Taxis</h2>
+    <p>Contacts taxis</p>
   </div>
 
-  <!-- =========================
-       7 - INVENTAIRE
-  ========================= -->
-  <div class="card" id="inventaire">
-    <h2>7 - Inventaire</h2>
-
-    <p>
-      Séjour, cuisine, chambre, salle de bain...
-    </p>
+  <div class="card section" id="acces">
+    <h2>Accès logement</h2>
+    <p>Itinéraire + photos</p>
   </div>
 
-  <!-- =========================
-       8 - SEJOUR
-  ========================= -->
-  <div class="card" id="sejour">
-    <h2>8 - Consignes durant le séjour</h2>
-
-    <p>
-      • Non-fumeur intérieur<br>
-      • Animaux interdits<br>
-      • Silence après 22h
-    </p>
+  <div class="card section" id="infos">
+    <h2>Infos utiles</h2>
+    <p>Poubelles, eau, électricité...</p>
   </div>
 
-  <!-- =========================
-       9 - PLAGES
-  ========================= -->
-  <div class="card" id="plages">
-    <h2>9 - Accès plages</h2>
-
-    <p>
-      Plage Richelieu<br>
-      Plage du Môle
-    </p>
+  <div class="card section" id="inventaire">
+    <h2>Inventaire</h2>
+    <p>Pièces du logement</p>
   </div>
 
-  <!-- =========================
-       10 - DEPART
-  ========================= -->
-  <div class="card" id="depart">
-    <h2>10 - Départ</h2>
+  <div class="card section" id="sejour">
+    <h2>Séjour</h2>
+    <p>Consignes</p>
+  </div>
 
-    <p>
-      Heure de départ : avant 10h<br>
-      Nettoyage + restitution des clés
-    </p>
+  <div class="card section" id="plages">
+    <h2>Plages</h2>
+    <p>Accès plages</p>
+  </div>
+
+  <div class="card section" id="depart">
+    <h2>Départ</h2>
+    <p>Check-out</p>
   </div>
 
 </div>
+
+<!-- =========================
+     JS SIMPLE
+========================= -->
+<script>
+function showSection(){
+  const value = document.getElementById("menu").value;
+
+  const sections = document.querySelectorAll(".section");
+
+  sections.forEach(s => s.style.display = "none");
+
+  if(value){
+    document.getElementById(value).style.display = "block";
+  }
+}
+
+// cacher tout au départ
+window.onload = () => {
+  document.querySelectorAll(".section").forEach(s => s.style.display = "none");
+};
+</script>
 
 </body>
 </html>
