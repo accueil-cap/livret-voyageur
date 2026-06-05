@@ -17,15 +17,6 @@
       <p>Sélectionnez votre logement</p>
     </div>
 
-    <!-- PHOTO D'ACCUEIL -->
-    <div class="card">
-      <img
-        src="images/accueil.jpg"
-        alt="Cap d'Agde"
-        style="width:100%; border-radius:12px;"
-      >
-    </div>
-
     <!-- COLISÉE -->
     <div class="card">
       <h2>🏠 Appartement Colisée</h2>
@@ -34,10 +25,9 @@
         Accédez aux informations relatives à votre séjour :
       </p>
 
-      <a class="btn" href="colisee/colisee.html">
-        Entrer
-      </a>
-    </div>
+      <button class="btn" onclick="accesColisee()">
+  Entrer
+</button>
 
     <!-- PALM BEACH -->
     <div class="card">
@@ -47,12 +37,34 @@
         Accédez aux informations relatives à votre séjour :
       </p>
 
-      <a class="btn" href="palm-beach/palm-beach.html">
-        Entrer
-      </a>
+      <button class="btn" onclick="accesPalmBeach()">
+  Entrer
+</button>
     </div>
 
   </div>
 
+    <script>
+function accesColisee() {
+    const code = prompt("Entrez votre code d'accès");
+
+    if (code === "2510") {
+        window.location.href = "colisee/colisee.html";
+    } else {
+        alert("Code incorrect");
+    }
+}
+
+function accesPalmBeach() {
+    const code = prompt("Entrez votre code d'accès");
+
+    if (code === "4837") {
+        window.location.href = "palm-beach/palm-beach.html";
+    } else {
+        alert("Code incorrect");
+    }
+}
+</script>
+    
 </body>
 </html>
