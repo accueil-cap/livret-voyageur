@@ -29,14 +29,14 @@
     <div class="card">
       <h2>🏠 <span id="colisee-title"></span></h2>
       <p id="colisee-text"></p>
-      <button class="btn" onclick="openPin('colisee')">Entrer</button>
+      <button class="btn" onclick="openPin('colisee')" id="btn-colisee"></button>
     </div>
 
     <!-- PALM BEACH -->
     <div class="card">
       <h2>🌴 <span id="palm-title"></span></h2>
       <p id="palm-text"></p>
-      <button class="btn" onclick="openPin('palm')">Entrer</button>
+      <button class="btn" onclick="openPin('palm')" id="btn-palm"></button>
     </div>
 
   </div>
@@ -81,6 +81,8 @@
         palm: "Appartement Palm Beach",
         text: "Accédez aux informations relatives à votre séjour",
         enter: "Entrer"
+        pinTitle: "Code d'accès",
+        pinSubtitle: "Entrez votre code à 4 chiffres",
       },
       en: {
         title: "Guest Guide",
@@ -89,6 +91,8 @@
         palm: "Palm Beach Apartment",
         text: "Access your stay information",
         enter: "Enter"
+        pinTitle: "Access code",
+        pinSubtitle: "Enter your 4-digit code",
       },
       es: {
         title: "Guía del viajero",
@@ -97,6 +101,8 @@
         palm: "Apartamento Palm Beach",
         text: "Accede a la información de tu estancia",
         enter: "Entrar"
+        pinTitle: "Código de acceso",
+        pinSubtitle: "Introduce tu código de 4 dígitos",
       }
     };
 
@@ -117,6 +123,12 @@
 
       document.getElementById("colisee-text").innerText = d.text;
       document.getElementById("palm-text").innerText = d.text;
+
+      document.getElementById("btn-colisee").innerText = d.enter;
+      document.getElementById("btn-palm").innerText = d.enter;
+
+      document.getElementById("pinTitle").innerText = d.pinTitle;
+      document.getElementById("pinSubtitle").innerText = d.pinSubtitle;
     }
 
     render();
