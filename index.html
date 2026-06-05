@@ -9,62 +9,149 @@
 
 <body>
 
+  <!-- LANG SWITCH -->
+  <div class="topbar">
+    <div class="topbar-inner">
+      <a href="#" onclick="setLang('fr')">🇫🇷 FR</a>
+      <a href="#" onclick="setLang('en')">🇬🇧 EN</a>
+      <a href="#" onclick="setLang('es')">🇪🇸 ES</a>
+    </div>
+  </div>
+
   <div class="container">
 
     <div class="header">
-      <h1>☀️ Livret Voyageurs</h1>
-      <p>Bienvenue au Cap d'Agde</p>
-      <p>Sélectionnez votre logement</p>
+      <h1 id="title"></h1>
+      <p id="subtitle"></p>
     </div>
 
     <!-- COLISÉE -->
     <div class="card">
-      <h2>🏠 Appartement Colisée</h2>
-
-      <p>
-        Accédez aux informations relatives à votre séjour :
-      </p>
+      <h2>🏠 <span id="colisee-title"></span></h2>
+      <p id="colisee-text"></p>
 
       <button class="btn" onclick="accesColisee()">
-  Entrer
-</button>
+        <span id="btn-enter"></span>
+      </button>
+    </div>
 
     <!-- PALM BEACH -->
     <div class="card">
-      <h2>🌴 Appartement Palm Beach</h2>
-
-      <p>
-        Accédez aux informations relatives à votre séjour :
-      </p>
+      <h2>🌴 <span id="palm-title"></span></h2>
+      <p id="palm-text"></p>
 
       <button class="btn" onclick="accesPalmBeach()">
-  Entrer
-</button>
+        <span id="btn-enter2"></span>
+      </button>
     </div>
 
   </div>
 
-    <script>
-function accesColisee() {
-    const code = prompt("Entrez votre code d'accès");
+  <script>
+    let lang = localStorage.getItem("lang") || "fr";
 
-    if (code === "2510") {
+    const t = {
+      fr: {
+        title: "Livret voyageurs",
+        subtitle: "Choisissez votre appartement",
+
+        colisee: "Appartement Colisée",
+        palm: "Appartement Palm Beach",
+
+        text: "Accédez aux informations relatives à votre séjour :",
+
+        enter: "Entrer"
+      },
+
+      en: {
+        title: "Guest Guide",
+        subtitle: "Choose your apartment",
+
+        colisee: "Colisée Apartment",
+        palm: "Palm Beach Apartment",
+
+        text: "Access your stay information:",
+
+        enter: "Enter"
+      },
+
+      es: {
+        title: "Guía del viajero",
+        subtitle: "Elige tu apartamento",
+
+        colisee: "Apartamento Colisée",
+        palm: "Apartamento Palm Beach",
+
+        text: "Accede a la información de tu estancia:",
+
+        enter: "Entrar"
+      }
+    };
+
+    function setLang(l){
+      lang = l;
+      localStorage.setItem("lang", l);
+      render();
+    }
+
+    function render(){
+      const d = t[lang];
+
+      document.getElementById("title").innerText = d.title;
+      document.getElementById("subtitle").innerText = d.subtitle;
+
+      document.getElementById("colisee-title").innerText = d.colisee;
+      document.getElementById("palm-title").innerText = d.palm;
+
+      document.getElementById("colisee-text").innerText = d.text;
+      document.getElementById("palm-text").innerText = d.text;
+
+      document.getElementById("btn-enter").innerText = d.enter;
+      document.getElementById("btn-enter2").innerText = d.enter;
+    }
+
+    render();
+
+    /* ======================
+       CODES PIN
+    ====================== */
+
+    function accesColisee() {
+      const code = prompt(
+        lang === "fr" ? "Entrez votre code d'accès" :
+        lang === "en" ? "Enter your access code" :
+        "Introduce tu código de acceso"
+      );
+
+      if (code === "2510") {
         window.location.href = "colisee/colisee.html";
-    } else {
-        alert("Code incorrect");
+      } else {
+        alert(
+          lang === "fr" ? "Code incorrect" :
+          lang === "en" ? "Wrong code" :
+          "Código incorrecto"
+        );
+      }
     }
-}
 
-function accesPalmBeach() {
-    const code = prompt("Entrez votre code d'accès");
+    function accesPalmBeach() {
+      const code = prompt(
+        lang === "fr" ? "Entrez votre code d'accès" :
+        lang === "en" ? "Enter your access code" :
+        "Introduce tu código de acceso"
+      );
 
-    if (code === "4837") {
+      if (code === "4837") {
         window.location.href = "palm-beach/palm-beach.html";
-    } else {
-        alert("Code incorrect");
+      } else {
+        alert(
+          lang === "fr" ? "Code incorrect" :
+          lang === "en" ? "Wrong code" :
+          "Código incorrecto"
+        );
+      }
     }
-}
-</script>
-    
+  </script>
+
 </body>
 </html>
