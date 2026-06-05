@@ -9,32 +9,87 @@
 
 <body>
 
+  <!-- TOP BAR LANGUE -->
+  <div class="topbar">
+    <div class="topbar-inner">
+      <a href="#" onclick="setLang('fr')">🇫🇷 FR</a>
+      <a href="#" onclick="setLang('en')">🇬🇧 EN</a>
+      <a href="#" onclick="setLang('es')">🇪🇸 ES</a>
+    </div>
+  </div>
+
   <div class="container">
 
     <div class="header">
-      <h1>🏠 Appartement Colisée</h1>
-      <p>Choisissez une section</p>
+      <h1 id="title"></h1>
+      <p id="subtitle"></p>
     </div>
 
+    <!-- BOUTON 1 -->
     <div class="card">
-      <a class="btn large" href="arrivee_colisee.html">
-        🔑 Récupération des clés
-      </a>
+      <a class="btn large" href="arrivee_colisee.html" id="btn-key"></a>
     </div>
 
+    <!-- BOUTON 2 -->
     <div class="card">
-      <a class="btn large" href="livret_colisee.html">
-        📘 Livret de séjour
-      </a>
+      <a class="btn large" href="livret_colisee.html" id="btn-book"></a>
     </div>
 
+    <!-- RETOUR -->
     <div class="card">
-      <a class="btn secondary" href="../index.html">
-        ← Retour accueil
-      </a>
+      <a class="btn secondary" href="../index.html" id="btn-back"></a>
     </div>
 
   </div>
+
+  <script>
+    let lang = localStorage.getItem("lang") || "fr";
+
+    const t = {
+      fr: {
+        title: "🏠 Appartement Colisée",
+        subtitle: "Choisissez une section",
+        key: "🔑 Récupération des clés",
+        book: "📘 Livret de séjour",
+        back: "← Retour accueil"
+      },
+
+      en: {
+        title: "🏠 Colisée Apartment",
+        subtitle: "Choose a section",
+        key: "🔑 Key collection",
+        book: "📘 Guest guide",
+        back: "← Back to home"
+      },
+
+      es: {
+        title: "🏠 Apartamento Colisée",
+        subtitle: "Elige una sección",
+        key: "🔑 Recogida de llaves",
+        book: "📘 Guía del huésped",
+        back: "← Volver al inicio"
+      }
+    };
+
+    function setLang(l){
+      lang = l;
+      localStorage.setItem("lang", l);
+      render();
+    }
+
+    function render(){
+      const d = t[lang];
+
+      document.getElementById("title").innerText = d.title;
+      document.getElementById("subtitle").innerText = d.subtitle;
+
+      document.getElementById("btn-key").innerText = d.key;
+      document.getElementById("btn-book").innerText = d.book;
+      document.getElementById("btn-back").innerText = d.back;
+    }
+
+    render();
+  </script>
 
 </body>
 </html>
