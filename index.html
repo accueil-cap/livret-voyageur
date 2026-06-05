@@ -125,23 +125,25 @@
     // PIN SYSTEM
     // =========================
 
-    function openPin(app){
-      currentApp = app;
+function openPin(app){
+  currentApp = app;
 
-      document.getElementById("pinOverlay").classList.remove("hidden");
+  const overlay = document.getElementById("pinOverlay");
+  overlay.classList.remove("hidden");
 
-      const inputs = document.querySelectorAll(".pin");
-      inputs.forEach(i => i.value = "");
-      inputs[0].focus();
+  const inputs = document.querySelectorAll(".pin");
 
-      inputs.forEach((input, index) => {
-        input.oninput = () => {
-          if(input.value && index < 3){
-            inputs[index + 1].focus();
-          }
-        };
-      });
-    }
+  inputs.forEach(i => i.value = "");
+  inputs[0].focus();
+
+  inputs.forEach((input, index) => {
+    input.oninput = () => {
+      if(input.value && index < 3){
+        inputs[index + 1].focus();
+      }
+    };
+  });
+}
 
     function validatePin(){
       const inputs = document.querySelectorAll(".pin");
