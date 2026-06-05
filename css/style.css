@@ -185,3 +185,18 @@ html {
     max-height: 70vh;
   }
 }
+
+.btn{
+    display:inline-block;
+    margin-top:10px;
+    padding:12px 24px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    opacity:0.9;
+}
