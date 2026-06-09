@@ -260,10 +260,10 @@ en: {
         3 rue Sarret de Coussergues<br>
         34300 Cap d'Agde<br><br>
 
-        Parking : <br>
+        Parking : 2<br>
         Residence : Palm Beach<br>
-        Building : <br>
-        Apartment : <br><br>
+        Building : A1<br>
+        Apartment : 6<br><br>
 
         <a class="map-link"
            href="https://maps.app.goo.gl/N4a77bKb9pezGHx26"
@@ -273,59 +273,71 @@ en: {
       `
     },
 
-    photos2: {
-      title: "7 - Access to the property",
-      text: `
-        <b>Palm Beach residence 👇</b>
-        ${photo(null, "residence.jpg")}<br>
+photos2: {
+  title: "7 - Access to the property",
+  text: `
+    <b>Palm Beach Residence 👇</b>
+    ${photo(null, "residence.jpg")}<br>
 
-        <b>Gate and pedestrian entrance 👇</b>
-        ${photo(null, "portail.jpg")}<br>
+    <b>Two gates to enter the residence 👇</b><br>
+    Access is through Gate 1<br>
+    orange arrow = Gate 1<br>
+    yellow arrow = Gate 2
+    ${photo(null, "chemin_portail.jpg")}<br>
 
-        <b>Opening the gate 👇</b><br>
-        (place the access badge on the black pad between the gate sections)
-        ${photo(null, "vigik_portail.jpg")}<br>
+    <b>Gate 1 and pedestrian entrance 👇</b>
+    ${photo(null, "portail1.jpg")}<br>
 
-        <b>Take the second driveway on the right 👇</b>
-        ${photo(null, "allee.jpg")}<br>
+    <b>Opening the gate and pedestrian entrance 👇</b><br>
+    (press the remote control button)
+    ${photo(null, "telecommande_portail.jpg")}<br>
 
-        <b>Parking space 👇</b><br>
-        Located on your right
-        ${photo(null, "parking.jpg")}<br>
+    <b>Continue straight to the end of the driveway, then turn right 👇</b>
+    ${photo(null, "allee1.jpg")}
+    ${photo(null, "allee2.jpg")}<br>
 
-        <b>Private parking numbers: 33D - 115 👇</b>
-        ${photo(null, "place_parking.jpg")}<br>
+    <b>Continue straight to the end, then turn right again 👇</b>
+    ${photo(null, "allee3.jpg")}<br>
 
-        <b>Building D access 👇</b><br>
-        yellow arrow = parking<br>
-        orange arrow = building
-        ${photo(null, "batiment_d_exterieur.jpg")}<br>
+    <b>Continue straight to the gate, then turn right one last time 👇</b>
+    ${photo(null, "allee4.jpg")}<br>
 
-        <b>Building entrance 👇</b>
-        ${photo(null, "entree_batiment1.jpg")}
-        ${photo(null, "entree_batiment2.jpg")}<br>
+    <b>Parking space 👇</b><br>
+    The parking space is located on your left
+    ${photo(null, "allee5.jpg")}
+    ${photo(null, "place_parking.jpg")}<br>
 
-        <b>Door access with badge 👇</b><br>
-        (place the badge on the black sensor on the right side)
-        ${photo(null, "badge_porte.jpg")}<br>
+    <b>Private parking space number: 2 👇</b>
+    ${photo(null, "numero_parking.jpg")}<br>
 
-        <b>Go to 3rd floor and turn left 👇</b>
-        ${photo(null, "escaliers.jpg")}<br>
+    <b>Access to Building A1 👇</b><br>
+    Return to the main driveway (Gate 1 entrance) and take the first right
+    ${photo(null, "acces_batiment.jpg")}<br>
 
-        <b>The apartment is at the end of the hallway 👇</b>
-        ${photo(null, "couloir.jpg")}<br>
+    <b>Building A1 entrance 👇</b>
+    ${photo(null, "batiment_A1.jpg")}<br>
 
-        <b>Apartment number 👇</b>
-        ${photo(null, "porte_appartement.jpg")}<br>
+    <b>Opening the door with the access badge 👇</b><br>
+    (place the badge on the black sensor located to the right of the door)
+    ${photo(null, "badge_porte.jpg")}<br>
 
-        <b>Keys 👇</b><br>
-        Flat key (main lock)
-        ${photo(null, "cle_plate.jpg")}<br>
+    <b>Take the first corridor on the right 👇</b>
+    ${photo(null, "couloir1.jpg")}<br>
 
-        Round key (top lock)
-        ${photo(null, "cle_ronde.jpg")}
-      `
-    },
+    <b>The apartment is located halfway down the corridor on the left 👇</b>
+    ${photo(null, "couloir2.jpg")}<br>
+
+    <b>Apartment number 👇</b>
+    ${photo(null, "numero_appart.jpg")}<br>
+
+    <b>Keys for the apartment door 👇</b><br>
+    flat key (main lock)
+    ${photo(null, "cle_plate.jpg")}
+
+    round key (upper deadbolt lock)
+    ${photo(null, "cle_ronde.jpg")}
+  `
+},
 
     livret: {
       title: "8 - Guest guide",
@@ -421,59 +433,71 @@ es: {
       `
     },
 
-    photos2: {
-      title: "7 - Acceso al alojamiento",
-      text: `
-        <b>Residencia Palm Beach 👇</b>
-        ${photo(null, "residence.jpg")}<br>
+photos2: {
+  title: "7 - Acceso al alojamiento",
+  text: `
+    <b>Residencia Palm Beach 👇</b>
+    ${photo(null, "residence.jpg")}<br>
 
-        <b>Portón y entrada 👇</b>
-        ${photo(null, "portail.jpg")}<br>
+    <b>Dos portones para entrar en la residencia 👇</b><br>
+    La entrada se realiza por el Portón 1<br>
+    flecha naranja = Portón 1<br>
+    flecha amarilla = Portón 2
+    ${photo(null, "chemin_portail.jpg")}<br>
 
-        <b>Apertura del portón 👇</b><br>
-        (coloca el llavero en el sensor negro)
-        ${photo(null, "vigik_portail.jpg")}<br>
+    <b>Portón 1 y puerta peatonal de la residencia 👇</b>
+    ${photo(null, "portail1.jpg")}<br>
 
-        <b>Toma la segunda entrada a la derecha 👇</b>
-        ${photo(null, "allee.jpg")}<br>
+    <b>Apertura del portón y de la puerta peatonal 👇</b><br>
+    (pulse el botón del mando a distancia)
+    ${photo(null, "telecommande_portail.jpg")}<br>
 
-        <b>Aparcamiento 👇</b><br>
-        Situado a la derecha
-        ${photo(null, "parking.jpg")}<br>
+    <b>Siga recto hasta el final del camino y luego gire a la derecha 👇</b>
+    ${photo(null, "allee1.jpg")}
+    ${photo(null, "allee2.jpg")}<br>
 
-        <b>Número de plaza: 33D - 115 👇</b>
-        ${photo(null, "place_parking.jpg")}<br>
+    <b>Siga recto hasta el final y vuelva a girar a la derecha 👇</b>
+    ${photo(null, "allee3.jpg")}<br>
 
-        <b>Acceso edificio D 👇</b><br>
-        flecha amarilla = parking<br>
-        flecha naranja = edificio
-        ${photo(null, "batiment_d_exterieur.jpg")}<br>
+    <b>Siga recto hasta el portón y gire por última vez a la derecha 👇</b>
+    ${photo(null, "allee4.jpg")}<br>
 
-        <b>Entrada edificio 👇</b>
-        ${photo(null, "entree_batiment1.jpg")}
-        ${photo(null, "entree_batiment2.jpg")}<br>
+    <b>Plaza de aparcamiento 👇</b><br>
+    La plaza se encuentra a su izquierda
+    ${photo(null, "allee5.jpg")}
+    ${photo(null, "place_parking.jpg")}<br>
 
-        <b>Acceso con badge 👇</b><br>
-        (coloca el badge en el lector)
-        ${photo(null, "badge_porte.jpg")}<br>
+    <b>Número de la plaza privada: 2 👇</b>
+    ${photo(null, "numero_parking.jpg")}<br>
 
-        <b>Sube al 3er piso y gira a la izquierda 👇</b>
-        ${photo(null, "escaliers.jpg")}<br>
+    <b>Acceso al edificio A1 👇</b><br>
+    Regrese al camino principal (entrada del Portón 1) y tome la primera a la derecha
+    ${photo(null, "acces_batiment.jpg")}<br>
 
-        <b>El apartamento está al final del pasillo 👇</b>
-        ${photo(null, "couloir.jpg")}<br>
+    <b>Entrada del edificio A1 👇</b>
+    ${photo(null, "batiment_A1.jpg")}<br>
 
-        <b>Número del apartamento 👇</b>
-        ${photo(null, "porte_appartement.jpg")}<br>
+    <b>Apertura de la puerta con la tarjeta de acceso 👇</b><br>
+    (acerque el badge al lector negro situado a la derecha de la puerta)
+    ${photo(null, "badge_porte.jpg")}<br>
 
-        <b>Llaves 👇</b><br>
-        Llave plana (cerradura principal)
-        ${photo(null, "cle_plate.jpg")}<br>
+    <b>Tome el primer pasillo a la derecha 👇</b>
+    ${photo(null, "couloir1.jpg")}<br>
 
-        Llave redonda (cerradura superior)
-        ${photo(null, "cle_ronde.jpg")}
-      `
-    },
+    <b>El alojamiento se encuentra a mitad del pasillo, a la izquierda 👇</b>
+    ${photo(null, "couloir2.jpg")}<br>
+
+    <b>Número del apartamento 👇</b>
+    ${photo(null, "numero_appart.jpg")}<br>
+
+    <b>Llaves de la puerta 👇</b><br>
+    llave plana (cerradura principal)
+    ${photo(null, "cle_plate.jpg")}
+
+    llave redonda (cerrojo superior)
+    ${photo(null, "cle_ronde.jpg")}
+  `
+},
 
     livret: {
       title: "8 - Guía de estancia",
