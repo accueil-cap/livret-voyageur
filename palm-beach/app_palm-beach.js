@@ -100,10 +100,10 @@ text: `
           3 rue Sarret de Coussergues<br>
           34300 Cap d'Agde<br><br>
 
-          Parking : <br>
+          Parking : 2 <br>
           Résidence : Palm Beach<br>
-          Bâtiment : <br>
-          Appartement : <br><br>
+          Bâtiment : A1 <br>
+          Appartement : 6 <br><br>
 
           <a class="map-link"
    href="https://maps.app.goo.gl/N4a77bKb9pezGHx26"
@@ -119,44 +119,56 @@ photos2: {
     <b>Résidence Palm Beach 👇</b>
     ${photo(null, "residence.jpg")}<br>
 
-    <b>Portail et portillon de la résidence 👇</b>
-    ${photo(null, "portail.jpg")}<br>
+    <b>Deux portails pour entrer 👇</b><br>
+    L'entrée se fait par le portail 1<br>
+    flèche orange = Portail 1<br>
+    flèche jaune = Portail 2
+    ${photo(null, "chemin_portail.jpg")}<br>
+
+    <b>Portail 1 et portillon de la résidence 👇</b>
+    ${photo(null, "portail1.jpg")}<br>
 
     <b>Ouverture du portail et du portillon 👇</b><br>
-    (collez le vigik sur la pastille noire située entre le portail et le portillon)
-    ${photo(null, "vigik_portail.jpg")}<br>
+    (appuyez sur le bouton de la télécommande)
+    ${photo(null, "telecommande_portail.jpg")}<br>
 
-    <b>Prendre la deuxième allée sur votre droite 👇</b>
-    ${photo(null, "allee.jpg")}<br>
+    <b>Continuez tout droit jusqu'au bout de l'allée, puis tournez sur votre droite 👇</b>
+    ${photo(null, "allee1.jpg")}
+    ${photo(null, "allee2.jpg")}<br>
+
+    <b>Continuez tout droit jusqu'au bout, puis tournez encore sur votre droite 👇</b>
+    ${photo(null, "allee3.jpg")}<br>
+
+    <b>Continuez tout droit jusqu'au portail, puis tournez une dernière fois sur votre droite 👇</b>
+    ${photo(null, "allee4.jpg")}<br>
 
     <b>Place de parking 👇</b><br>
-    La place se situe sur votre droite
-    ${photo(null, "parking.jpg")}<br>
-
-    <b>Numéros de la place privative : 33D - 115 👇</b>
+    La place se situe sur votre gauche
+    ${photo(null, "allee5.jpg")}
     ${photo(null, "place_parking.jpg")}<br>
 
-    <b>Accès au bâtiment D 👇</b><br>
-    flèche jaune = parking<br>
-    flèche orange = bâtiment
-    ${photo(null, "batiment_d_exterieur.jpg")}<br>
+    <b>Numéros de la place privative : 2 👇</b>
+    ${photo(null, "numero_parking.jpg")}<br>
 
-    <b>Entrée du bâtiment D 👇</b>
-    ${photo(null, "entree_batiment1.jpg")}
-    ${photo(null, "entree_batiment2.jpg")}<br>
+    <b>Accès au bâtiment A1 👇</b><br>
+    Revenez dans l'allée principale (entrée du portail 1) et prenez la première à droite
+    ${photo(null, "acces_batiment.jpg")}<br>
+
+    <b>Entrée du bâtiment A1 👇</b>
+    ${photo(null, "batiment_A1.jpg")}<br>
 
     <b>Ouverture de la porte avec le badge 👇</b><br>
     (collez le vigik sur la pastille noire à droite de la porte)
     ${photo(null, "badge_porte.jpg")}<br>
 
-    <b>Montez jusqu'au 3ème étage et prenez à gauche 👇</b>
-    ${photo(null, "escaliers.jpg")}<br>
+    <b>Prenez la première à droite 👇</b>
+    ${photo(null, "couloir1.jpg")}<br>
 
-    <b>Le logement se situe au bout du couloir 👇</b>
-    ${photo(null, "couloir.jpg")}<br>
+    <b>Le logement se situe au milieu du couloir à gauche 👇</b>
+    ${photo(null, "couloir2.jpg")}<br>
 
     <b>Numéro d'appartement 👇</b>
-    ${photo(null, "porte_appartement.jpg")}<br>
+    ${photo(null, "numero_appart.jpg")}<br>
 
     <b>Clés de la porte 👇</b><br>
     clé plate (serrure principale)
