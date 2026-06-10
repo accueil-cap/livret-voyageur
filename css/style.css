@@ -29,7 +29,6 @@
   color: #374151;
 }
 
-
 /* Titres */
 .page-keys .header h1 {
   font-size: 26px;
@@ -113,7 +112,7 @@
 }
 
 /* Menu avec liens */
-.page-keys #menu a {
+.page-keys .menu a {
   display: block;
   padding: 10px;
   margin: 6px auto;
@@ -125,7 +124,7 @@
   font-weight: 600;
 }
 
-.page-keys #menu a:hover {
+.page-keys .menu a:hover {
   background:#e5e7eb;
 }
 
