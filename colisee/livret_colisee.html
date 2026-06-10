@@ -1917,22 +1917,29 @@
 let currentLang = "fr";
 
 /* =========================
-   SHOW / HIDE SECTIONS
+   UTILITAIRES
 ========================= */
 
-function hideAll(lang) {
-  document.querySelectorAll(`#lang-${lang} .section`)
-    .forEach(el => el.hidden = true);
+function getSections(lang) {
+  return document.querySelectorAll(`#lang-${lang} .section`);
 }
 
-function show(id) {
-  const el = document.getElementById(id);
-  if (!el) return;
+function hideAll(lang) {
+  getSections(lang).forEach(el => {
+    el.hidden = true;
+  });
+}
 
-  if (!el.closest(`#lang-${currentLang}`)) return;
+function showOnly(lang, id) {
+  const target = document.getElementById(id);
 
-  hideAll(currentLang);
-  el.hidden = false;
+  if (!target) return;
+
+  // sécurité : doit appartenir à la langue active
+  if (!target.closest(`#lang-${lang}`)) return;
+
+  hideAll(lang);
+  target.hidden = false;
 }
 
 /* =========================
@@ -1943,30 +1950,36 @@ function showSection() {
   const value = document.getElementById("menu").value;
   if (!value) return;
 
-  show(value);
+  showOnly(currentLang, value);
 }
 
 /* =========================
-   LANGUAGE
+   LANGUE
 ========================= */
 
 function setLang(lang) {
   currentLang = lang;
 
-  document.querySelectorAll("[id^='lang-']")
-    .forEach(el => el.hidden = true);
+  // cacher tous les blocs langue
+  document.querySelectorAll("[id^='lang-']").forEach(el => {
+    el.hidden = true;
+  });
 
+  // afficher langue active
   const active = document.getElementById("lang-" + lang);
   if (active) active.hidden = false;
 
+  // reconstruire menu
   buildMenu(lang);
 
-  // RESET menu + affichage propre
-  document.getElementById("menu").value = "";
+  // reset select
+  const menu = document.getElementById("menu");
+  menu.value = "";
 
+  // cacher toutes les sections
   hideAll(lang);
 
-  // ⭐ IMPORTANT : afficher 1ère section automatiquement
+  // afficher la première section (optionnel)
   const first = document.querySelector(`#lang-${lang} .section`);
   if (first) first.hidden = false;
 }
