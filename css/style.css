@@ -263,7 +263,7 @@ html {
 
 .page-livret ul {
   padding-left: 18px;
-  text-align: center;
+  text-align: left;
 }
 
 /* Boutons (maps + autres) */
@@ -296,7 +296,6 @@ html {
 
 .page-livret a:hover {
   text-decoration: underline;
-   text-align: center;
 }
 
 /* Lignes séparation */
