@@ -100,8 +100,7 @@ body {
 }
 
 /* Liens secondaires */
-.page-keys .card a {
-  all: unset;
+.page-keys .card a:not(.map-link) {
   display: inline-block;
   margin-top: 10px;
   padding: 10px 14px;
@@ -112,7 +111,7 @@ body {
   border-radius: 10px;
 }
 
-.page-keys .card a:hover {
+.page-keys .card a:not(.map-link):hover {
   background: #4b5563;
   transform: translateY(-2px);
 }
