@@ -31,14 +31,14 @@
        MENU DÉROULANT
   ========================= -->
   <div class="card">
-<select id="menu" onchange="showSection()">
+<select id="menu" onchange="showSection()" aria-label="Sélectionnez une section">
   <option value="">--</option>
 </select>
   </div>
 
   
 <div id="lang-fr">
-<div class="card section" id="fr-intro">
+<div class="card section" id="fr-intro" hidden>
   <h2>📘 LIVRET DE SEJOUR</h2>
 
   <p>
@@ -67,7 +67,7 @@
   </p>
 </div>
 
-<div class="card section" id="fr-logement">
+<div class="card section" id="fr-logement" hidden>
 
   <h2>🏠 Le logement</h2>
 
@@ -86,7 +86,7 @@
     Le logement se compose :
   </p>
 
-  <ul style="text-align:left;">
+  <ul>
     <li>Entrée avec 2 lits superposés</li>
     <li>Séjour avec canapé convertible</li>
     <li>Coin cuisine équipé</li>
@@ -100,67 +100,67 @@
 
   <h3>📸 Séjour</h3>
  <div class="photo">
-  <img src="images_colisee/sejour1.jpg">
+  <img src="images_colisee/sejour1.jpg" alt="">
 </div>
    <div class="photo">
-  <img src="images_colisee/sejour2.jpg">
+  <img src="images_colisee/sejour2.jpg" alt="">
 </div>
    <div class="photo">
-  <img src="images_colisee/sejour3.jpg">
+  <img src="images_colisee/sejour3.jpg" alt="">
 </div>
    <div class="photo">
-  <img src="images_colisee/sejour4.jpg">
+  <img src="images_colisee/sejour4.jpg" alt="">
 </div>
    <div class="photo">
-  <img src="images_colisee/sejour5.jpg">
+  <img src="images_colisee/sejour5.jpg" alt="">
 </div>
 
   <h3>🍳 Cuisine</h3>
  <div class="photo">
-  <img src="images_colisee/cuisine1.jpg">
+  <img src="images_colisee/cuisine1.jpg" alt="">
 </div>
    <div class="photo">
-  <img src="images_colisee/cuisine2.jpg">
+  <img src="images_colisee/cuisine2.jpg" alt="">
 </div>
      <div class="photo">
-  <img src="images_colisee/cuisine3.jpg">
+  <img src="images_colisee/cuisine3.jpg" alt="">
 </div>
 
   <h3>🛏️ Chambre mezzanine</h3>
   <p>Lit double 140 x 190</p>
  <div class="photo">
-  <img src="images_colisee/chambre1.jpg">
+  <img src="images_colisee/chambre1.jpg" alt="">
 </div>
    <div class="photo">
-  <img src="images_colisee/chambre2.jpg">
+  <img src="images_colisee/chambre2.jpg" alt="">
 </div>
 
   <h3>☀️ Loggia</h3>
    <div class="photo">
-  <img src="images_colisee/loggia.jpg">
+  <img src="images_colisee/loggia.jpg" alt="">
 </div>
 
   <h3>🚿 Salle de bain</h3>
    <div class="photo">
-  <img src="images_colisee/sdb1.jpg">
+  <img src="images_colisee/sdb1.jpg" alt="">
 </div>
      <div class="photo">
-  <img src="images_colisee/sdb2.jpg">
+  <img src="images_colisee/sdb2.jpg" alt="">
 </div>
 
   <h3>🚗 Parking privatif</h3>
      <div class="photo">
-  <img src="images_colisee/parking1.jpg">
+  <img src="images_colisee/parking1.jpg" alt="">
 </div>
 
   <h3>🚲 Parking à vélos</h3>
      <div class="photo">
-  <img src="images_colisee/parking_velo.jpg">
+  <img src="images_colisee/parking_velo.jpg" alt="">
 </div>
 
 </div>
 
-<div class="card section" id="fr-accueil">
+<div class="card section" id="fr-accueil" hidden>
 
   <h2>🔑 Modalités d'accueil</h2>
 
@@ -195,7 +195,7 @@
 
   <a class="btn"
      href="https://maps.app.goo.gl/t46grpyPzibVdFZM9"
-     target="_blank">
+     target="_blank" rel="noopener noreferrer">
      📍 Ouvrir Google Maps
   </a>
 
@@ -204,23 +204,23 @@
   <h3>3 - Photographies du point d'accueil</h3>
 
  <div class="photo">
-  <img src="images_colisee/conciergerie1.jpg">
+  <img src="images_colisee/conciergerie1.jpg" alt="">
 </div>
 
 <div class="photo">
-  <img src="images_colisee/conciergerie2.jpg">
+  <img src="images_colisee/conciergerie2.jpg" alt="">
 </div>
 
 </div>
 
-<div class="card section" id="fr-taxi">
+<div class="card section" id="fr-taxi" hidden>
 
   <h2>🚖 Taxis - VTC</h2>
 
   <h3>1 - VTC Confort 34</h3>
 
   <div class="photo">
-    <img src="images_colisee/vtcconfort.jpg">
+    <img src="images_colisee/vtcconfort.jpg" alt="">
   </div>
 
   <p>
@@ -234,7 +234,7 @@
   <h3>2 - Génie TAXI</h3>
 
   <div class="photo">
-    <img src="images_colisee/genietaxi.jpg">
+    <img src="images_colisee/genietaxi.jpg" alt="">
   </div>
 
   <p>
@@ -243,7 +243,7 @@
 
 </div>
 
-<div class="card section" id="fr-acces">
+<div class="card section" id="fr-acces" hidden>
 
   <h2>🏠 Accès à l'hébergement</h2>
 
@@ -271,7 +271,7 @@
 
   <a class="btn"
      href="https://maps.app.goo.gl/NGggttSMAHzW2q1N6"
-     target="_blank">
+     target="_blank" rel="noopener noreferrer">
      📍 Ouvrir Google Maps
   </a>
 
@@ -281,37 +281,37 @@
 
   <b>Résidence Le Colisée 👇</b>
   <div class="photo">
-    <img src="images_colisee/residence.jpg">
+    <img src="images_colisee/residence.jpg" alt="">
   </div>
 
   <b>Portail et portillon de la résidence 👇</b>
   <div class="photo">
-    <img src="images_colisee/portail.jpg">
+    <img src="images_colisee/portail.jpg" alt="">
   </div>
 
   <b>Ouverture du portail et du portillon 👇</b><br>
   (collez le vigik sur la pastille noire située entre le portail et le portillon)
 
   <div class="photo">
-    <img src="images_colisee/vigik_portail.jpg">
+    <img src="images_colisee/vigik_portail.jpg" alt="">
   </div>
 
   <b>Prendre la deuxième allée sur votre droite 👇</b>
 
   <div class="photo">
-    <img src="images_colisee/allee.jpg">
+    <img src="images_colisee/allee.jpg" alt="">
   </div>
 
   <b>La place de parking se situera sur votre droite 👇</b>
 
   <div class="photo">
-    <img src="images_colisee/parking.jpg">
+    <img src="images_colisee/parking.jpg" alt="">
   </div>
 
   <b>Numéros de la place privative : 33D - 115 👇</b>
 
   <div class="photo">
-    <img src="images_colisee/place_parking.jpg">
+    <img src="images_colisee/place_parking.jpg" alt="">
   </div>
 
   <b>Accès au bâtiment D 👇</b><br>
@@ -319,54 +319,54 @@
   flèche orange = bâtiment
 
   <div class="photo">
-    <img src="images_colisee/batiment_d_exterieur.jpg">
+    <img src="images_colisee/batiment_d_exterieur.jpg" alt="">
   </div>
 
   <b>Entrée du bâtiment D 👇</b>
 
   <div class="photo">
-    <img src="images_colisee/entree_batiment1.jpg">
+    <img src="images_colisee/entree_batiment1.jpg" alt="">
   </div>
 
   <div class="photo">
-    <img src="images_colisee/entree_batiment2.jpg">
+    <img src="images_colisee/entree_batiment2.jpg" alt="">
   </div>
 
   <b>Ouverture de la porte avec le badge 👇</b><br>
   (collez le vigik sur la pastille noire située à droite de la porte)
 
   <div class="photo">
-    <img src="images_colisee/badge_porte.jpg">
+    <img src="images_colisee/badge_porte.jpg" alt="">
   </div>
 
   <b>Montez jusqu'au 3ème étage et prenez à gauche 👇</b>
 
   <div class="photo">
-    <img src="images_colisee/escaliers.jpg">
+    <img src="images_colisee/escaliers.jpg" alt="">
   </div>
 
   <b>Le logement se situe au bout du couloir 👇</b>
 
   <div class="photo">
-    <img src="images_colisee/couloir.jpg">
+    <img src="images_colisee/couloir.jpg" alt="">
   </div>
 
   <b>Numéro d'appartement situé sur la porte 👇</b>
 
   <div class="photo">
-    <img src="images_colisee/porte_appartement.jpg">
+    <img src="images_colisee/porte_appartement.jpg" alt="">
   </div>
 
   <b>Clé plate pour la serrure principale 👇</b>
 
   <div class="photo">
-    <img src="images_colisee/cle_plate.jpg">
+    <img src="images_colisee/cle_plate.jpg" alt="">
   </div>
 
   <b>Clé ronde pour le verrou du haut 👇</b>
 
   <div class="photo">
-    <img src="images_colisee/cle_ronde.jpg">
+    <img src="images_colisee/cle_ronde.jpg" alt="">
   </div>
 
   <hr>
@@ -383,13 +383,13 @@
 
   <a class="btn"
      href="https://www.capbus.fr"
-     target="_blank">
+     target="_blank" rel="noopener noreferrer">
      🚌 Consulter Cap'Bus
   </a>
 
 </div>
 
-<div class="card section" id="fr-infos">
+<div class="card section" id="fr-infos" hidden>
 
   <h2>⚙️ Informations – Centre d'aide</h2>
 
@@ -406,11 +406,11 @@
   </p>
 
   <div class="photo">
-    <img src="images_colisee/poubelle1.jpg">
+    <img src="images_colisee/poubelle1.jpg" alt="">
   </div>
 
     <div class="photo">
-    <img src="images_colisee/poubelle2.jpg">
+    <img src="images_colisee/poubelle2.jpg" alt="">
   </div>
 
   <p>
@@ -421,7 +421,7 @@
 
   <a class="btn"
      href="https://maps.app.goo.gl/WS2Jq8gPz7cyMJCDA"
-     target="_blank">
+     target="_blank" rel="noopener noreferrer">
      📍 Localisation tri sélectif
   </a>
 
@@ -435,7 +435,7 @@
   </p>
 
   <div class="photo">
-    <img src="images_colisee/disjoncteur.jpg">
+    <img src="images_colisee/disjoncteur.jpg" alt="">
   </div>
 
   <hr>
@@ -448,11 +448,11 @@
   </p>
 
   <div class="photo">
-    <img src="images_colisee/vanne_eau.jpg">
+    <img src="images_colisee/vanne_eau.jpg" alt="">
   </div>
 
   <div class="photo">
-    <img src="images_colisee/vanne_position.jpg">
+    <img src="images_colisee/vanne_position.jpg" alt="">
   </div>
 
   <hr>
@@ -468,12 +468,12 @@
   </p>
 
   <div class="photo">
-    <img src="images_colisee/chauffe_eau.jpg">
+    <img src="images_colisee/chauffe_eau.jpg" alt="">
   </div>
 
 </div>
 
-<div class="card section" id="fr-sejour">
+<div class="card section" id="fr-sejour" hidden>
 
   <h2>📌 Consignes durant votre séjour</h2>
 
@@ -490,9 +490,7 @@
 </p>
 
 <div class="photo">
-    
-  <div class="photo">
-    <img src="images_colisee/interdiction_fumeur.png">
+    <img src="images_colisee/interdiction_fumeur.png" alt="">
   </div>
 
     <p>
@@ -504,7 +502,7 @@
   </p>
 
   <div class="photo">
-    <img src="images_colisee/interdiction_animaux.jpg">
+    <img src="images_colisee/interdiction_animaux.jpg" alt="">
   </div>
 
   <hr>
@@ -516,11 +514,11 @@
   </p>
 
   <div class="photo">
-    <img src="images_colisee/residence_calme.jpg">
+    <img src="images_colisee/residence_calme.jpg" alt="">
   </div>
 
 </div>
-<div class="card section" id="fr-plages">
+<div class="card section" id="fr-plages" hidden>
 
   <h2>🏖️ Accès plages</h2>
 
@@ -534,7 +532,7 @@
 
   <a class="btn"
      href="https://maps.app.goo.gl/fSMNB5dZnadcJ94f9"
-     target="_blank">
+     target="_blank" rel="noopener noreferrer">
      📍 Ouvrir Google Maps
   </a>
 
@@ -544,13 +542,13 @@
 
   <a class="btn"
      href="https://maps.app.goo.gl/E68VxdyPnVj3R5V26"
-     target="_blank">
+     target="_blank" rel="noopener noreferrer">
      📍 Ouvrir Google Maps
   </a>
 
 </div>
   
-<div class="card section" id="fr-evenements">
+<div class="card section" id="fr-evenements" hidden>
 
   <h2>🗞️ Actualités – Événements</h2>
 
@@ -564,45 +562,45 @@
 
   <a class="btn"
      href="https://www.lachainemeteo.com"
-     target="_blank">
+     target="_blank" rel="noopener noreferrer">
      🌤️ Consulter La Chaîne Météo
   </a>
 
   <hr>
 
-  <h3>🏖️ Tourisme & infos locales</h3>
+  <h3>🏖️ Tourisme &amp; infos locales</h3>
 
   <a class="btn"
      href="https://www.capdagde.com"
-     target="_blank">
+     target="_blank" rel="noopener noreferrer">
      📍 Office de tourisme Cap d'Agde
   </a>
 
   <a class="btn"
      href="https://www.capdagde.com/agenda"
-     target="_blank">
+     target="_blank" rel="noopener noreferrer">
      📅 Agenda des événements
   </a>
 
   <a class="btn"
      href="https://www.ville-agde.fr/agenda"
-     target="_blank">
+     target="_blank" rel="noopener noreferrer">
      🗓️ Agenda Ville d’Agde
   </a>
 
   <a class="btn"
      href="https://www.herault-tourisme.com"
-     target="_blank">
+     target="_blank" rel="noopener noreferrer">
      🌿 Hérault Tourisme
   </a>
 
   <hr>
 
-  <h3>🎉 Événements & congrès</h3>
+  <h3>🎉 Événements &amp; congrès</h3>
 
   <a class="btn"
      href="https://www.capdagde-congres.fr"
-     target="_blank">
+     target="_blank" rel="noopener noreferrer">
      🏛️ Cap d’Agde Congrès
   </a>
 
@@ -612,13 +610,13 @@
 
   <a class="btn"
      href="https://www.port-capdagde.com"
-     target="_blank">
+     target="_blank" rel="noopener noreferrer">
      🎥 Voir la webcam du port
   </a>
 
 </div>
 
-<div class="card section" id="fr-depart">
+<div class="card section" id="fr-depart" hidden>
 
   <h2>🚪 Modalités de départ</h2>
 
@@ -669,7 +667,7 @@
 
   <a class="btn"
      href="https://maps.app.goo.gl/t46grpyPzibVdFZM9"
-     target="_blank">
+     target="_blank" rel="noopener noreferrer">
      📍 Ouvrir Google Maps
   </a>
 
@@ -678,18 +676,18 @@
   <h3>3 - Photographies du point d'accueil</h3>
 
  <div class="photo">
-  <img src="images_colisee/conciergerie1.jpg">
+  <img src="images_colisee/conciergerie1.jpg" alt="">
 </div>
 
 <div class="photo">
-  <img src="images_colisee/conciergerie2.jpg">
+  <img src="images_colisee/conciergerie2.jpg" alt="">
 </div>
 
 </div>
 </div>
 
-<div id="lang-en" style="display:none">
-<div class="card section" id="en-intro">
+<div id="lang-en" hidden>
+<div class="card section" id="en-intro" hidden>
 
   <h2>📘 GUEST BOOK</h2>
 
@@ -721,7 +719,7 @@
 
 </div>
 
-<div class="card section" id="en-logement">
+<div class="card section" id="en-logement" hidden>
 
   <h2>🏠 The accommodation</h2>
 
@@ -740,7 +738,7 @@
     The accommodation is composed of:
   </p>
 
-  <ul style="text-align:left;">
+  <ul>
     <li>Entrance with 2 bunk beds</li>
     <li>Living room with sofa bed</li>
     <li>Equipped kitchen area</li>
@@ -753,38 +751,38 @@
   <hr>
 
   <h3>📸 Living room</h3>
-  <div class="photo"><img src="images_colisee/sejour1.jpg"></div>
-  <div class="photo"><img src="images_colisee/sejour2.jpg"></div>
-  <div class="photo"><img src="images_colisee/sejour3.jpg"></div>
-  <div class="photo"><img src="images_colisee/sejour4.jpg"></div>
-  <div class="photo"><img src="images_colisee/sejour5.jpg"></div>
+  <div class="photo"><img src="images_colisee/sejour1.jpg" alt=""></div>
+  <div class="photo"><img src="images_colisee/sejour2.jpg" alt=""></div>
+  <div class="photo"><img src="images_colisee/sejour3.jpg" alt=""></div>
+  <div class="photo"><img src="images_colisee/sejour4.jpg" alt=""></div>
+  <div class="photo"><img src="images_colisee/sejour5.jpg" alt=""></div>
 
   <h3>🍳 Kitchen</h3>
-  <div class="photo"><img src="images_colisee/cuisine1.jpg"></div>
-  <div class="photo"><img src="images_colisee/cuisine2.jpg"></div>
-  <div class="photo"><img src="images_colisee/cuisine3.jpg"></div>
+  <div class="photo"><img src="images_colisee/cuisine1.jpg" alt=""></div>
+  <div class="photo"><img src="images_colisee/cuisine2.jpg" alt=""></div>
+  <div class="photo"><img src="images_colisee/cuisine3.jpg" alt=""></div>
 
   <h3>🛏️ Mezzanine bedroom</h3>
   <p>Double bed 140 x 190</p>
-  <div class="photo"><img src="images_colisee/chambre1.jpg"></div>
-  <div class="photo"><img src="images_colisee/chambre2.jpg"></div>
+  <div class="photo"><img src="images_colisee/chambre1.jpg" alt=""></div>
+  <div class="photo"><img src="images_colisee/chambre2.jpg" alt=""></div>
 
   <h3>☀️ Loggia</h3>
-  <div class="photo"><img src="images_colisee/loggia.jpg"></div>
+  <div class="photo"><img src="images_colisee/loggia.jpg" alt=""></div>
 
   <h3>🚿 Bathroom</h3>
-  <div class="photo"><img src="images_colisee/sdb1.jpg"></div>
-  <div class="photo"><img src="images_colisee/sdb2.jpg"></div>
+  <div class="photo"><img src="images_colisee/sdb1.jpg" alt=""></div>
+  <div class="photo"><img src="images_colisee/sdb2.jpg" alt=""></div>
 
   <h3>🚗 Private parking</h3>
-  <div class="photo"><img src="images_colisee/parking1.jpg"></div>
+  <div class="photo"><img src="images_colisee/parking1.jpg" alt=""></div>
 
   <h3>🚲 Bicycle parking</h3>
-  <div class="photo"><img src="images_colisee/parking_velo.jpg"></div>
+  <div class="photo"><img src="images_colisee/parking_velo.jpg" alt=""></div>
 
 </div>
 
-<div class="card section" id="en-accueil">
+<div class="card section" id="en-accueil" hidden>
 
   <h2>🔑 Check-in information</h2>
 
@@ -819,7 +817,7 @@
 
   <a class="btn"
      href="https://maps.app.goo.gl/t46grpyPzibVdFZM9"
-     target="_blank">
+     target="_blank" rel="noopener noreferrer">
      📍 Open Google Maps
   </a>
 
@@ -828,23 +826,23 @@
   <h3>3 - Photos of the check-in point</h3>
 
   <div class="photo">
-    <img src="images_colisee/conciergerie1.jpg">
+    <img src="images_colisee/conciergerie1.jpg" alt="">
   </div>
 
   <div class="photo">
-    <img src="images_colisee/conciergerie2.jpg">
+    <img src="images_colisee/conciergerie2.jpg" alt="">
   </div>
 
 </div>
 
-<div class="card section" id="en-taxi">
+<div class="card section" id="en-taxi" hidden>
 
   <h2>🚖 Taxis - Ride services</h2>
 
   <h3>1 - VTC Confort 34</h3>
 
   <div class="photo">
-    <img src="images_colisee/vtcconfort.jpg">
+    <img src="images_colisee/vtcconfort.jpg" alt="">
   </div>
 
   <p>
@@ -858,7 +856,7 @@
   <h3>2 - Génie TAXI</h3>
 
   <div class="photo">
-    <img src="images_colisee/genietaxi.jpg">
+    <img src="images_colisee/genietaxi.jpg" alt="">
   </div>
 
   <p>
@@ -867,7 +865,7 @@
 
 </div>
 
-<div class="card section" id="en-acces">
+<div class="card section" id="en-acces" hidden>
 
   <h2>🏠 Access to the accommodation</h2>
 
@@ -894,7 +892,7 @@
 
   <a class="btn"
      href="https://maps.app.goo.gl/NGggttSMAHzW2q1N6"
-     target="_blank">
+     target="_blank" rel="noopener noreferrer">
      📍 Open Google Maps
   </a>
 
@@ -904,34 +902,34 @@
 
   <b>Le Colisée residence 👇</b>
   <div class="photo">
-    <img src="images_colisee/residence.jpg">
+    <img src="images_colisee/residence.jpg" alt="">
   </div>
 
   <b>Residence gate and pedestrian gate 👇</b>
   <div class="photo">
-    <img src="images_colisee/portail.jpg">
+    <img src="images_colisee/portail.jpg" alt="">
   </div>
 
   <b>How to open the gate 👇</b><br>
   (place the VIGIK on the black circle located between the main gate and the pedestrian gate)
 
   <div class="photo">
-    <img src="images_colisee/vigik_portail.jpg">
+    <img src="images_colisee/vigik_portail.jpg" alt="">
   </div>
 
   <b>Take the second alley on your right 👇</b>
   <div class="photo">
-    <img src="images_colisee/allee.jpg">
+    <img src="images_colisee/allee.jpg" alt="">
   </div>
 
   <b>The parking space will be on your right 👇</b>
   <div class="photo">
-    <img src="images_colisee/parking.jpg">
+    <img src="images_colisee/parking.jpg" alt="">
   </div>
 
   <b>Private parking numbers: 33D - 115 👇</b>
   <div class="photo">
-    <img src="images_colisee/place_parking.jpg">
+    <img src="images_colisee/place_parking.jpg" alt="">
   </div>
 
   <b>Access to building D 👇</b><br>
@@ -939,48 +937,48 @@
   orange arrow = building
 
   <div class="photo">
-    <img src="images_colisee/batiment_d_exterieur.jpg">
+    <img src="images_colisee/batiment_d_exterieur.jpg" alt="">
   </div>
 
   <b>Entrance to building D 👇</b>
   <div class="photo">
-    <img src="images_colisee/entree_batiment1.jpg">
+    <img src="images_colisee/entree_batiment1.jpg" alt="">
   </div>
 
   <div class="photo">
-    <img src="images_colisee/entree_batiment2.jpg">
+    <img src="images_colisee/entree_batiment2.jpg" alt="">
   </div>
 
   <b>Opening the door with the badge 👇</b><br>
   (place the VIGIK on the black circle on the right side of the door)
 
   <div class="photo">
-    <img src="images_colisee/badge_porte.jpg">
+    <img src="images_colisee/badge_porte.jpg" alt="">
   </div>
 
   <b>Go up to the 3rd floor and turn left 👇</b>
   <div class="photo">
-    <img src="images_colisee/escaliers.jpg">
+    <img src="images_colisee/escaliers.jpg" alt="">
   </div>
 
   <b>The accommodation is at the end of the corridor 👇</b>
   <div class="photo">
-    <img src="images_colisee/couloir.jpg">
+    <img src="images_colisee/couloir.jpg" alt="">
   </div>
 
   <b>Apartment number on the door 👇</b>
   <div class="photo">
-    <img src="images_colisee/porte_appartement.jpg">
+    <img src="images_colisee/porte_appartement.jpg" alt="">
   </div>
 
   <b>Flat key for the main lock 👇</b>
   <div class="photo">
-    <img src="images_colisee/cle_plate.jpg">
+    <img src="images_colisee/cle_plate.jpg" alt="">
   </div>
 
   <b>Round key for the upper lock 👇</b>
   <div class="photo">
-    <img src="images_colisee/cle_ronde.jpg">
+    <img src="images_colisee/cle_ronde.jpg" alt="">
   </div>
 
   <hr>
@@ -997,13 +995,13 @@
 
   <a class="btn"
      href="https://www.capbus.fr"
-     target="_blank">
+     target="_blank" rel="noopener noreferrer">
      🚌 View Cap’Bus website
   </a>
 
 </div>
 
-<div class="card section" id="en-infos">
+<div class="card section" id="en-infos" hidden>
 
   <h2>⚙️ Information – Help center</h2>
 
@@ -1020,11 +1018,11 @@
   </p>
 
   <div class="photo">
-    <img src="images_colisee/poubelle1.jpg">
+    <img src="images_colisee/poubelle1.jpg" alt="">
   </div>
 
   <div class="photo">
-    <img src="images_colisee/poubelle2.jpg">
+    <img src="images_colisee/poubelle2.jpg" alt="">
   </div>
 
   <p>
@@ -1035,7 +1033,7 @@
 
   <a class="btn"
      href="https://maps.app.goo.gl/WS2Jq8gPz7cyMJCDA"
-     target="_blank">
+     target="_blank" rel="noopener noreferrer">
      📍 Recycling location
   </a>
 
@@ -1049,7 +1047,7 @@
   </p>
 
   <div class="photo">
-    <img src="images_colisee/disjoncteur.jpg">
+    <img src="images_colisee/disjoncteur.jpg" alt="">
   </div>
 
   <hr>
@@ -1062,11 +1060,11 @@
   </p>
 
   <div class="photo">
-    <img src="images_colisee/vanne_eau.jpg">
+    <img src="images_colisee/vanne_eau.jpg" alt="">
   </div>
 
   <div class="photo">
-    <img src="images_colisee/vanne_position.jpg">
+    <img src="images_colisee/vanne_position.jpg" alt="">
   </div>
 
   <hr>
@@ -1082,12 +1080,12 @@
   </p>
 
   <div class="photo">
-    <img src="images_colisee/chauffe_eau.jpg">
+    <img src="images_colisee/chauffe_eau.jpg" alt="">
   </div>
 
 </div>
 
-<div class="card section" id="en-sejour">
+<div class="card section" id="en-sejour" hidden>
 
   <h2>📌 House rules during your stay</h2>
 
@@ -1104,7 +1102,7 @@
     </p>
 
     <div class="photo">
-      <img src="images_colisee/interdiction_fumeur.png">
+      <img src="images_colisee/interdiction_fumeur.png" alt="">
     </div>
 
     <p>
@@ -1116,7 +1114,7 @@
   </p>
 
   <div class="photo">
-    <img src="images_colisee/interdiction_animaux.jpg">
+    <img src="images_colisee/interdiction_animaux.jpg" alt="">
   </div>
 
   <hr>
@@ -1128,12 +1126,12 @@
   </p>
 
   <div class="photo">
-    <img src="images_colisee/residence_calme.jpg">
+    <img src="images_colisee/residence_calme.jpg" alt="">
   </div>
 
 </div>
 
-<div class="card section" id="en-plages">
+<div class="card section" id="en-plages" hidden>
 
   <h2>🏖️ Beach access</h2>
 
@@ -1147,7 +1145,7 @@
 
   <a class="btn"
      href="https://maps.app.goo.gl/fSMNB5dZnadcJ94f9"
-     target="_blank">
+     target="_blank" rel="noopener noreferrer">
      📍 Open Google Maps
   </a>
 
@@ -1157,13 +1155,13 @@
 
   <a class="btn"
      href="https://maps.app.goo.gl/E68VxdyPnVj3R5V26"
-     target="_blank">
+     target="_blank" rel="noopener noreferrer">
      📍 Open Google Maps
   </a>
 
 </div>
 
-<div class="card section" id="en-evenements">
+<div class="card section" id="en-evenements" hidden>
 
   <h2>🗞️ News – Events</h2>
 
@@ -1177,45 +1175,45 @@
 
   <a class="btn"
      href="https://www.lachainemeteo.com"
-     target="_blank">
+     target="_blank" rel="noopener noreferrer">
      🌤️ Check La Chaîne Météo
   </a>
 
   <hr>
 
-  <h3>🏖️ Tourism & local information</h3>
+  <h3>🏖️ Tourism &amp; local information</h3>
 
   <a class="btn"
      href="https://www.capdagde.com"
-     target="_blank">
+     target="_blank" rel="noopener noreferrer">
      📍 Cap d’Agde Tourist Office
   </a>
 
   <a class="btn"
      href="https://www.capdagde.com/agenda"
-     target="_blank">
+     target="_blank" rel="noopener noreferrer">
      📅 Events calendar
   </a>
 
   <a class="btn"
      href="https://www.ville-agde.fr/agenda"
-     target="_blank">
+     target="_blank" rel="noopener noreferrer">
      🗓️ City of Agde events calendar
   </a>
 
   <a class="btn"
      href="https://www.herault-tourisme.com"
-     target="_blank">
+     target="_blank" rel="noopener noreferrer">
      🌿 Hérault Tourism
   </a>
 
   <hr>
 
-  <h3>🎉 Events & conventions</h3>
+  <h3>🎉 Events &amp; conventions</h3>
 
   <a class="btn"
      href="https://www.capdagde-congres.fr"
-     target="_blank">
+     target="_blank" rel="noopener noreferrer">
      🏛️ Cap d’Agde Congress
   </a>
 
@@ -1225,13 +1223,13 @@
 
   <a class="btn"
      href="https://www.port-capdagde.com"
-     target="_blank">
+     target="_blank" rel="noopener noreferrer">
      🎥 View harbor webcam
   </a>
 
 </div>
 
-<div class="card section" id="en-depart">
+<div class="card section" id="en-depart" hidden>
 
   <h2>🚪 Check-out instructions</h2>
 
@@ -1282,7 +1280,7 @@
 
   <a class="btn"
      href="https://maps.app.goo.gl/t46grpyPzibVdFZM9"
-     target="_blank">
+     target="_blank" rel="noopener noreferrer">
      📍 Open Google Maps
   </a>
 
@@ -1291,18 +1289,18 @@
   <h3>4 - Photos of the check-in point</h3>
 
   <div class="photo">
-    <img src="images_colisee/conciergerie1.jpg">
+    <img src="images_colisee/conciergerie1.jpg" alt="">
   </div>
 
   <div class="photo">
-    <img src="images_colisee/conciergerie2.jpg">
+    <img src="images_colisee/conciergerie2.jpg" alt="">
   </div>
 
 </div>
 </div>
 
-<div id="lang-es" style="display:none">
-<div class="card section" id="es-intro">
+<div id="lang-es" hidden>
+<div class="card section" id="es-intro" hidden>
 
   <h2>📘 GUÍA DE ESTANCIA</h2>
 
@@ -1334,7 +1332,7 @@
 
 </div>
 
-<div class="card section" id="es-logement">
+<div class="card section" id="es-logement" hidden>
 
   <h2>🏠 El alojamiento</h2>
 
@@ -1353,7 +1351,7 @@
     El alojamiento se compone de:
   </p>
 
-  <ul style="text-align:left;">
+  <ul>
     <li>Entrada con 2 literas</li>
     <li>Salón con sofá cama</li>
     <li>Cocina equipada</li>
@@ -1366,38 +1364,38 @@
   <hr>
 
   <h3>📸 Salón</h3>
-  <div class="photo"><img src="images_colisee/sejour1.jpg"></div>
-  <div class="photo"><img src="images_colisee/sejour2.jpg"></div>
-  <div class="photo"><img src="images_colisee/sejour3.jpg"></div>
-  <div class="photo"><img src="images_colisee/sejour4.jpg"></div>
-  <div class="photo"><img src="images_colisee/sejour5.jpg"></div>
+  <div class="photo"><img src="images_colisee/sejour1.jpg" alt=""></div>
+  <div class="photo"><img src="images_colisee/sejour2.jpg" alt=""></div>
+  <div class="photo"><img src="images_colisee/sejour3.jpg" alt=""></div>
+  <div class="photo"><img src="images_colisee/sejour4.jpg" alt=""></div>
+  <div class="photo"><img src="images_colisee/sejour5.jpg" alt=""></div>
 
   <h3>🍳 Cocina</h3>
-  <div class="photo"><img src="images_colisee/cuisine1.jpg"></div>
-  <div class="photo"><img src="images_colisee/cuisine2.jpg"></div>
-  <div class="photo"><img src="images_colisee/cuisine3.jpg"></div>
+  <div class="photo"><img src="images_colisee/cuisine1.jpg" alt=""></div>
+  <div class="photo"><img src="images_colisee/cuisine2.jpg" alt=""></div>
+  <div class="photo"><img src="images_colisee/cuisine3.jpg" alt=""></div>
 
   <h3>🛏️ Dormitorio en altillo</h3>
   <p>Cama doble 140 x 190</p>
-  <div class="photo"><img src="images_colisee/chambre1.jpg"></div>
-  <div class="photo"><img src="images_colisee/chambre2.jpg"></div>
+  <div class="photo"><img src="images_colisee/chambre1.jpg" alt=""></div>
+  <div class="photo"><img src="images_colisee/chambre2.jpg" alt=""></div>
 
   <h3>☀️ Terraza (logia)</h3>
-  <div class="photo"><img src="images_colisee/loggia.jpg"></div>
+  <div class="photo"><img src="images_colisee/loggia.jpg" alt=""></div>
 
   <h3>🚿 Baño</h3>
-  <div class="photo"><img src="images_colisee/sdb1.jpg"></div>
-  <div class="photo"><img src="images_colisee/sdb2.jpg"></div>
+  <div class="photo"><img src="images_colisee/sdb1.jpg" alt=""></div>
+  <div class="photo"><img src="images_colisee/sdb2.jpg" alt=""></div>
 
   <h3>🚗 Aparcamiento privado</h3>
-  <div class="photo"><img src="images_colisee/parking1.jpg"></div>
+  <div class="photo"><img src="images_colisee/parking1.jpg" alt=""></div>
 
   <h3>🚲 Aparcamiento de bicicletas</h3>
-  <div class="photo"><img src="images_colisee/parking_velo.jpg"></div>
+  <div class="photo"><img src="images_colisee/parking_velo.jpg" alt=""></div>
 
 </div>
 
-<div class="card section" id="es-accueil">
+<div class="card section" id="es-accueil" hidden>
 
   <h2>🔑 Información de llegada</h2>
 
@@ -1432,7 +1430,7 @@
 
   <a class="btn"
      href="https://maps.app.goo.gl/t46grpyPzibVdFZM9"
-     target="_blank">
+     target="_blank" rel="noopener noreferrer">
      📍 Abrir Google Maps
   </a>
 
@@ -1441,23 +1439,23 @@
   <h3>3 - Fotos del punto de llegada</h3>
 
   <div class="photo">
-    <img src="images_colisee/conciergerie1.jpg">
+    <img src="images_colisee/conciergerie1.jpg" alt="">
   </div>
 
   <div class="photo">
-    <img src="images_colisee/conciergerie2.jpg">
+    <img src="images_colisee/conciergerie2.jpg" alt="">
   </div>
 
 </div>
 
-<div class="card section" id="es-taxi">
+<div class="card section" id="es-taxi" hidden>
 
   <h2>🚖 Taxis - VTC</h2>
 
   <h3>1 - VTC Confort 34</h3>
 
   <div class="photo">
-    <img src="images_colisee/vtcconfort.jpg">
+    <img src="images_colisee/vtcconfort.jpg" alt="">
   </div>
 
   <p>
@@ -1471,7 +1469,7 @@
   <h3>2 - Génie TAXI</h3>
 
   <div class="photo">
-    <img src="images_colisee/genietaxi.jpg">
+    <img src="images_colisee/genietaxi.jpg" alt="">
   </div>
 
   <p>
@@ -1480,7 +1478,7 @@
 
 </div>
 
-<div class="card section" id="es-acces">
+<div class="card section" id="es-acces" hidden>
 
   <h2>🏠 Acceso al alojamiento</h2>
 
@@ -1507,7 +1505,7 @@
 
   <a class="btn"
      href="https://maps.app.goo.gl/NGggttSMAHzW2q1N6"
-     target="_blank">
+     target="_blank" rel="noopener noreferrer">
      📍 Abrir Google Maps
   </a>
 
@@ -1517,34 +1515,34 @@
 
   <b>Residencia Le Colisée 👇</b>
   <div class="photo">
-    <img src="images_colisee/residence.jpg">
+    <img src="images_colisee/residence.jpg" alt="">
   </div>
 
   <b>Puerta de la residencia 👇</b>
   <div class="photo">
-    <img src="images_colisee/portail.jpg">
+    <img src="images_colisee/portail.jpg" alt="">
   </div>
 
   <b>Apertura de la puerta 👇</b><br>
   (coloca el VIGIK sobre el círculo negro situado entre la puerta principal y la peatonal)
 
   <div class="photo">
-    <img src="images_colisee/vigik_portail.jpg">
+    <img src="images_colisee/vigik_portail.jpg" alt="">
   </div>
 
   <b>Toma el segundo camino a la derecha 👇</b>
   <div class="photo">
-    <img src="images_colisee/allee.jpg">
+    <img src="images_colisee/allee.jpg" alt="">
   </div>
 
   <b>La plaza de aparcamiento estará a la derecha 👇</b>
   <div class="photo">
-    <img src="images_colisee/parking.jpg">
+    <img src="images_colisee/parking.jpg" alt="">
   </div>
 
   <b>Número de plaza privada: 33D - 115 👇</b>
   <div class="photo">
-    <img src="images_colisee/place_parking.jpg">
+    <img src="images_colisee/place_parking.jpg" alt="">
   </div>
 
   <b>Acceso al edificio D 👇</b><br>
@@ -1552,48 +1550,48 @@
   flecha naranja = edificio
 
   <div class="photo">
-    <img src="images_colisee/batiment_d_exterieur.jpg">
+    <img src="images_colisee/batiment_d_exterieur.jpg" alt="">
   </div>
 
   <b>Entrada del edificio D 👇</b>
   <div class="photo">
-    <img src="images_colisee/entree_batiment1.jpg">
+    <img src="images_colisee/entree_batiment1.jpg" alt="">
   </div>
 
   <div class="photo">
-    <img src="images_colisee/entree_batiment2.jpg">
+    <img src="images_colisee/entree_batiment2.jpg" alt="">
   </div>
 
   <b>Apertura de la puerta con el badge 👇</b><br>
   (coloca el VIGIK sobre el círculo negro a la derecha de la puerta)
 
   <div class="photo">
-    <img src="images_colisee/badge_porte.jpg">
+    <img src="images_colisee/badge_porte.jpg" alt="">
   </div>
 
   <b>Sube al 3º piso y gira a la izquierda 👇</b>
   <div class="photo">
-    <img src="images_colisee/escaliers.jpg">
+    <img src="images_colisee/escaliers.jpg" alt="">
   </div>
 
   <b>El alojamiento está al final del pasillo 👇</b>
   <div class="photo">
-    <img src="images_colisee/couloir.jpg">
+    <img src="images_colisee/couloir.jpg" alt="">
   </div>
 
   <b>Número del apartamento en la puerta 👇</b>
   <div class="photo">
-    <img src="images_colisee/porte_appartement.jpg">
+    <img src="images_colisee/porte_appartement.jpg" alt="">
   </div>
 
   <b>Llave plana para la cerradura principal 👇</b>
   <div class="photo">
-    <img src="images_colisee/cle_plate.jpg">
+    <img src="images_colisee/cle_plate.jpg" alt="">
   </div>
 
   <b>Llave redonda para la cerradura superior 👇</b>
   <div class="photo">
-    <img src="images_colisee/cle_ronde.jpg">
+    <img src="images_colisee/cle_ronde.jpg" alt="">
   </div>
 
   <hr>
@@ -1610,13 +1608,13 @@
 
   <a class="btn"
      href="https://www.capbus.fr"
-     target="_blank">
+     target="_blank" rel="noopener noreferrer">
      🚌 Ver sitio Cap’Bus
   </a>
 
 </div>
 
-<div class="card section" id="es-infos">
+<div class="card section" id="es-infos" hidden>
 
   <h2>⚙️ Información – Centro de ayuda</h2>
 
@@ -1633,11 +1631,11 @@
   </p>
 
   <div class="photo">
-    <img src="images_colisee/poubelle1.jpg">
+    <img src="images_colisee/poubelle1.jpg" alt="">
   </div>
 
   <div class="photo">
-    <img src="images_colisee/poubelle2.jpg">
+    <img src="images_colisee/poubelle2.jpg" alt="">
   </div>
 
   <p>
@@ -1648,7 +1646,7 @@
 
   <a class="btn"
      href="https://maps.app.goo.gl/WS2Jq8gPz7cyMJCDA"
-     target="_blank">
+     target="_blank" rel="noopener noreferrer">
      📍 Ubicación reciclaje
   </a>
 
@@ -1662,7 +1660,7 @@
   </p>
 
   <div class="photo">
-    <img src="images_colisee/disjoncteur.jpg">
+    <img src="images_colisee/disjoncteur.jpg" alt="">
   </div>
 
   <hr>
@@ -1675,11 +1673,11 @@
   </p>
 
   <div class="photo">
-    <img src="images_colisee/vanne_eau.jpg">
+    <img src="images_colisee/vanne_eau.jpg" alt="">
   </div>
 
   <div class="photo">
-    <img src="images_colisee/vanne_position.jpg">
+    <img src="images_colisee/vanne_position.jpg" alt="">
   </div>
 
   <hr>
@@ -1695,12 +1693,12 @@
   </p>
 
   <div class="photo">
-    <img src="images_colisee/chauffe_eau.jpg">
+    <img src="images_colisee/chauffe_eau.jpg" alt="">
   </div>
 
 </div>
 
-<div class="card section" id="es-sejour">
+<div class="card section" id="es-sejour" hidden>
 
   <h2>📌 Normas durante la estancia</h2>
 
@@ -1717,7 +1715,7 @@
     </p>
 
     <div class="photo">
-      <img src="images_colisee/interdiction_fumeur.png">
+      <img src="images_colisee/interdiction_fumeur.png" alt="">
     </div>
 
     <p>
@@ -1729,7 +1727,7 @@
   </p>
 
   <div class="photo">
-    <img src="images_colisee/interdiction_animaux.jpg">
+    <img src="images_colisee/interdiction_animaux.jpg" alt="">
   </div>
 
   <hr>
@@ -1741,12 +1739,12 @@
   </p>
 
   <div class="photo">
-    <img src="images_colisee/residence_calme.jpg">
+    <img src="images_colisee/residence_calme.jpg" alt="">
   </div>
 
 </div>
 
-<div class="card section" id="es-plages">
+<div class="card section" id="es-plages" hidden>
 
   <h2>🏖️ Acceso a las playas</h2>
 
@@ -1760,7 +1758,7 @@
 
   <a class="btn"
      href="https://maps.app.goo.gl/fSMNB5dZnadcJ94f9"
-     target="_blank">
+     target="_blank" rel="noopener noreferrer">
      📍 Abrir Google Maps
   </a>
 
@@ -1770,13 +1768,13 @@
 
   <a class="btn"
      href="https://maps.app.goo.gl/E68VxdyPnVj3R5V26"
-     target="_blank">
+     target="_blank" rel="noopener noreferrer">
      📍 Abrir Google Maps
   </a>
 
 </div>
 
-<div class="card section" id="es-evenements">
+<div class="card section" id="es-evenements" hidden>
 
   <h2>🗞️ Noticias – Eventos</h2>
 
@@ -1790,7 +1788,7 @@
 
   <a class="btn"
      href="https://www.lachainemeteo.com"
-     target="_blank">
+     target="_blank" rel="noopener noreferrer">
      🌤️ Consultar La Chaîne Météo
   </a>
 
@@ -1800,25 +1798,25 @@
 
   <a class="btn"
      href="https://www.capdagde.com"
-     target="_blank">
+     target="_blank" rel="noopener noreferrer">
      📍 Oficina de turismo de Cap d’Agde
   </a>
 
   <a class="btn"
      href="https://www.capdagde.com/agenda"
-     target="_blank">
+     target="_blank" rel="noopener noreferrer">
      📅 Agenda de eventos
   </a>
 
   <a class="btn"
      href="https://www.ville-agde.fr/agenda"
-     target="_blank">
+     target="_blank" rel="noopener noreferrer">
      🗓️ Agenda de la ciudad de Agde
   </a>
 
   <a class="btn"
      href="https://www.herault-tourisme.com"
-     target="_blank">
+     target="_blank" rel="noopener noreferrer">
      🌿 Turismo de Hérault
   </a>
 
@@ -1828,7 +1826,7 @@
 
   <a class="btn"
      href="https://www.capdagde-congres.fr"
-     target="_blank">
+     target="_blank" rel="noopener noreferrer">
      🏛️ Congresos Cap d’Agde
   </a>
 
@@ -1838,13 +1836,13 @@
 
   <a class="btn"
      href="https://www.port-capdagde.com"
-     target="_blank">
+     target="_blank" rel="noopener noreferrer">
      🎥 Ver webcam del puerto
   </a>
 
 </div>
 
-<div class="card section" id="es-depart">
+<div class="card section" id="es-depart" hidden>
 
   <h2>🚪 Instrucciones de salida</h2>
 
@@ -1895,7 +1893,7 @@
 
   <a class="btn"
      href="https://maps.app.goo.gl/t46grpyPzibVdFZM9"
-     target="_blank">
+     target="_blank" rel="noopener noreferrer">
      📍 Abrir Google Maps
   </a>
 
@@ -1904,11 +1902,11 @@
   <h3>4 - Fotos del punto de recepción</h3>
 
   <div class="photo">
-    <img src="images_colisee/conciergerie1.jpg">
+    <img src="images_colisee/conciergerie1.jpg" alt="">
   </div>
 
   <div class="photo">
-    <img src="images_colisee/conciergerie2.jpg">
+    <img src="images_colisee/conciergerie2.jpg" alt="">
   </div>
 
 </div>
@@ -1995,7 +1993,12 @@ function renderUI(lang) {
 function renderMenu(lang) {
   const select = document.getElementById("menu");
 
-  select.innerHTML = `<option value="">--</option>`;
+  select.replaceChildren();
+
+  const placeholder = document.createElement("option");
+  placeholder.value = "";
+  placeholder.textContent = "--";
+  select.appendChild(placeholder);
 
   menuTranslations[lang].forEach(item => {
     const opt = document.createElement("option");
@@ -2010,7 +2013,9 @@ function renderMenu(lang) {
 ========================= */
 function hideAllSections(lang) {
   document.querySelectorAll(`#lang-${lang} .section`)
-    .forEach(el => el.style.display = "none");
+    .forEach(el => {
+      el.hidden = true;
+    });
 }
 
 function showSection() {
@@ -2025,7 +2030,7 @@ function showSection() {
   if (!target || !target.closest(`#lang-${currentLang}`)) return;
 
   hideAllSections(currentLang);
-  target.style.display = "block";
+  target.hidden = false;
 
   localStorage.setItem("section", value);
 }
@@ -2037,21 +2042,25 @@ function setLang(lang) {
   if (!menuTranslations[lang]) return;
 
   currentLang = lang;
+  document.documentElement.lang = lang;
   localStorage.setItem("lang", lang);
 
   // hide all languages
   document.querySelectorAll("[id^='lang-']")
-    .forEach(el => el.style.display = "none");
+    .forEach(el => {
+      el.hidden = true;
+    });
 
   // show active language
   const active = document.getElementById("lang-" + lang);
-  if (active) active.style.display = "block";
+  if (active) active.hidden = false;
 
   renderMenu(lang);
   renderUI(lang);
 
   const menu = document.getElementById("menu");
   menu.value = "";
+  localStorage.removeItem("section");
 
   hideAllSections(lang);
 }
@@ -2071,7 +2080,8 @@ window.addEventListener("DOMContentLoaded", () => {
     if (el && el.closest(`#lang-${currentLang}`)) {
       const menu = document.getElementById("menu");
       menu.value = savedSection;
-      showSection();
+      el.hidden = false;
+      localStorage.setItem("section", savedSection);
     }
   }
 });
