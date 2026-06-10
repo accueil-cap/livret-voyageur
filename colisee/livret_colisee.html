@@ -578,19 +578,55 @@
 
 <script>
 function setLang(l){
-  document.getElementById("lang-fr").style.display = (l==="fr")?"block":"none";
-  document.getElementById("lang-en").style.display = (l==="en")?"block":"none";
-  document.getElementById("lang-es").style.display = (l==="es")?"block":"none";
+
+  // cacher langues
+  document.getElementById("lang-fr").style.display = "none";
+  document.getElementById("lang-en").style.display = "none";
+  document.getElementById("lang-es").style.display = "none";
+
+  // afficher langue choisie
+  document.getElementById("lang-" + l).style.display = "block";
+
+  // reset sections visibles
+  document.querySelectorAll(".section").forEach(s => s.style.display = "none");
 }
 
+// FR
 function showSection(){
   const value = document.getElementById("menu").value;
-  document.querySelectorAll(".section").forEach(s => s.style.display="none");
-  if(value) document.getElementById(value).style.display="block";
+
+  document.querySelectorAll("#lang-fr .section").forEach(s => s.style.display="none");
+
+  if(value){
+    document.getElementById(value).style.display="block";
+  }
 }
 
+// EN
+function showSectionEn(){
+  const value = document.getElementById("menu-en").value;
+
+  document.querySelectorAll("#lang-en .section").forEach(s => s.style.display="none");
+
+  if(value){
+    document.getElementById(value).style.display="block";
+  }
+}
+
+// ES
+function showSectionEs(){
+  const value = document.getElementById("menu-es").value;
+
+  document.querySelectorAll("#lang-es .section").forEach(s => s.style.display="none");
+
+  if(value){
+    document.getElementById(value).style.display="block";
+  }
+}
+
+// init
 window.onload = () => {
-  document.querySelectorAll(".section").forEach(s => s.style.display="none");
+  setLang("fr");
 };
 </script>
 
