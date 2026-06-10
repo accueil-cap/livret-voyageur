@@ -495,6 +495,7 @@
     <img src="images_colisee/interdiction_fumeur.png">
   </div>
 
+    <p>
     Il est possible de fumer uniquement sur la loggia.
   </p>
 
@@ -1106,6 +1107,7 @@
       <img src="images_colisee/interdiction_fumeur.png">
     </div>
 
+    <p>
     Smoking is only allowed on the loggia.
   </p>
 
@@ -1718,6 +1720,7 @@
       <img src="images_colisee/interdiction_fumeur.png">
     </div>
 
+    <p>
     Solo se permite fumar en la terraza (logia).
   </p>
 
@@ -1954,8 +1957,42 @@ const menuTranslations = {
   ]
 };
 
-function renderMenu(lang){
+/* ===== UI HEADER TRANSLATIONS ===== */
+const uiTranslations = {
+  fr: {
+    title: "📘 Livret de séjour",
+    subtitle: "Sélectionnez une section"
+  },
+  en: {
+    title: "📘 Guest Book",
+    subtitle: "Select a section"
+  },
+  es: {
+    title: "📘 Guía de estancia",
+    subtitle: "Selecciona una sección"
+  }
+};
 
+let currentLang = "fr";
+
+/* =========================
+   UI HEADER RENDER
+========================= */
+function renderUI(lang) {
+  const t = uiTranslations[lang];
+  if (!t) return;
+
+  const title = document.querySelector(".header h1");
+  const subtitle = document.querySelector(".header p");
+
+  if (title) title.textContent = t.title;
+  if (subtitle) subtitle.textContent = t.subtitle;
+}
+
+/* =========================
+   MENU RENDER
+========================= */
+function renderMenu(lang) {
   const select = document.getElementById("menu");
 
   select.innerHTML = `<option value="">--</option>`;
@@ -1967,45 +2004,77 @@ function renderMenu(lang){
     select.appendChild(opt);
   });
 }
-  
-function setLang(l){
 
-  document.getElementById("lang-fr").style.display = "none";
-  document.getElementById("lang-en").style.display = "none";
-  document.getElementById("lang-es").style.display = "none";
-
-  document.getElementById("lang-" + l).style.display = "block";
-
-  renderMenu(l); // 👈 IMPORTANT
-
-  document.getElementById("menu").value = "";
+/* =========================
+   SECTIONS HANDLING
+========================= */
+function hideAllSections(lang) {
+  document.querySelectorAll(`#lang-${lang} .section`)
+    .forEach(el => el.style.display = "none");
 }
-  
-  document.querySelectorAll("#lang-" + l + " .section")
-  .forEach(s => s.style.display = "block");
 
-  document.querySelectorAll(".section").forEach(s => s.style.display = "block");
+function showSection() {
+  const menu = document.getElementById("menu");
+  const value = menu.value;
 
-function showSection(){
+  if (!value) return;
 
-  const value = document.getElementById("menu").value;
-  const lang = document.querySelector("[id^='lang-']:not([style*='display: none'])")?.id;
+  const target = document.getElementById(value);
 
-  if(!lang) return;
+  // sécurité : doit appartenir à la langue active
+  if (!target || !target.closest(`#lang-${currentLang}`)) return;
 
-  // cache seulement les sections de la langue active
-  document.querySelectorAll("#" + lang + " .section")
-    .forEach(s => s.style.display = "none");
+  hideAllSections(currentLang);
+  target.style.display = "block";
 
-  if(value){
-    document.getElementById(value).style.display = "block";
+  localStorage.setItem("section", value);
+}
+
+/* =========================
+   LANGUAGE SWITCH
+========================= */
+function setLang(lang) {
+  if (!menuTranslations[lang]) return;
+
+  currentLang = lang;
+  localStorage.setItem("lang", lang);
+
+  // hide all languages
+  document.querySelectorAll("[id^='lang-']")
+    .forEach(el => el.style.display = "none");
+
+  // show active language
+  const active = document.getElementById("lang-" + lang);
+  if (active) active.style.display = "block";
+
+  renderMenu(lang);
+  renderUI(lang);
+
+  const menu = document.getElementById("menu");
+  menu.value = "";
+
+  hideAllSections(lang);
+}
+
+/* =========================
+   INIT
+========================= */
+window.addEventListener("DOMContentLoaded", () => {
+  const savedLang = localStorage.getItem("lang");
+  const savedSection = localStorage.getItem("section");
+
+  setLang(menuTranslations[savedLang] ? savedLang : "fr");
+
+  if (savedSection) {
+    const el = document.getElementById(savedSection);
+
+    if (el && el.closest(`#lang-${currentLang}`)) {
+      const menu = document.getElementById("menu");
+      menu.value = savedSection;
+      showSection();
+    }
   }
-}
-
-// init
-window.onload = () => {
-  setLang("fr");
-};
+});
 </script>
 
 </body>
