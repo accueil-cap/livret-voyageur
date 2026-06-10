@@ -197,11 +197,13 @@ html {
   font-size: 26px;
   font-weight: 800;
   margin: 0;
+  text-align: center;
 }
 
 .page-livret .header p {
   margin: 6px 0 0;
   color: #6b7280;
+  text-align: center;
 }
 
 /* Menu slection */
@@ -215,6 +217,7 @@ html {
   background: white;
   cursor: pointer;
   outline: none;
+  text-align: center;
 }
 
 /* Sections */
@@ -226,6 +229,7 @@ html {
   margin: 14px 0;
   box-shadow: 0 8px 22px rgba(0,0,0,0.06);
   animation: fade 0.25s ease;
+  text-align: center;
 }
 
 @keyframes fade {
@@ -238,12 +242,14 @@ html {
   font-size: 18px;
   font-weight: 800;
   margin-bottom: 10px;
+   text-align: center;
 }
 
 .page-livret h3 {
   font-size: 15px;
   font-weight: 700;
   margin-top: 18px;
+   text-align: center;
 }
 
 /* Texte */
@@ -252,11 +258,12 @@ html {
   font-size: 14px;
   line-height: 1.7;
   color: #374151;
+   text-align: center;
 }
 
 .page-livret ul {
   padding-left: 18px;
-  text-align: left;
+  text-align: center;
 }
 
 /* Boutons (maps + autres) */
@@ -270,11 +277,13 @@ html {
   font-weight: 600;
   border-radius: 10px;
   transition: 0.2s;
+   text-align: center;
 }
 
 .page-livret .btn:hover {
   background: #1d4ed8;
   transform: translateY(-2px);
+   text-align: center;
 }
 
 /* Liens Textes */
@@ -282,10 +291,12 @@ html {
   color: #2563eb;
   text-decoration: none;
   font-weight: 600;
+   text-align: center;
 }
 
 .page-livret a:hover {
   text-decoration: underline;
+   text-align: center;
 }
 
 /* Lignes séparation */
@@ -294,6 +305,7 @@ html {
   height: 1px;
   background: #e5e7eb;
   margin: 18px 0;
+   text-align: center;
 }
 
 
