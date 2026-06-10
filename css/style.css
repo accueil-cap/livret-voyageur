@@ -119,18 +119,21 @@ body {
 /* Menu avec liens */
 .page-keys .menu a {
   display: block;
-  padding: 10px;
-  margin: 6px auto;
-  width: fit-content;
+  padding: 8px 10px;
+  margin: 0;
   background: #f3f4f6;
   border-radius: 10px;
   text-decoration: none;
   color: #111827;
   font-weight: 600;
+  font-size: 13px;
+  line-height: 1.2;
+  transition: 0.2s;
 }
 
 .page-keys .menu a:hover {
-  background:#e5e7eb;
+  background: #e5e7eb;
+  transform: translateY(-1px);
 }
 
 /* PHOTOS POUR TOUS LES DOCUMENTS */
