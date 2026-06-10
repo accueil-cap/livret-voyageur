@@ -1958,30 +1958,11 @@ function showSection() {
 ========================= */
 
 function setLang(lang) {
-  currentLang = lang;
+  console.log("LANG:", lang);
 
-  // cacher tous les blocs langue
-  document.querySelectorAll("[id^='lang-']").forEach(el => {
-    el.hidden = true;
+  document.querySelectorAll(".section").forEach(el => {
+    el.hidden = false;
   });
-
-  // afficher langue active
-  const active = document.getElementById("lang-" + lang);
-  if (active) active.hidden = false;
-
-  // reconstruire menu
-  buildMenu(lang);
-
-  // reset select
-  const menu = document.getElementById("menu");
-  menu.value = "";
-
-  // cacher toutes les sections
-  hideAll(lang);
-
-  // afficher la première section (optionnel)
-  const first = document.querySelector(`#lang-${lang} .section`);
-  if (first) first.hidden = false;
 }
 
 /* =========================
