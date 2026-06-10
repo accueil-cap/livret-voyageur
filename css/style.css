@@ -145,11 +145,25 @@ body {
 /* =========================
   PAGES DES LIVRETS
 ========================= */
+/* Visibilité de sections */
+
+/* Par défaut : toutes les sections sont cachées */
 .section {
   display: none;
 }
 
+/* Section active = visible */
 .section.active {
+  display: block;
+}
+
+/* Langues : sécurité */
+[id^="lang-"] {
+  display: none;
+}
+
+/* Langue visible (JS la met en block) */
+[id^="lang-"][style*="display: block"] {
   display: block;
 }
 
