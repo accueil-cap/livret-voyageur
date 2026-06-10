@@ -25,556 +25,1228 @@
   <!-- =========================
        FRANÇAIS
   ========================= -->
-  <div id="lang-fr">
+  <div class="header">
+    <h1>📘 Livret de séjour</h1>
+    <p>Sélectionnez une section</p>
+  </div>
 
-    <div class="header">
-      <h1>📘 Livret de séjour</h1>
-      <p>Sélectionnez une section</p>
-    </div>
+  <!-- =========================
+       MENU DÉROULANT
+  ========================= -->
+  <div class="card">
 
-    <div class="card">
-      <select id="menu" onchange="showSection()">
-        <option value="">-- Choisir une section --</option>
-        <option value="intro">1 - Présentation</option>
-        <option value="logement">2 - Le Logement</option>
-        <option value="accueil">3 - Modalités d'Accueil</option>
-        <option value="taxi">4 - Taxis - VTC</option>
-        <option value="acces">5 - Accès au logement</option>
-        <option value="infos">6 - Informations utiles - Centre d'aide</option>
-        <option value="sejour">7 - Consignes durant votre Séjour</option>
-        <option value="plages">8 - Plages</option>
-        <option value="evenements">9 - Actualités - Evènements</option>
-        <option value="depart">10 - Modalités de Départ</option>
-      </select>
-    </div>
-
-    <!-- INTRO -->
-    <div class="card section" id="intro">
-      <h2>📘 LIVRET DE SEJOUR</h2>
-      <p>Ce livret de séjour a pour objectif de vous informer sur votre séjour au Cap d'Agde. Pour les plus chanceux, c'est les vacances !</p>
-      <p>Ce guide vous permettra d’arriver sereinement au point d’accueil puis à votre hébergement.</p>
-      <p>La conciergerie permet l’échange de clés 24h/24 et 7j/7 via Bookeys.fr.</p>
-      <p>⚠️ Demandez les codes d’accès au propriétaire.</p>
-      <p><b>Bonne visite ! ☀️</b></p>
-    </div>
-
-    <!-- LOGEMENT -->
-    <div class="card section" id="logement">
-      <h2>🏠 Le logement</h2>
-      <p>Appartement de 36 m² au 3ème étage avec parking privé.</p>
-      <p>Plage à 850 m, proche commerces et activités.</p>
-
-      <p>Composition :</p>
-      <ul style="text-align:left;">
-        <li>Entrée avec lits superposés</li>
-        <li>Séjour canapé convertible</li>
-        <li>Cuisine équipée</li>
-        <li>Mezzanine lit double</li>
-        <li>Salle de bain</li>
-        <li>Loggia</li>
-        <li>Parking</li>
-      </ul>
-
-      <hr>
-      <h3>📸 Séjour</h3>
-      <div class="photo"><img src="images_colisee/sejour1.jpg"></div>
-      <div class="photo"><img src="images_colisee/sejour2.jpg"></div>
-      <div class="photo"><img src="images_colisee/sejour3.jpg"></div>
-      <div class="photo"><img src="images_colisee/sejour4.jpg"></div>
-      <div class="photo"><img src="images_colisee/sejour5.jpg"></div>
-
-      <h3>🍳 Cuisine</h3>
-      <div class="photo"><img src="images_colisee/cuisine1.jpg"></div>
-      <div class="photo"><img src="images_colisee/cuisine2.jpg"></div>
-      <div class="photo"><img src="images_colisee/cuisine3.jpg"></div>
-
-      <h3>🛏️ Chambre mezzanine</h3>
-      <p>Lit double 140 x 190</p>
-      <div class="photo"><img src="images_colisee/chambre1.jpg"></div>
-      <div class="photo"><img src="images_colisee/chambre2.jpg"></div>
-
-      <h3>☀️ Loggia</h3>
-      <div class="photo"><img src="images_colisee/loggia.jpg"></div>
-
-      <h3>🚿 Salle de bain</h3>
-      <div class="photo"><img src="images_colisee/sdb1.jpg"></div>
-      <div class="photo"><img src="images_colisee/sdb2.jpg"></div>
-
-      <h3>🚗 Parking</h3>
-      <div class="photo"><img src="images_colisee/parking1.jpg"></div>
-
-      <h3>🚲 Vélo</h3>
-      <div class="photo"><img src="images_colisee/parking_velo.jpg"></div>
-    </div>
-
-    <!-- ACCUEIL -->
-    <div class="card section" id="accueil">
-      <h2>🔑 Modalités d'accueil</h2>
-      <p>⚠️ Demandez les codes d’accès pour récupérer les clés.</p>
-
-      <h3>Arrivée</h3>
-      <p><b>À partir de 16h</b></p>
-      <p>Arrivée autonome possible 24h/24.</p>
-
-      <h3>Adresse point d’accueil</h3>
-      <p>Conciergerie du Cap d'Agde<br>Impasse des Sargasses<br>34300 Cap d'Agde</p>
-
-      <a class="btn" href="https://maps.app.goo.gl/t46grpyPzibVdFZM9" target="_blank">📍 Google Maps</a>
-
-      <h3>Photos</h3>
-      <div class="photo"><img src="images_colisee/conciergerie1.jpg"></div>
-      <div class="photo"><img src="images_colisee/conciergerie2.jpg"></div>
-    </div>
-
-    <!-- TAXI -->
-    <div class="card section" id="taxi">
-      <h2>🚖 Taxis - VTC</h2>
-
-      <h3>VTC Confort 34</h3>
-      <div class="photo"><img src="images_colisee/vtcconfort.jpg"></div>
-      <p>📞 06 35 24 53 75<br>✉️ contact@vtc-confort34.fr<br>🌐 www.vtc-confort34.fr</p>
-
-      <h3>Génie TAXI</h3>
-      <div class="photo"><img src="images_colisee/genietaxi.jpg"></div>
-      <p>📞 06 95 13 78 77</p>
-    </div>
-
-    <!-- ACCES -->
-    <div class="card section" id="acces">
-      <h2>🏠 Accès logement</h2>
-      <p>Récupérez les clés avant arrivée.</p>
-
-      <h3>Adresse</h3>
-      <p>7 rue Sarret de Coussergues<br>34300 Cap d'Agde</p>
-
-      <a class="btn" href="https://maps.app.goo.gl/NGggttSMAHzW2q1N6" target="_blank">📍 Google Maps</a>
-    </div>
-
-    <!-- INFOS -->
-    <div class="card section" id="infos">
-      <h2>⚙️ Infos</h2>
-      <p>Poubelles, électricité, eau, chauffe-eau, etc.</p>
-    </div>
-
-    <!-- SEJOUR -->
-    <div class="card section" id="sejour">
-      <h2>📌 Consignes</h2>
-      <p>🚭 Non fumeur / 🐾 animaux interdits / 🔇 calme après 22h</p>
-    </div>
-
-    <!-- PLAGES -->
-    <div class="card section" id="plages">
-      <h2>🏖️ Plages</h2>
-      <a class="btn" href="https://maps.app.goo.gl/fSMNB5dZnadcJ94f9">Plage Richelieu</a>
-      <a class="btn" href="https://maps.app.goo.gl/E68VxdyPnVj3R5V26">Plage du Môle</a>
-    </div>
-
-    <!-- EVENEMENTS -->
-    <div class="card section" id="evenements">
-      <h2>🗞️ Infos locales</h2>
-      <a class="btn" href="https://www.lachainemeteo.com">Météo</a>
-      <a class="btn" href="https://www.capdagde.com">Tourisme</a>
-    </div>
-
-    <!-- DEPART -->
-    <div class="card section" id="depart">
-      <h2>🚪 Départ</h2>
-      <p>Départ avant 10h + ménage + retour des clés.</p>
-    </div>
+    <select id="menu" onchange="showSection()">
+      <option value="">-- Choisir une section --</option>
+      <option value="intro">1 - Présentation</option>
+      <option value="logement">2 - Le Logement</option>
+      <option value="accueil">3 - Modalités d'Accueil</option>
+      <option value="taxi">4 - Taxis - VTC</option>
+      <option value="acces">5 - Accès au logement</option>
+      <option value="infos">6 - Informations utiles - Centre d'aide</option>
+      <option value="sejour">7 - Consignes durant votre Séjour</option>
+      <option value="plages">8 - Plages</option>
+      <option value="evenements">9 - Actualités - Evènements</option>
+      <option value="depart">10 - Modalités de Départ</option>
+    </select>
 
   </div>
+
+  <!-- =========================
+       SECTIONS
+  ========================= -->
+
+<div class="card section" id="intro">
+  <h2>📘 LIVRET DE SEJOUR</h2>
+
+  <p>
+    Ce livret de séjour a pour objectif de vous informer sur votre séjour au Cap d'Agde.
+    Pour les plus chanceux, c'est les vacances !
+  </p>
+
+  <p>
+    Ce petit guide vous permettra d’arriver en toute sérénité jusqu’au Point d’Accueil
+    de la Conciergerie du Cap d'Agde puis à votre hébergement.
+  </p>
+
+  <p>
+    La Conciergerie du Cap d'Agde a été créée dans le but d’aider les propriétaires,
+    voyageurs, prestataires, familles et amis grâce au service <b>Bookeys.fr</b>,
+    permettant l’échange de clés 24h/24 et 7j/7 en toute sécurité.
+  </p>
+
+  <p>
+    ⚠️ Pensez à bien demander au propriétaire ou gestionnaire les codes d'accès pour récupérer les clés,
+    ces informations ne sont pas communiquées dans ce livret.
+  </p>
+
+  <p>
+    <b>Bonne visite ! ☀️</b>
+  </p>
+</div>
+
+<div class="card section" id="logement">
+
+  <h2>🏠 Le logement</h2>
+
+  <p>
+    Appartement au Cap d'Agde de 36 m² situé au 3ème et dernier étage
+    d'une résidence sécurisée avec parking privé.
+  </p>
+
+  <p>
+    La plage se situe à environ 850 mètres.
+    Le logement est proche des commerces, du port,
+    du parc d'attractions et des principales activités de la station.
+  </p>
+
+  <p>
+    Le logement se compose :
+  </p>
+
+  <ul style="text-align:left;">
+    <li>Entrée avec 2 lits superposés</li>
+    <li>Séjour avec canapé convertible</li>
+    <li>Coin cuisine équipé</li>
+    <li>Chambre en mezzanine avec lit double 140x190</li>
+    <li>Salle de bain avec WC</li>
+    <li>Loggia</li>
+    <li>Parking privatif</li>
+  </ul>
+
+  <hr>
+
+  <h3>📸 Séjour</h3>
+ <div class="photo">
+  <img src="images_colisee/sejour1.jpg">
+</div>
+   <div class="photo">
+  <img src="images_colisee/sejour2.jpg">
+</div>
+   <div class="photo">
+  <img src="images_colisee/sejour3.jpg">
+</div>
+   <div class="photo">
+  <img src="images_colisee/sejour4.jpg">
+</div>
+   <div class="photo">
+  <img src="images_colisee/sejour5.jpg">
+</div>
+
+  <h3>🍳 Cuisine</h3>
+ <div class="photo">
+  <img src="images_colisee/cuisine1.jpg">
+</div>
+   <div class="photo">
+  <img src="images_colisee/cuisine2.jpg">
+</div>
+     <div class="photo">
+  <img src="images_colisee/cuisine3.jpg">
+</div>
+
+  <h3>🛏️ Chambre mezzanine</h3>
+  <p>Lit double 140 x 190</p>
+ <div class="photo">
+  <img src="images_colisee/chambre1.jpg">
+</div>
+   <div class="photo">
+  <img src="images_colisee/chambre2.jpg">
+</div>
+
+  <h3>☀️ Loggia</h3>
+   <div class="photo">
+  <img src="images_colisee/loggia.jpg">
+</div>
+
+  <h3>🚿 Salle de bain</h3>
+   <div class="photo">
+  <img src="images_colisee/sdb1.jpg">
+</div>
+     <div class="photo">
+  <img src="images_colisee/sdb2.jpg">
+</div>
+
+  <h3>🚗 Parking privatif</h3>
+     <div class="photo">
+  <img src="images_colisee/parking1.jpg">
+</div>
+
+  <h3>🚲 Parking à vélos</h3>
+     <div class="photo">
+  <img src="images_colisee/parking_velo.jpg">
+</div>
+
+</div>
+
+<div class="card section" id="accueil">
+
+  <h2>🔑 Modalités d'accueil</h2>
+
+  <p>
+    ⚠️ Pensez à bien demander au propriétaire ou gestionnaire les codes d'accès
+    pour récupérer les clés. Ces informations ne sont pas communiquées dans ce livret.
+  </p>
+
+  <hr>
+
+  <h3>1 - Heure d'arrivée</h3>
+
+  <p>
+    <b>À partir de 16h</b>
+  </p>
+
+  <p>
+    Système de récupération autonome des clés avec possibilité d'arriver de nuit,
+    n'importe quel jour de la semaine.
+  </p>
+
+  <hr>
+
+  <h3>2 - Adresse du point d'accueil pour récupérer les clés</h3>
+
+  <p>
+    Conciergerie du Cap d'Agde<br>
+    Impasse des Sargasses<br>
+    34300 Cap d'Agde<br>
+    (Résidence Amoureva)
+  </p>
+
+  <a class="btn"
+     href="https://maps.app.goo.gl/t46grpyPzibVdFZM9"
+     target="_blank">
+     📍 Ouvrir Google Maps
+  </a>
+
+  <hr>
+
+  <h3>3 - Photographies du point d'accueil</h3>
+
+ <div class="photo">
+  <img src="images_colisee/conciergerie1.jpg">
+</div>
+
+<div class="photo">
+  <img src="images_colisee/conciergerie2.jpg">
+</div>
+
+</div>
+
+<div class="card section" id="taxi">
+
+  <h2>🚖 Taxis - VTC</h2>
+
+  <h3>1 - VTC Confort 34</h3>
+
+  <div class="photo">
+    <img src="images_colisee/vtcconfort.jpg">
+  </div>
+
+  <p>
+    📞 06 35 24 53 75<br>
+    ✉️ contact@vtc-confort34.fr<br>
+    🌐 www.vtc-confort34.fr
+  </p>
+
+  <hr>
+
+  <h3>2 - Génie TAXI</h3>
+
+  <div class="photo">
+    <img src="images_colisee/genietaxi.jpg">
+  </div>
+
+  <p>
+    📞 06 95 13 78 77
+  </p>
+
+</div>
+
+<div class="card section" id="acces">
+
+  <h2>🏠 Accès à l'hébergement</h2>
+
+  <p>
+    ⚠️ Pensez à bien récupérer les clés avant de vous rendre à la résidence.
+    Les informations concernant la récupération des clés sont disponibles dans
+    la rubrique <b>"Modalités d'accueil"</b>.
+  </p>
+
+  <hr>
+
+  <h3>1 - Adresse du logement</h3>
+
+  <p>
+    7 rue Sarret de Coussergues<br>
+    34300 Cap d'Agde<br><br>
+
+    Parking privatif : 115 / D33<br><br>
+
+    Résidence : Le Colisée<br>
+    Bâtiment : D<br>
+    3ème étage<br>
+    Appartement : 33
+  </p>
+
+  <a class="btn"
+     href="https://maps.app.goo.gl/NGggttSMAHzW2q1N6"
+     target="_blank">
+     📍 Ouvrir Google Maps
+  </a>
+
+  <hr>
+
+  <h3>2 - Photographies d'accès</h3>
+
+  <b>Résidence Le Colisée 👇</b>
+  <div class="photo">
+    <img src="images_colisee/residence.jpg">
+  </div>
+
+  <b>Portail et portillon de la résidence 👇</b>
+  <div class="photo">
+    <img src="images_colisee/portail.jpg">
+  </div>
+
+  <b>Ouverture du portail et du portillon 👇</b><br>
+  (collez le vigik sur la pastille noire située entre le portail et le portillon)
+
+  <div class="photo">
+    <img src="images_colisee/vigik_portail.jpg">
+  </div>
+
+  <b>Prendre la deuxième allée sur votre droite 👇</b>
+
+  <div class="photo">
+    <img src="images_colisee/allee.jpg">
+  </div>
+
+  <b>La place de parking se situera sur votre droite 👇</b>
+
+  <div class="photo">
+    <img src="images_colisee/parking.jpg">
+  </div>
+
+  <b>Numéros de la place privative : 33D - 115 👇</b>
+
+  <div class="photo">
+    <img src="images_colisee/place_parking.jpg">
+  </div>
+
+  <b>Accès au bâtiment D 👇</b><br>
+  flèche jaune = parking<br>
+  flèche orange = bâtiment
+
+  <div class="photo">
+    <img src="images_colisee/batiment_d_exterieur.jpg">
+  </div>
+
+  <b>Entrée du bâtiment D 👇</b>
+
+  <div class="photo">
+    <img src="images_colisee/entree_batiment1.jpg">
+  </div>
+
+  <div class="photo">
+    <img src="images_colisee/entree_batiment2.jpg">
+  </div>
+
+  <b>Ouverture de la porte avec le badge 👇</b><br>
+  (collez le vigik sur la pastille noire située à droite de la porte)
+
+  <div class="photo">
+    <img src="images_colisee/badge_porte.jpg">
+  </div>
+
+  <b>Montez jusqu'au 3ème étage et prenez à gauche 👇</b>
+
+  <div class="photo">
+    <img src="images_colisee/escaliers.jpg">
+  </div>
+
+  <b>Le logement se situe au bout du couloir 👇</b>
+
+  <div class="photo">
+    <img src="images_colisee/couloir.jpg">
+  </div>
+
+  <b>Numéro d'appartement situé sur la porte 👇</b>
+
+  <div class="photo">
+    <img src="images_colisee/porte_appartement.jpg">
+  </div>
+
+  <b>Clé plate pour la serrure principale 👇</b>
+
+  <div class="photo">
+    <img src="images_colisee/cle_plate.jpg">
+  </div>
+
+  <b>Clé ronde pour le verrou du haut 👇</b>
+
+  <div class="photo">
+    <img src="images_colisee/cle_ronde.jpg">
+  </div>
+
+  <hr>
+
+  <h3>3 - Arrêts de bus les plus proches</h3>
+
+  <p>
+    <b>Ligne 3</b><br><br>
+
+    Arrêts de bus :<br>
+    • Mont Saint Martin<br>
+    • Les Nautiles
+  </p>
+
+  <a class="btn"
+     href="https://www.capbus.fr"
+     target="_blank">
+     🚌 Consulter Cap'Bus
+  </a>
+
+</div>
+
+<div class="card section" id="infos">
+
+  <h2>⚙️ Informations – Centre d'aide</h2>
+
+  <p>
+    Retrouvez ici les éléments essentiels pour le bon fonctionnement du logement.
+  </p>
+
+  <hr>
+
+  <h3>1 - Local poubelle</h3>
+
+  <p>
+    Situé à côté du portail de la résidence.
+  </p>
+
+  <div class="photo">
+    <img src="images_colisee/poubelle1.jpg">
+  </div>
+
+    <div class="photo">
+    <img src="images_colisee/poubelle2.jpg">
+  </div>
+
+  <p>
+    ♻️ Adresse pour le tri sélectif :<br>
+    2 rue Volvire de Brassac<br>
+    34300 Cap d'Agde
+  </p>
+
+  <a class="btn"
+     href="https://maps.app.goo.gl/WS2Jq8gPz7cyMJCDA"
+     target="_blank">
+     📍 Localisation tri sélectif
+  </a>
+
+  <hr>
+
+  <h3>2 - Disjoncteur électrique</h3>
+
+  <p>
+    Il est situé à gauche en entrant dans l'appartement.<br>
+    Pour un bon fonctionnement, mettez-le sur la position <b>"I"</b>.
+  </p>
+
+  <div class="photo">
+    <img src="images_colisee/disjoncteur.jpg">
+  </div>
+
+  <hr>
+
+  <h3>3 - Vanne d'arrêt d'eau</h3>
+
+  <p>
+    La vanne se situe derrière le compteur d'eau dans le meuble sous évier.
+    Elle doit être positionnée parallèlement à la canalisation.
+  </p>
+
+  <div class="photo">
+    <img src="images_colisee/vanne_eau.jpg">
+  </div>
+
+  <div class="photo">
+    <img src="images_colisee/vanne_position.jpg">
+  </div>
+
+  <hr>
+
+  <h3>4 - Chauffe-eau électrique</h3>
+
+  <p>
+    Situé dans la cuisine. Il se met en route une fois le disjoncteur activé.
+  </p>
+
+  <p>
+    Pour vérifier son fonctionnement, regardez si le panneau d’affichage est allumé.
+  </p>
+
+  <div class="photo">
+    <img src="images_colisee/chauffe_eau.jpg">
+  </div>
+
+</div>
+
+<div class="card section" id="sejour">
+
+  <h2>📌 Consignes durant votre séjour</h2>
+
+  <p>
+    Merci de respecter ces quelques règles pour garantir un séjour agréable pour tous.
+  </p>
+
+  <hr>
+
+  <h3>1 - Dans le logement</h3>
+
+  <p>
+    🚭 Logement non fumeur.<br><br>
+    
+  <div class="photo">
+    <img src="images_colisee/interdiction_fumeur.png">
+  </div>
+
+    Il est possible de fumer uniquement sur la loggia.
+  </p>
+
+  <p>
+    🐾 Les animaux ne sont pas admis à l’intérieur du logement.
+  </p>
+
+  <div class="photo">
+    <img src="images_colisee/interdiction_animaux.jpg">
+  </div>
+
+  <hr>
+
+  <h3>2 - Dans la résidence</h3>
+
+  <p>
+    🔇 Merci de respecter le calme de la résidence, notamment après 22h.
+  </p>
+
+  <div class="photo">
+    <img src="images_colisee/residence_calme.jpg">
+  </div>
+
+</div>
+<div class="card section" id="plages">
+
+  <h2>🏖️ Accès plages</h2>
+
+  <p>
+    Voici les plages les plus proches du logement.
+  </p>
+
+  <hr>
+
+  <h3>Plage Richelieu</h3>
+
+  <a class="btn"
+     href="https://maps.app.goo.gl/fSMNB5dZnadcJ94f9"
+     target="_blank">
+     📍 Ouvrir Google Maps
+  </a>
+
+  <hr>
+
+  <h3>Plage du Môle</h3>
+
+  <a class="btn"
+     href="https://maps.app.goo.gl/E68VxdyPnVj3R5V26"
+     target="_blank">
+     📍 Ouvrir Google Maps
+  </a>
+
+</div>
+  
+<div class="card section" id="evenements">
+
+  <h2>🗞️ Actualités – Événements</h2>
+
+  <p>
+    Retrouvez ici les principales sources d’informations utiles pendant votre séjour.
+  </p>
+
+  <hr>
+
+  <h3>🌦️ Météo</h3>
+
+  <a class="btn"
+     href="https://www.lachainemeteo.com"
+     target="_blank">
+     🌤️ Consulter La Chaîne Météo
+  </a>
+
+  <hr>
+
+  <h3>🏖️ Tourisme & infos locales</h3>
+
+  <a class="btn"
+     href="https://www.capdagde.com"
+     target="_blank">
+     📍 Office de tourisme Cap d'Agde
+  </a>
+
+  <a class="btn"
+     href="https://www.capdagde.com/agenda"
+     target="_blank">
+     📅 Agenda des événements
+  </a>
+
+  <a class="btn"
+     href="https://www.ville-agde.fr/agenda"
+     target="_blank">
+     🗓️ Agenda Ville d’Agde
+  </a>
+
+  <a class="btn"
+     href="https://www.herault-tourisme.com"
+     target="_blank">
+     🌿 Hérault Tourisme
+  </a>
+
+  <hr>
+
+  <h3>🎉 Événements & congrès</h3>
+
+  <a class="btn"
+     href="https://www.capdagde-congres.fr"
+     target="_blank">
+     🏛️ Cap d’Agde Congrès
+  </a>
+
+  <hr>
+
+  <h3>📷 Webcam du port</h3>
+
+  <a class="btn"
+     href="https://www.port-capdagde.com"
+     target="_blank">
+     🎥 Voir la webcam du port
+  </a>
+
+</div>
+
+<div class="card section" id="depart">
+
+  <h2>🚪 Modalités de départ</h2>
+
+  <p>
+    Toute bonne chose a malheureusement une fin… Voici les étapes à suivre pour votre départ.
+  </p>
+
+  <hr>
+
+  <h3>⏰ 1 - Heure de départ</h3>
+
+  <p>
+    Départ avant <b>10h</b>.<br><br>
+
+    Le système de remise des clés est autonome, avec possibilité de départ à toute heure, même de nuit.<br><br>
+
+    ⚠️ Les codes de retour des clés sont les mêmes qu’à l’arrivée.<br><br>
+
+    En cas d’oubli, merci de contacter le propriétaire ou gestionnaire.
+  </p>
+
+  <hr>
+
+  <h3>🧹 2 - Démarches à effectuer</h3>
+
+  <p>
+    ✔️ Vider et dégivrer le réfrigérateur<br>
+    ✔️ Laver et ranger la vaisselle<br>
+    ✔️ Remettre le mobilier en place<br>
+    ✔️ Vider les poubelles<br>
+    ✔️ Nettoyer les surfaces<br>
+    ✔️ Ne pas couper l’électricité, l’eau et le gaz<br>
+    ✔️ Envoyer des photos du logement (séjour, cuisine, chambre, salle de bain, etc.)<br>
+    ✔️ Fermer fenêtres et volets<br>
+    ✔️ Déposer les clés au Point d’Accueil et envoyer une photo des clés au gestionnaire
+  </p>
+
+  <hr>
+
+  <h3>📍 3 - Point d’Accueil</h3>
+
+  <p>
+    Conciergerie du Cap d'Agde<br>
+    Impasse des Sargasses<br>
+    34300 Cap d'Agde<br>
+    (Résidence Amoureva)
+  </p>
+
+  <a class="btn"
+     href="https://maps.app.goo.gl/t46grpyPzibVdFZM9"
+     target="_blank">
+     📍 Ouvrir Google Maps
+  </a>
+
+  <hr>
+
+  <h3>3 - Photographies du point d'accueil</h3>
+
+ <div class="photo">
+  <img src="images_colisee/conciergerie1.jpg">
+</div>
+
+<div class="photo">
+  <img src="images_colisee/conciergerie2.jpg">
+</div>
+
+</div>
+
+</div>
 
 <!-- =========================
      ENGLISH VERSION
 ========================= -->
 
-<div id="lang-en" style="display:none">
+<div class="card section" id="intro-en">
 
-  <div class="header">
-    <h1>📘 Guest Guide</h1>
-    <p>Select a section</p>
-  </div>
+<h2>📘 GUEST GUIDE</h2>
 
-  <div class="card">
+<p>
+This guest guide aims to provide you with information about your stay in Cap d'Agde.
+For the lucky ones, it's vacation time!
+</p>
 
-    <select id="menu-en" onchange="showSectionEn()">
-      <option value="">-- Choose a section --</option>
-      <option value="intro-en">1 - Introduction</option>
-      <option value="logement-en">2 - Accommodation</option>
-      <option value="accueil-en">3 - Check-in Information</option>
-      <option value="taxi-en">4 - Taxi - Ride Services</option>
-      <option value="acces-en">5 - Access to the accommodation</option>
-      <option value="infos-en">6 - Useful information - Help Center</option>
-      <option value="sejour-en">7 - Stay rules</option>
-      <option value="plages-en">8 - Beaches</option>
-      <option value="evenements-en">9 - News - Events</option>
-      <option value="depart-en">10 - Check-out information</option>
-    </select>
+<p>
+This small guide will help you arrive safely at the Check-in Point of the Conciergerie du Cap d'Agde
+and then to your accommodation.
+</p>
 
-  </div>
+<p>
+The Conciergerie du Cap d'Agde was created to assist owners, travelers, service providers,
+families and friends thanks to the <b>Bookeys.fr</b> service,
+allowing secure key exchange 24/7.
+</p>
 
-  <!-- INTRO -->
-  <div class="card section" id="intro-en">
-    <h2>📘 GUEST GUIDE</h2>
+<p>
+⚠️ Please make sure to ask the owner or manager for access codes to retrieve the keys,
+as this information is not included in this guide.
+</p>
 
-    <p>
-      This guest guide aims to provide you with all the necessary information for your stay in Cap d'Agde.
-      For the lucky ones, it's vacation time!
-    </p>
-
-    <p>
-      This guide will help you arrive smoothly at the check-in point and then to your accommodation.
-    </p>
-
-    <p>
-      The concierge service was created to assist owners, travelers, providers, families and friends
-      thanks to <b>Bookeys.fr</b>, allowing secure key exchange 24/7.
-    </p>
-
-    <p>
-      ⚠️ Please make sure to ask the owner or manager for access codes to retrieve the keys.
-      This information is not included in this guide.
-    </p>
-
-    <p><b>Enjoy your stay! ☀️</b></p>
-  </div>
-
-  <!-- ACCOMMODATION -->
-  <div class="card section" id="logement-en">
-    <h2>🏠 Accommodation</h2>
-
-    <p>
-      36 m² apartment in Cap d'Agde located on the 3rd and top floor of a secure residence with private parking.
-    </p>
-
-    <p>
-      The beach is about 850 meters away.
-      The accommodation is close to shops, the harbor, amusement park, and main activities.
-    </p>
-
-    <p>The accommodation includes:</p>
-
-    <ul style="text-align:left;">
-      <li>Entrance with bunk beds</li>
-      <li>Living room with sofa bed</li>
-      <li>Fully equipped kitchen</li>
-      <li>Mezzanine bedroom with double bed 140x190</li>
-      <li>Bathroom with toilet</li>
-      <li>Loggia</li>
-      <li>Private parking</li>
-    </ul>
-
-    <hr>
-
-    <h3>📸 Living room</h3>
-    <div class="photo"><img src="images_colisee/sejour1.jpg"></div>
-    <div class="photo"><img src="images_colisee/sejour2.jpg"></div>
-    <div class="photo"><img src="images_colisee/sejour3.jpg"></div>
-    <div class="photo"><img src="images_colisee/sejour4.jpg"></div>
-    <div class="photo"><img src="images_colisee/sejour5.jpg"></div>
-
-    <h3>🍳 Kitchen</h3>
-    <div class="photo"><img src="images_colisee/cuisine1.jpg"></div>
-    <div class="photo"><img src="images_colisee/cuisine2.jpg"></div>
-    <div class="photo"><img src="images_colisee/cuisine3.jpg"></div>
-
-    <h3>🛏️ Mezzanine bedroom</h3>
-    <p>Double bed 140 x 190</p>
-    <div class="photo"><img src="images_colisee/chambre1.jpg"></div>
-    <div class="photo"><img src="images_colisee/chambre2.jpg"></div>
-
-    <h3>☀️ Loggia</h3>
-    <div class="photo"><img src="images_colisee/loggia.jpg"></div>
-
-    <h3>🚿 Bathroom</h3>
-    <div class="photo"><img src="images_colisee/sdb1.jpg"></div>
-    <div class="photo"><img src="images_colisee/sdb2.jpg"></div>
-
-    <h3>🚗 Parking</h3>
-    <div class="photo"><img src="images_colisee/parking1.jpg"></div>
-
-    <h3>🚲 Bicycle parking</h3>
-    <div class="photo"><img src="images_colisee/parking_velo.jpg"></div>
-  </div>
-
-  <!-- CHECK-IN -->
-  <div class="card section" id="accueil-en">
-    <h2>🔑 Check-in information</h2>
-
-    <p>
-      ⚠️ Please request access codes from the owner or manager to retrieve the keys.
-    </p>
-
-    <h3>Arrival time</h3>
-    <p><b>From 4:00 PM</b></p>
-    <p>Self check-in system available 24/7, including nighttime arrivals.</p>
-
-    <h3>Check-in address</h3>
-    <p>
-      Conciergerie du Cap d'Agde<br>
-      Impasse des Sargasses<br>
-      34300 Cap d'Agde<br>
-      (Amoureva residence)
-    </p>
-
-    <a class="btn" href="https://maps.app.goo.gl/t46grpyPzibVdFZM9" target="_blank">
-      📍 Open Google Maps
-    </a>
-
-    <h3>Photos</h3>
-    <div class="photo"><img src="images_colisee/conciergerie1.jpg"></div>
-    <div class="photo"><img src="images_colisee/conciergerie2.jpg"></div>
-  </div>
-
-  <!-- TAXI -->
-  <div class="card section" id="taxi-en">
-    <h2>🚖 Taxi - Ride services</h2>
-
-    <h3>VTC Confort 34</h3>
-    <div class="photo"><img src="images_colisee/vtcconfort.jpg"></div>
-    <p>📞 06 35 24 53 75<br>✉️ contact@vtc-confort34.fr<br>🌐 www.vtc-confort34.fr</p>
-
-    <h3>Génie TAXI</h3>
-    <div class="photo"><img src="images_colisee/genietaxi.jpg"></div>
-    <p>📞 06 95 13 78 77</p>
-  </div>
-
-  <!-- ACCESS -->
-  <div class="card section" id="acces-en">
-    <h2>🏠 Access to accommodation</h2>
-
-    <p>
-      ⚠️ Please collect the keys before going to the residence.
-    </p>
-
-    <p>
-      7 rue Sarret de Coussergues<br>
-      34300 Cap d'Agde
-    </p>
-
-    <a class="btn" href="https://maps.app.goo.gl/NGggttSMAHzW2q1N6" target="_blank">
-      📍 Open Google Maps
-    </a>
-  </div>
-
-  <!-- INFO -->
-  <div class="card section" id="infos-en">
-    <h2>⚙️ Useful information</h2>
-    <p>Bins, electricity, water, water heater, etc.</p>
-  </div>
-
-  <!-- RULES -->
-  <div class="card section" id="sejour-en">
-    <h2>📌 Stay rules</h2>
-    <p>🚭 No smoking / 🐾 no pets / 🔇 quiet after 10 PM</p>
-  </div>
-
-  <!-- BEACH -->
-  <div class="card section" id="plages-en">
-    <h2>🏖️ Beaches</h2>
-    <a class="btn" href="https://maps.app.goo.gl/fSMNB5dZnadcJ94f9">Richelieu Beach</a>
-    <a class="btn" href="https://maps.app.goo.gl/E68VxdyPnVj3R5V26">Môle Beach</a>
-  </div>
-
-  <!-- EVENTS -->
-  <div class="card section" id="evenements-en">
-    <h2>🗞️ Local information</h2>
-
-    <a class="btn" href="https://www.lachainemeteo.com">Weather</a>
-    <a class="btn" href="https://www.capdagde.com">Tourism</a>
-  </div>
-
-  <!-- DEPARTURE -->
-  <div class="card section" id="depart-en">
-    <h2>🚪 Check-out</h2>
-    <p>Departure before 10 AM + cleaning + key return.</p>
-  </div>
+<p><b>Enjoy your stay! ☀️</b></p>
 
 </div>
+
+<div class="card section" id="logement-en">
+
+<h2>🏠 Accommodation</h2>
+
+<p>
+A 36 m² apartment in Cap d'Agde located on the 3rd and top floor
+of a secure residence with private parking.
+</p>
+
+<p>
+The beach is about 850 meters away.
+The accommodation is close to shops, the harbor,
+the amusement park and main activities of the resort.
+</p>
+
+<p>The accommodation consists of:</p>
+
+<ul style="text-align:left;">
+<li>Entrance with bunk beds</li>
+<li>Living room with sofa bed</li>
+<li>Fully equipped kitchen area</li>
+<li>Mezzanine bedroom with double bed 140x190</li>
+<li>Bathroom with toilet</li>
+<li>Loggia</li>
+<li>Private parking space</li>
+</ul>
+
+<hr>
+
+<h3>📸 Living room</h3>
+
+<div class="photo"><img src="images_colisee/sejour1.jpg"></div>
+<div class="photo"><img src="images_colisee/sejour2.jpg"></div>
+<div class="photo"><img src="images_colisee/sejour3.jpg"></div>
+<div class="photo"><img src="images_colisee/sejour4.jpg"></div>
+<div class="photo"><img src="images_colisee/sejour5.jpg"></div>
+
+<h3>🍳 Kitchen</h3>
+
+<div class="photo"><img src="images_colisee/cuisine1.jpg"></div>
+<div class="photo"><img src="images_colisee/cuisine2.jpg"></div>
+<div class="photo"><img src="images_colisee/cuisine3.jpg"></div>
+
+<h3>🛏️ Mezzanine bedroom</h3>
+<p>Double bed 140 x 190</p>
+
+<div class="photo"><img src="images_colisee/chambre1.jpg"></div>
+<div class="photo"><img src="images_colisee/chambre2.jpg"></div>
+
+<h3>☀️ Loggia</h3>
+<div class="photo"><img src="images_colisee/loggia.jpg"></div>
+
+<h3>🚿 Bathroom</h3>
+<div class="photo"><img src="images_colisee/sdb1.jpg"></div>
+<div class="photo"><img src="images_colisee/sdb2.jpg"></div>
+
+<h3>🚗 Private parking</h3>
+<div class="photo"><img src="images_colisee/parking1.jpg"></div>
+
+<h3>🚲 Bicycle parking</h3>
+<div class="photo"><img src="images_colisee/parking_velo.jpg"></div>
+
+</div>
+
+<div class="card section" id="accueil-en">
+
+<h2>🔑 Check-in information</h2>
+
+<p>
+⚠️ Please ask the owner or manager for access codes to retrieve the keys.
+This information is not included in this guide.
+</p>
+
+<hr>
+
+<h3>1 - Arrival time</h3>
+
+<p><b>From 4:00 PM</b></p>
+
+<p>
+Self check-in system available 24/7, including night arrivals any day of the week.
+</p>
+
+<hr>
+
+<h3>2 - Check-in point address</h3>
+
+<p>
+Conciergerie du Cap d'Agde<br>
+Impasse des Sargasses<br>
+34300 Cap d'Agde<br>
+(Amoureva residence)
+</p>
+
+<a class="btn" href="https://maps.app.goo.gl/t46grpyPzibVdFZM9" target="_blank">
+📍 Open Google Maps
+</a>
+
+<hr>
+
+<h3>3 - Check-in point photos</h3>
+
+<div class="photo"><img src="images_colisee/conciergerie1.jpg"></div>
+<div class="photo"><img src="images_colisee/conciergerie2.jpg"></div>
+
+</div>
+
+<div class="card section" id="taxi-en">
+
+<h2>🚖 Taxi - Ride services</h2>
+
+<h3>1 - VTC Confort 34</h3>
+
+<div class="photo"><img src="images_colisee/vtcconfort.jpg"></div>
+
+<p>
+📞 06 35 24 53 75<br>
+✉️ contact@vtc-confort34.fr<br>
+🌐 www.vtc-confort34.fr
+</p>
+
+<hr>
+
+<h3>2 - Génie TAXI</h3>
+
+<div class="photo"><img src="images_colisee/genietaxi.jpg"></div>
+
+<p>
+📞 06 95 13 78 77
+</p>
+
+</div>
+
+<div class="card section" id="acces-en">
+
+<h2>🏠 Access to accommodation</h2>
+
+<p>
+⚠️ Please make sure to collect the keys before going to the residence.
+Key instructions are provided in the "Check-in information" section.
+</p>
+
+<hr>
+
+<h3>1 - Address</h3>
+
+<p>
+7 rue Sarret de Coussergues<br>
+34300 Cap d'Agde<br><br>
+
+Private parking: 115 / D33<br><br>
+
+Residence: Le Colisée<br>
+Building: D<br>
+3rd floor<br>
+Apartment: 33
+
+</p>
+
+<a class="btn" href="https://maps.app.goo.gl/NGggttSMAHzW2q1N6" target="_blank">
+📍 Open Google Maps
+</a>
+
+<hr>
+
+<h3>2 - Access photos</h3>
+
+<b>Residence Le Colisée 👇</b>
+
+<div class="photo"><img src="images_colisee/residence.jpg"></div>
+
+<b>Entrance gate 👇</b>
+
+<div class="photo"><img src="images_colisee/portail.jpg"></div>
+
+<b>How to open 👇</b>
+
+<div class="photo"><img src="images_colisee/vigik_portail.jpg"></div>
+
+<b>Take the second alley on the right 👇</b>
+
+<div class="photo"><img src="images_colisee/allee.jpg"></div>
+
+<b>Parking spot 👇</b>
+
+<div class="photo"><img src="images_colisee/parking.jpg"></div>
+
+<b>Private parking number 33D - 115 👇</b>
+
+<div class="photo"><img src="images_colisee/place_parking.jpg"></div>
+
+<b>Building D access 👇</b>
+
+<div class="photo"><img src="images_colisee/batiment_d_exterieur.jpg"></div>
+
+<b>Entrance 👇</b>
+
+<div class="photo"><img src="images_colisee/entree_batiment1.jpg"></div>
+<div class="photo"><img src="images_colisee/entree_batiment2.jpg"></div>
+
+<b>Door access 👇</b>
+
+<div class="photo"><img src="images_colisee/badge_porte.jpg"></div>
+
+<b>Stairs 👇</b>
+
+<div class="photo"><img src="images_colisee/escaliers.jpg"></div>
+
+<b>Corridor 👇</b>
+
+<div class="photo"><img src="images_colisee/couloir.jpg"></div>
+
+<b>Apartment door 👇</b>
+
+<div class="photo"><img src="images_colisee/porte_appartement.jpg"></div>
+
+<b>Main key 👇</b>
+
+<div class="photo"><img src="images_colisee/cle_plate.jpg"></div>
+
+<b>Secondary key 👇</b>
+
+<div class="photo"><img src="images_colisee/cle_ronde.jpg"></div>
+
+<hr>
+
+<h3>3 - Nearest bus stops</h3>
+
+<p>
+<b>Line 3</b><br><br>
+Stops:<br>
+• Mont Saint Martin<br>
+• Les Nautiles
+</p>
+
+<a class="btn" href="https://www.capbus.fr" target="_blank">🚌 Cap'Bus</a>
+
+</div>
+
 
 <!-- =========================
      VERSION ESPAÑOL
 ========================= -->
 
-<div id="lang-es" style="display:none">
+<div class="card section" id="intro-es">
 
-  <div class="header">
-    <h1>📘 Guía del viajero</h1>
-    <p>Selecciona una sección</p>
-  </div>
+<h2>📘 GUÍA DEL VIAJERO</h2>
 
-  <div class="card">
+<p>
+Esta guía tiene como objetivo informarle sobre su estancia en Cap d'Agde.
+¡Para los más afortunados, son vacaciones!
+</p>
 
-    <select id="menu-es" onchange="showSectionEs()">
-      <option value="">-- Elegir una sección --</option>
-      <option value="intro-es">1 - Presentación</option>
-      <option value="logement-es">2 - El alojamiento</option>
-      <option value="accueil-es">3 - Llegada / Check-in</option>
-      <option value="taxi-es">4 - Taxis - VTC</option>
-      <option value="acces-es">5 - Acceso al alojamiento</option>
-      <option value="infos-es">6 - Información útil - Ayuda</option>
-      <option value="sejour-es">7 - Normas de la estancia</option>
-      <option value="plages-es">8 - Playas</option>
-      <option value="evenements-es">9 - Noticias - Eventos</option>
-      <option value="depart-es">10 - Salida</option>
-    </select>
+<p>
+Esta pequeña guía le permitirá llegar con tranquilidad al Punto de Acogida de la Conciergerie du Cap d'Agde
+y posteriormente a su alojamiento.
+</p>
 
-  </div>
+<p>
+La Conciergerie du Cap d'Agde fue creada para ayudar a propietarios, viajeros, proveedores,
+familias y amigos gracias al servicio <b>Bookeys.fr</b>,
+permitiendo el intercambio de llaves 24/7 de forma segura.
+</p>
 
-  <!-- INTRO -->
-  <div class="card section" id="intro-es">
-    <h2>📘 GUÍA DEL VIAJERO</h2>
+<p>
+⚠️ Por favor, solicite los códigos de acceso al propietario o gestor para recoger las llaves,
+ya que esta información no está incluida en esta guía.
+</p>
 
-    <p>
-      Esta guía tiene como objetivo informarle sobre su estancia en Cap d'Agde.
-      ¡Para los más afortunados, son vacaciones!
-    </p>
-
-    <p>
-      Esta guía le permitirá llegar con tranquilidad al punto de acogida y a su alojamiento.
-    </p>
-
-    <p>
-      La conserjería permite el intercambio de llaves 24/7 de forma segura mediante Bookeys.fr.
-    </p>
-
-    <p>
-      ⚠️ Por favor, solicite los códigos de acceso al propietario o gestor.
-    </p>
-
-    <p><b>¡Que disfrute de su estancia! ☀️</b></p>
-  </div>
-
-  <!-- ALOJAMIENTO -->
-  <div class="card section" id="logement-es">
-    <h2>🏠 El alojamiento</h2>
-
-    <p>
-      Apartamento de 36 m² en Cap d'Agde en la 3ª y última planta con parking privado.
-    </p>
-
-    <p>
-      Playa a 850 metros, cerca de comercios y actividades.
-    </p>
-
-    <p>El alojamiento incluye:</p>
-
-    <ul style="text-align:left;">
-      <li>Entrada con literas</li>
-      <li>Salón con sofá cama</li>
-      <li>Cocina equipada</li>
-      <li>Mezzanine con cama doble 140x190</li>
-      <li>Baño con WC</li>
-      <li>Logia</li>
-      <li>Aparcamiento privado</li>
-    </ul>
-
-    <hr>
-
-    <h3>📸 Salón</h3>
-    <div class="photo"><img src="images_colisee/sejour1.jpg"></div>
-    <div class="photo"><img src="images_colisee/sejour2.jpg"></div>
-
-    <h3>🍳 Cocina</h3>
-    <div class="photo"><img src="images_colisee/cuisine1.jpg"></div>
-    <div class="photo"><img src="images_colisee/cuisine2.jpg"></div>
-
-    <h3>🛏️ Habitación</h3>
-    <p>Cama doble 140 x 190</p>
-
-    <h3>☀️ Logia</h3>
-    <div class="photo"><img src="images_colisee/loggia.jpg"></div>
-
-    <h3>🚿 Baño</h3>
-    <div class="photo"><img src="images_colisee/sdb1.jpg"></div>
-
-    <h3>🚗 Parking</h3>
-    <div class="photo"><img src="images_colisee/parking1.jpg"></div>
-  </div>
-
-  <!-- CHECK-IN -->
-  <div class="card section" id="accueil-es">
-    <h2>🔑 Llegada</h2>
-
-    <p>⚠️ Solicite los códigos de acceso al propietario.</p>
-
-    <h3>Hora de llegada</h3>
-    <p><b>A partir de las 16:00</b></p>
-
-    <p>Check-in autónomo 24/7.</p>
-
-    <h3>Dirección</h3>
-    <p>
-      Conciergerie du Cap d'Agde<br>
-      Impasse des Sargasses<br>
-      34300 Cap d'Agde
-    </p>
-
-    <a class="btn" href="https://maps.app.goo.gl/t46grpyPzibVdFZM9" target="_blank">
-      📍 Abrir Google Maps
-    </a>
-  </div>
-
-  <!-- TAXI -->
-  <div class="card section" id="taxi-es">
-    <h2>🚖 Taxis</h2>
-
-    <h3>VTC Confort 34</h3>
-    <p>📞 06 35 24 53 75</p>
-
-    <h3>Génie TAXI</h3>
-    <p>📞 06 95 13 78 77</p>
-  </div>
-
-  <!-- ACCESS -->
-  <div class="card section" id="acces-es">
-    <h2>🏠 Acceso</h2>
-
-    <p>Recoja las llaves antes de llegar.</p>
-
-    <p>7 rue Sarret de Coussergues<br>34300 Cap d'Agde</p>
-
-    <a class="btn" href="https://maps.app.goo.gl/NGggttSMAHzW2q1N6">
-      📍 Google Maps
-    </a>
-  </div>
-
-  <!-- INFO -->
-  <div class="card section" id="infos-es">
-    <h2>⚙️ Información útil</h2>
-    <p>Basura, electricidad, agua, etc.</p>
-  </div>
-
-  <!-- RULES -->
-  <div class="card section" id="sejour-es">
-    <h2>📌 Normas</h2>
-    <p>🚭 No fumar / 🐾 no mascotas / 🔇 silencio después de las 22h</p>
-  </div>
-
-  <!-- BEACH -->
-  <div class="card section" id="plages-es">
-    <h2>🏖️ Playas</h2>
-    <a class="btn" href="https://maps.app.goo.gl/fSMNB5dZnadcJ94f9">Playa Richelieu</a>
-    <a class="btn" href="https://maps.app.goo.gl/E68VxdyPnVj3R5V26">Playa del Môle</a>
-  </div>
-
-  <!-- EVENTS -->
-  <div class="card section" id="evenements-es">
-    <h2>🗞️ Información local</h2>
-
-    <a class="btn" href="https://www.lachainemeteo.com">Tiempo</a>
-    <a class="btn" href="https://www.capdagde.com">Turismo</a>
-  </div>
-
-  <!-- DEPARTURE -->
-  <div class="card section" id="depart-es">
-    <h2>🚪 Salida</h2>
-    <p>Salida antes de las 10h + limpieza + devolución de llaves.</p>
-  </div>
+<p><b>¡Que disfrute de su estancia! ☀️</b></p>
 
 </div>
 
+<div class="card section" id="logement-es">
+
+<h2>🏠 El alojamiento</h2>
+
+<p>
+Apartamento de 36 m² en Cap d'Agde situado en la 3ª y última planta
+de una residencia segura con parking privado.
+</p>
+
+<p>
+La playa se encuentra a unos 850 metros.
+El alojamiento está cerca de comercios, del puerto,
+del parque de atracciones y de las principales actividades.
+</p>
+
+<p>El alojamiento se compone de:</p>
+
+<ul style="text-align:left;">
+<li>Entrada con literas</li>
+<li>Salón con sofá cama</li>
+<li>Cocina totalmente equipada</li>
+<li>Mezzanine con cama doble 140x190</li>
+<li>Baño con WC</li>
+<li>Logia</li>
+<li>Aparcamiento privado</li>
+</ul>
+
+<hr>
+
+<h3>📸 Salón</h3>
+
+<div class="photo"><img src="images_colisee/sejour1.jpg"></div>
+<div class="photo"><img src="images_colisee/sejour2.jpg"></div>
+<div class="photo"><img src="images_colisee/sejour3.jpg"></div>
+<div class="photo"><img src="images_colisee/sejour4.jpg"></div>
+<div class="photo"><img src="images_colisee/sejour5.jpg"></div>
+
+<h3>🍳 Cocina</h3>
+
+<div class="photo"><img src="images_colisee/cuisine1.jpg"></div>
+<div class="photo"><img src="images_colisee/cuisine2.jpg"></div>
+<div class="photo"><img src="images_colisee/cuisine3.jpg"></div>
+
+<h3>🛏️ Habitación en altillo</h3>
+<p>Cama doble 140 x 190</p>
+
+<div class="photo"><img src="images_colisee/chambre1.jpg"></div>
+<div class="photo"><img src="images_colisee/chambre2.jpg"></div>
+
+<h3>☀️ Logia</h3>
+<div class="photo"><img src="images_colisee/loggia.jpg"></div>
+
+<h3>🚿 Baño</h3>
+<div class="photo"><img src="images_colisee/sdb1.jpg"></div>
+<div class="photo"><img src="images_colisee/sdb2.jpg"></div>
+
+<h3>🚗 Parking privado</h3>
+<div class="photo"><img src="images_colisee/parking1.jpg"></div>
+
+<h3>🚲 Parking de bicicletas</h3>
+<div class="photo"><img src="images_colisee/parking_velo.jpg"></div>
+
 </div>
+
+<div class="card section" id="accueil-es">
+
+<h2>🔑 Información de llegada</h2>
+
+<p>
+⚠️ Solicite los códigos de acceso al propietario o gestor para recoger las llaves.
+Esta información no está incluida en esta guía.
+</p>
+
+<hr>
+
+<h3>1 - Hora de llegada</h3>
+
+<p><b>A partir de las 16:00</b></p>
+
+<p>
+Sistema de check-in autónomo 24/7 con posibilidad de llegada nocturna cualquier día.
+</p>
+
+<hr>
+
+<h3>2 - Dirección del punto de recogida de llaves</h3>
+
+<p>
+Conciergerie du Cap d'Agde<br>
+Impasse des Sargasses<br>
+34300 Cap d'Agde<br>
+(Residencia Amoureva)
+</p>
+
+<a class="btn" href="https://maps.app.goo.gl/t46grpyPzibVdFZM9" target="_blank">
+📍 Abrir Google Maps
+</a>
+
+<hr>
+
+<h3>3 - Fotos del punto de llegada</h3>
+
+<div class="photo"><img src="images_colisee/conciergerie1.jpg"></div>
+<div class="photo"><img src="images_colisee/conciergerie2.jpg"></div>
+
+</div>
+
+<div class="card section" id="taxi-es">
+
+<h2>🚖 Taxis - VTC</h2>
+
+<h3>1 - VTC Confort 34</h3>
+
+<div class="photo"><img src="images_colisee/vtcconfort.jpg"></div>
+
+<p>
+📞 06 35 24 53 75<br>
+✉️ contact@vtc-confort34.fr<br>
+🌐 www.vtc-confort34.fr
+</p>
+
+<hr>
+
+<h3>2 - Génie TAXI</h3>
+
+<div class="photo"><img src="images_colisee/genietaxi.jpg"></div>
+
+<p>
+📞 06 95 13 78 77
+</p>
+
+</div>
+
+<div class="card section" id="acces-es">
+
+<h2>🏠 Acceso al alojamiento</h2>
+
+<p>
+⚠️ Recuerde recoger las llaves antes de ir a la residencia.
+La información está en la sección “Información de llegada”.
+</p>
+
+<hr>
+
+<h3>1 - Dirección</h3>
+
+<p>
+7 rue Sarret de Coussergues<br>
+34300 Cap d'Agde<br><br>
+
+Aparcamiento privado: 115 / D33<br><br>
+
+Residencia: Le Colisée<br>
+Edificio: D<br>
+3ª planta<br>
+Apartamento: 33
+
+</p>
+
+<a class="btn" href="https://maps.app.goo.gl/NGggttSMAHzW2q1N6" target="_blank">
+📍 Abrir Google Maps
+</a>
+
+<hr>
+
+<h3>2 - Fotos de acceso</h3>
+
+<b>Residencia Le Colisée 👇</b>
+
+<div class="photo"><img src="images_colisee/residence.jpg"></div>
+
+<b>Entrada 👇</b>
+
+<div class="photo"><img src="images_colisee/portail.jpg"></div>
+
+<b>Acceso 👇</b>
+
+<div class="photo"><img src="images_colisee/vigik_portail.jpg"></div>
+
+<b>Segunda calle a la derecha 👇</b>
+
+<div class="photo"><img src="images_colisee/allee.jpg"></div>
+
+<b>Plaza de parking 👇</b>
+
+<div class="photo"><img src="images_colisee/parking.jpg"></div>
+
+<b>Número de plaza 33D - 115 👇</b>
+
+<div class="photo"><img src="images_colisee/place_parking.jpg"></div>
+
+<b>Acceso edificio D 👇</b>
+
+<div class="photo"><img src="images_colisee/batiment_d_exterieur.jpg"></div>
+
+<b>Entrada edificio 👇</b>
+
+<div class="photo"><img src="images_colisee/entree_batiment1.jpg"></div>
+<div class="photo"><img src="images_colisee/entree_batiment2.jpg"></div>
+
+<b>Acceso con badge 👇</b>
+
+<div class="photo"><img src="images_colisee/badge_porte.jpg"></div>
+
+<b>Escaleras 👇</b>
+
+<div class="photo"><img src="images_colisee/escaliers.jpg"></div>
+
+<b>Pasillo 👇</b>
+
+<div class="photo"><img src="images_colisee/couloir.jpg"></div>
+
+<b>Puerta del apartamento 👇</b>
+
+<div class="photo"><img src="images_colisee/porte_appartement.jpg"></div>
+
+<b>Llave principal 👇</b>
+
+<div class="photo"><img src="images_colisee/cle_plate.jpg"></div>
+
+<b>Llave secundaria 👇</b>
+
+<div class="photo"><img src="images_colisee/cle_ronde.jpg"></div>
+
+<hr>
+
+<h3>3 - Paradas de bus cercanas</h3>
+
+<p>
+<b>Línea 3</b><br><br>
+Paradas:<br>
+• Mont Saint Martin<br>
+• Les Nautiles
+</p>
+
+<a class="btn" href="https://www.capbus.fr" target="_blank">🚌 Cap'Bus</a>
+
+</div>
+
 
 <script>
 function setLang(l){
