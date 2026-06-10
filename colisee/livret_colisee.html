@@ -1914,21 +1914,82 @@
 
 
 <script>
+let currentLang = "fr";
+
+/* =========================
+   SHOW / HIDE SECTIONS
+========================= */
+
+function hideAll(lang) {
+  document.querySelectorAll(`#lang-${lang} .section`)
+    .forEach(el => el.hidden = true);
+}
+
+function show(id) {
+  const el = document.getElementById(id);
+  if (!el) return;
+
+  if (!el.closest(`#lang-${currentLang}`)) return;
+
+  hideAll(currentLang);
+  el.hidden = false;
+}
+
+/* =========================
+   MENU
+========================= */
+
+function showSection() {
+  const value = document.getElementById("menu").value;
+  if (!value) return;
+
+  show(value);
+}
+
+/* =========================
+   LANGUAGE
+========================= */
+
+function setLang(lang) {
+  currentLang = lang;
+
+  document.querySelectorAll("[id^='lang-']")
+    .forEach(el => el.hidden = true);
+
+  const active = document.getElementById("lang-" + lang);
+  if (active) active.hidden = false;
+
+  buildMenu(lang);
+
+  // RESET menu + affichage propre
+  document.getElementById("menu").value = "";
+
+  hideAll(lang);
+
+  // ⭐ IMPORTANT : afficher 1ère section automatiquement
+  const first = document.querySelector(`#lang-${lang} .section`);
+  if (first) first.hidden = false;
+}
+
+/* =========================
+   MENU BUILD
+========================= */
+
 const menuTranslations = {
   fr: [
     { value: "fr-intro", text: "1 - Présentation" },
-    { value: "fr-logement", text: "2 - Le Logement" },
-    { value: "fr-accueil", text: "3 - Modalités d'Accueil" },
-    { value: "fr-taxi", text: "4 - Taxis - VTC" },
-    { value: "fr-acces", text: "5 - Accès au logement" },
-    { value: "fr-infos", text: "6 - Informations utiles" },
-    { value: "fr-sejour", text: "7 - Consignes" },
+    { value: "fr-logement", text: "2 - Logement" },
+    { value: "fr-accueil", text: "3 - Accueil" },
+    { value: "fr-taxi", text: "4 - Taxis" },
+    { value: "fr-acces", text: "5 - Accès" },
+    { value: "fr-infos", text: "6 - Infos" },
+    { value: "fr-sejour", text: "7 - Séjour" },
     { value: "fr-plages", text: "8 - Plages" },
     { value: "fr-evenements", text: "9 - Événements" },
     { value: "fr-depart", text: "10 - Départ" }
   ],
   en: [
-    { value: "en-intro", text: "1 - Introduction" },
+    { value: "en-intro", text: "1 - Intro" },
     { value: "en-logement", text: "2 - Accommodation" },
     { value: "en-accueil", text: "3 - Check-in" },
     { value: "en-taxi", text: "4 - Taxi" },
@@ -1940,12 +2001,12 @@ const menuTranslations = {
     { value: "en-depart", text: "10 - Check-out" }
   ],
   es: [
-    { value: "es-intro", text: "1 - Presentación" },
+    { value: "es-intro", text: "1 - Inicio" },
     { value: "es-logement", text: "2 - Alojamiento" },
     { value: "es-accueil", text: "3 - Llegada" },
     { value: "es-taxi", text: "4 - Taxis" },
     { value: "es-acces", text: "5 - Acceso" },
-    { value: "es-infos", text: "6 - Ayuda" },
+    { value: "es-infos", text: "6 - Info" },
     { value: "es-sejour", text: "7 - Normas" },
     { value: "es-plages", text: "8 - Playas" },
     { value: "es-evenements", text: "9 - Eventos" },
@@ -1953,56 +2014,11 @@ const menuTranslations = {
   ]
 };
 
-const uiTranslations = {
-  fr: { title: "📘 Livret de séjour", subtitle: "Sélectionnez une section" },
-  en: { title: "📘 Guest Book", subtitle: "Select a section" },
-  es: { title: "📘 Guía de estancia", subtitle: "Selecciona una sección" }
-};
-
-let currentLang = "fr";
-
-/* =========================
-   SAFE HELPERS
-========================= */
-
-function safeHideAllSections(lang) {
-  document.querySelectorAll(`#lang-${lang} .section`)
-    .forEach(el => el.hidden = true);
-}
-
-function safeShowSection(id) {
-  const el = document.getElementById(id);
-  if (!el) return false;
-
-  const langContainer = el.closest(`#lang-${currentLang}`);
-  if (!langContainer) return false;
-
-  safeHideAllSections(currentLang);
-  el.hidden = false;
-  return true;
-}
-
-/* =========================
-   UI
-========================= */
-
-function renderUI(lang) {
-  const t = uiTranslations[lang] || uiTranslations.fr;
-
-  const title = document.querySelector(".header h1");
-  const subtitle = document.querySelector(".header p");
-
-  if (title) title.textContent = t.title;
-  if (subtitle) subtitle.textContent = t.subtitle;
-}
-
-function renderMenu(lang) {
+function buildMenu(lang) {
   const select = document.getElementById("menu");
-  if (!select) return;
-
   select.innerHTML = `<option value="">--</option>`;
 
-  (menuTranslations[lang] || menuTranslations.fr).forEach(item => {
+  menuTranslations[lang].forEach(item => {
     const opt = document.createElement("option");
     opt.value = item.value;
     opt.textContent = item.text;
@@ -2011,73 +2027,11 @@ function renderMenu(lang) {
 }
 
 /* =========================
-   LANGUAGE SWITCH
-========================= */
-
-function setLang(lang) {
-  if (!menuTranslations[lang]) lang = "fr";
-
-  currentLang = lang;
-  document.documentElement.lang = lang;
-
-  localStorage.setItem("lang", lang);
-
-  document.querySelectorAll("[id^='lang-']")
-    .forEach(el => el.hidden = true);
-
-  const active = document.getElementById("lang-" + lang);
-  if (active) active.hidden = false;
-
-  renderMenu(lang);
-  renderUI(lang);
-
-  const menu = document.getElementById("menu");
-  if (menu) menu.value = "";
-
-  localStorage.removeItem("section");
-
-  safeHideAllSections(lang);
-}
-
-/* =========================
-   MENU
-========================= */
-
-function showSection() {
-  const menu = document.getElementById("menu");
-  if (!menu) return;
-
-  const value = menu.value;
-  if (!value) return;
-
-  const ok = safeShowSection(value);
-
-  if (ok) {
-    localStorage.setItem("section", value);
-  }
-}
-
-/* =========================
-   INIT (SAFE)
+   INIT
 ========================= */
 
 window.addEventListener("DOMContentLoaded", () => {
-  const savedLang = localStorage.getItem("lang");
-  const savedSection = localStorage.getItem("section");
-
-  setLang(savedLang && menuTranslations[savedLang] ? savedLang : "fr");
-
-  // IMPORTANT : ne jamais bloquer le site si section invalide
-  if (savedSection) {
-    const success = safeShowSection(savedSection);
-
-    if (success) {
-      const menu = document.getElementById("menu");
-      if (menu) menu.value = savedSection;
-    } else {
-      localStorage.removeItem("section");
-    }
-  }
+  setLang("fr");
 });
 </script>
 
