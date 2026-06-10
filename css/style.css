@@ -250,7 +250,6 @@ body {
 .page-livret .btn:hover {
   background: #1d4ed8;
   transform: translateY(-2px);
-   text-align: center;
 }
 
 /* Liens Textes */
