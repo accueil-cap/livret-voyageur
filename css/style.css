@@ -153,6 +153,39 @@ body {
   padding-top: 80px;
 }
 
+/* Traduction */
+.page-livret .lang-switch {
+  margin-top: 14px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.page-livret .lang-switch button {
+  background: white;
+  border: 1px solid #e5e7eb;
+  padding: 7px 12px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.2s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+  color: #111827;
+}
+
+.page-livret .lang-switch button:hover {
+  transform: translateY(-1px);
+  background: #f3f4f6;
+}
+
+.page-livret .lang-switch button.active {
+  background: #2563eb;
+  color: white;
+  border-color: #2563eb;
+}
+
 /* Titres */
 .page-livret .header {
   text-align: center;
