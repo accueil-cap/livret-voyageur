@@ -145,26 +145,18 @@ body {
 /* =========================
   PAGES DES LIVRETS
 ========================= */
-/* Visibilité de sections */
-
-/* Par défaut : toutes les sections sont cachées */
-.section {
+/* sections cachées par défaut */
+.page-livret .section {
   display: none;
 }
 
-/* Section active = visible */
-.section.active {
+/* section active = visible */
+.page-livret .section.active {
   display: block;
 }
 
-/* Langues : sécurité */
 [id^="lang-"] {
   display: none;
-}
-
-/* Langue visible (JS la met en block) */
-[id^="lang-"][style*="display: block"] {
-  display: block;
 }
 
 /* Container */
@@ -245,7 +237,6 @@ body {
 
 /* Sections */
 .page-livret .section {
-  display: none;
   background: white;
   border-radius: 16px;
   padding: 22px;
@@ -253,6 +244,12 @@ body {
   box-shadow: 0 8px 22px rgba(0,0,0,0.06);
   animation: fade 0.25s ease;
   text-align: center;
+
+  display: none; /* IMPORTANT : on garde ici */
+}
+
+.page-livret .section.active {
+  display: block;
 }
 
 @keyframes fade {
