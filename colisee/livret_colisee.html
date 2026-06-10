@@ -595,7 +595,8 @@ function setLang(l){
 function showSection(){
   const value = document.getElementById("menu").value;
 
-  document.querySelectorAll("#lang-fr .section").forEach(s => s.style.display="none");
+  document.querySelectorAll("#lang-fr .section, #lang-en .section, #lang-es .section")
+  .forEach(s => s.style.display = "none");
 
   if(value){
     document.getElementById(value).style.display="block";
