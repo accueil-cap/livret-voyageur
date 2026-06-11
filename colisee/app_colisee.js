@@ -466,6 +466,9 @@ es: {
     livret: {
       title: "8 - Guía de estancia",
       text: "Guía completa del alojamiento disponible."
+           <div class="card">
+      <a class="btn large" href="livret_colisee.html" id="btn-key"></a>
+    </div>
     }
   }
 }
