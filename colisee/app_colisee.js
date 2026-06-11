@@ -168,9 +168,19 @@ photos2: {
 },
 
       livret: {
-        title: "8 - Livret de séjour",
-        text: "Accès au livret complet du logement."
-      }
+  title: "8 - Livret de séjour",
+  text: `
+    Accédez au guide complet du logement :
+
+    <br><br>
+
+    <a class="card a"
+       href="livret_colisee.html"
+       target="_blank">
+       📘 Ouvrir le livret de séjour
+    </a>
+  `
+}
     }
   },
 
@@ -316,9 +326,19 @@ en: {
     },
 
     livret: {
-      title: "8 - Guest guide",
-      text: "Full accommodation guide available."
-    }
+  title: "8 - Guest Guide",
+  text: `
+    Access the complete accommodation guide:
+
+    <br><br>
+
+    <a class="card a"
+       href="livret_colisee.html"
+       target="_blank">
+       📘 Open Guest Guide
+    </a>
+  `
+}
   }
 },
 
@@ -464,12 +484,19 @@ es: {
     },
 
     livret: {
-      title: "8 - Guía de estancia",
-      text: "Guía completa del alojamiento disponible."
-           <div class="card">
-      <a class="btn large" href="livret_colisee.html" id="btn-key"></a>
-    </div>
-    }
+  title: "8 - Guía de estancia",
+  text: `
+    Acceda a la guía completa del alojamiento:
+
+    <br><br>
+
+    <a class="card a"
+       href="livret_colisee.html"
+       target="_blank">
+       📘 Abrir guía de estancia
+    </a>
+  `
+}
   }
 }
 };
