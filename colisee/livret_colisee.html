@@ -1939,37 +1939,34 @@ function setLang(lang) {
   // afficher langue active
   document.getElementById("lang-" + lang).style.display = "block";
 
+  // Traduction du header
+  const headers = {
+    fr: {
+      title: "📘 Livret de séjour",
+      subtitle: "Sélectionnez une section"
+    },
+    en: {
+      title: "📘 Guest Book",
+      subtitle: "Select a section"
+    },
+    es: {
+      title: "📘 Guía de estancia",
+      subtitle: "Seleccione una sección"
+    }
+  };
+
+  document.getElementById("header-title").textContent =
+    headers[lang].title;
+
+  document.getElementById("header-subtitle").textContent =
+    headers[lang].subtitle;
+
   buildMenu(lang);
 
   document.getElementById("menu").value = "";
 
   showFirstSection(lang);
 }
-
-  /* =========================
-   TITRES PRINCIPAUX
-========================= */
-const headers = {
-  fr: {
-    title: "📘 Livret de séjour",
-    subtitle: "Sélectionnez une section"
-  },
-  en: {
-    title: "📘 Guest Book",
-    subtitle: "Select a section"
-  },
-  es: {
-    title: "📘 Guía de estancia",
-    subtitle: "Seleccione una sección"
-  }
-};
-
-document.getElementById("header-title").textContent =
-  headers[lang].title;
-
-document.getElementById("header-subtitle").textContent =
-  headers[lang].subtitle;
-
   
 /* =========================
    MENU
