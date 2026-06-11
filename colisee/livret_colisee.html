@@ -21,11 +21,11 @@
 </div>
 
 <div class="container">
-
-  <div class="header">
-    <h1>📘 Livret de séjour</h1>
-    <p>Sélectionnez une section</p>
-  </div>
+  
+<div class="header">
+  <h1 id="header-title">📘 Livret de séjour</h1>
+  <p id="header-subtitle">Sélectionnez une section</p>
+</div>
 
   <!-- =========================
        MENU DÉROULANT
@@ -1946,10 +1946,34 @@ function setLang(lang) {
   showFirstSection(lang);
 }
 
+  /* =========================
+   TITRES PRINCIPAUX
+========================= */
+const headers = {
+  fr: {
+    title: "📘 Livret de séjour",
+    subtitle: "Sélectionnez une section"
+  },
+  en: {
+    title: "📘 Guest Book",
+    subtitle: "Select a section"
+  },
+  es: {
+    title: "📘 Guía de estancia",
+    subtitle: "Seleccione una sección"
+  }
+};
+
+document.getElementById("header-title").textContent =
+  headers[lang].title;
+
+document.getElementById("header-subtitle").textContent =
+  headers[lang].subtitle;
+
+  
 /* =========================
    MENU
 ========================= */
-
 function buildMenu(lang) {
   const select = document.getElementById("menu");
 
