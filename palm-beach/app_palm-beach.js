@@ -132,26 +132,8 @@ photos2: {
     (appuyez sur le bouton de la télécommande)
     ${photo(null, "telecommande_portail.jpg")}<br>
 
-    <b>Continuez tout droit jusqu'au bout de l'allée, puis tournez sur votre droite 👇</b>
-    ${photo(null, "allee1.jpg")}
-    ${photo(null, "allee2.jpg")}<br>
-
-    <b>Continuez tout droit jusqu'au bout, puis tournez encore sur votre droite 👇</b>
-    ${photo(null, "allee3.jpg")}<br>
-
-    <b>Continuez tout droit jusqu'au portail, puis tournez une dernière fois sur votre droite 👇</b>
-    ${photo(null, "allee4.jpg")}<br>
-
-    <b>Place de parking 👇</b><br>
-    La place se situe sur votre gauche
-    ${photo(null, "allee5.jpg")}
-    ${photo(null, "place_parking.jpg")}<br>
-
-    <b>Numéros de la place privative : 2 👇</b>
-    ${photo(null, "numero_parking.jpg")}<br>
-
     <b>Accès au bâtiment A1 👇</b><br>
-    Revenez dans l'allée principale (entrée du portail 1) et prenez la première à droite
+    Avancez et arrêtez-vous devant la bâtiment A1 (sur votre droite)
     ${photo(null, "acces_batiment.jpg")}<br>
 
     <b>Entrée du bâtiment A1 👇</b>
@@ -176,6 +158,24 @@ photos2: {
 
     clé ronde (verrou du haut)
     ${photo(null, "cle_ronde.jpg")}
+
+    <b>Pour aller vous garer, revenez à votre voiture 👇</b><br>
+    Continuez tout droit jusqu'au bout de l'allée, puis tournez sur votre droite
+    ${photo(null, "allee2.jpg")}<br>
+
+    <b>Continuez tout droit jusqu'au bout, puis tournez encore sur votre droite 👇</b>
+    ${photo(null, "allee3.jpg")}<br>
+
+    <b>Continuez tout droit jusqu'au portail, puis tournez une dernière fois sur votre droite 👇</b>
+    ${photo(null, "allee4.jpg")}<br>
+
+    <b>Place de parking 👇</b><br>
+    La place se situe sur votre gauche
+    ${photo(null, "allee5.jpg")}
+    ${photo(null, "place_parking.jpg")}<br>
+
+    <b>Numéros de la place privative : 2 👇</b>
+    ${photo(null, "numero_parking.jpg")}<br>
   `
 },
 
@@ -302,26 +302,8 @@ photos2: {
     (press the remote control button)
     ${photo(null, "telecommande_portail.jpg")}<br>
 
-    <b>Continue straight to the end of the driveway, then turn right 👇</b>
-    ${photo(null, "allee1.jpg")}
-    ${photo(null, "allee2.jpg")}<br>
-
-    <b>Continue straight to the end, then turn right again 👇</b>
-    ${photo(null, "allee3.jpg")}<br>
-
-    <b>Continue straight to the gate, then turn right one last time 👇</b>
-    ${photo(null, "allee4.jpg")}<br>
-
-    <b>Parking space 👇</b><br>
-    The parking space is located on your left
-    ${photo(null, "allee5.jpg")}
-    ${photo(null, "place_parking.jpg")}<br>
-
-    <b>Private parking space number: 2 👇</b>
-    ${photo(null, "numero_parking.jpg")}<br>
-
     <b>Access to Building A1 👇</b><br>
-    Return to the main driveway (Gate 1 entrance) and take the first right
+    Drive on and stop in front of Building A1 (on your right)
     ${photo(null, "acces_batiment.jpg")}<br>
 
     <b>Building A1 entrance 👇</b>
@@ -346,6 +328,24 @@ photos2: {
 
     round key (upper deadbolt lock)
     ${photo(null, "cle_ronde.jpg")}
+
+    <b>To park, go back to your car 👇</b><br>
+    Carry on straight ahead to the end of the driveway, then turn right
+    ${photo(null, "allee2.jpg")}<br>
+
+    <b>Continue straight to the end, then turn right again 👇</b>
+    ${photo(null, "allee3.jpg")}<br>
+
+    <b>Continue straight to the gate, then turn right one last time 👇</b>
+    ${photo(null, "allee4.jpg")}<br>
+
+    <b>Parking space 👇</b><br>
+    The parking space is located on your left
+    ${photo(null, "allee5.jpg")}
+    ${photo(null, "place_parking.jpg")}<br>
+
+    <b>Private parking space number: 2 👇</b>
+    ${photo(null, "numero_parking.jpg")}<br>
   `
 },
 
@@ -472,26 +472,8 @@ photos2: {
     (pulse el botón del mando a distancia)
     ${photo(null, "telecommande_portail.jpg")}<br>
 
-    <b>Siga recto hasta el final del camino y luego gire a la derecha 👇</b>
-    ${photo(null, "allee1.jpg")}
-    ${photo(null, "allee2.jpg")}<br>
-
-    <b>Siga recto hasta el final y vuelva a girar a la derecha 👇</b>
-    ${photo(null, "allee3.jpg")}<br>
-
-    <b>Siga recto hasta el portón y gire por última vez a la derecha 👇</b>
-    ${photo(null, "allee4.jpg")}<br>
-
-    <b>Plaza de aparcamiento 👇</b><br>
-    La plaza se encuentra a su izquierda
-    ${photo(null, "allee5.jpg")}
-    ${photo(null, "place_parking.jpg")}<br>
-
-    <b>Número de la plaza privada: 2 👇</b>
-    ${photo(null, "numero_parking.jpg")}<br>
-
     <b>Acceso al edificio A1 👇</b><br>
-    Regrese al camino principal (entrada del Portón 1) y tome la primera a la derecha
+    Sigue adelante y detente delante del edificio A1 (a tu derecha)
     ${photo(null, "acces_batiment.jpg")}<br>
 
     <b>Entrada del edificio A1 👇</b>
@@ -516,6 +498,24 @@ photos2: {
 
     llave redonda (cerrojo superior)
     ${photo(null, "cle_ronde.jpg")}
+    
+    <b>Siga recto hasta el final del camino y luego gire a la derecha 👇</b>
+    ${photo(null, "allee2.jpg")}<br>
+
+    <b>Para ir a aparcar, vuelve a tu coche 👇</b><br>
+    Sigue todo recto hasta el final de la calle y luego gira a la derecha
+    ${photo(null, "allee3.jpg")}<br>
+
+    <b>Siga recto hasta el portón y gire por última vez a la derecha 👇</b>
+    ${photo(null, "allee4.jpg")}<br>
+
+    <b>Plaza de aparcamiento 👇</b><br>
+    La plaza se encuentra a su izquierda
+    ${photo(null, "allee5.jpg")}
+    ${photo(null, "place_parking.jpg")}<br>
+
+    <b>Número de la plaza privada: 2 👇</b>
+    ${photo(null, "numero_parking.jpg")}<br>
   `
 },
 
